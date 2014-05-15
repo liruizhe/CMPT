@@ -10,6 +10,7 @@ typedef struct cmpt_data_
 {
 	int init_called;
 	int enabled;
+	int in_openmp_area;
 } cmpt_data;
 
 #define SHARED_MEMORY_FILENAME "/cmpt_lib_shm"

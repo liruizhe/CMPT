@@ -305,6 +305,7 @@ int main(int argc, char * argv[])
 	  is_cmpt_setting_enabled = 1;
 	  cmpt_setting->enabled = 1;
 	  cmpt_setting->init_called = 0;
+	  cmpt_setting->in_openmp_area = 0;
 	}
 	else {
 	  perror("shm_open");
@@ -380,6 +381,8 @@ int main(int argc, char * argv[])
 				}
 			}
 
+			fprintf(fw, " [Other]");
+			fprintf(fw, " %d", cmpt_setting->in_openmp_area);
 			fprintf(fw, "\n");
 		}
 		counter++;

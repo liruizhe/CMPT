@@ -37,3 +37,17 @@ int cmpt_resume()
 	  data->enabled = 1;
 	return 0;
 }
+
+int cmpt_enter_openmp()
+{
+	if (is_shm_exists)
+	  data->in_openmp_area = 1;
+	return 0;
+}
+
+int cmpt_leave_openmp()
+{
+	if (is_shm_exists)
+	  data->in_openmp_area = 0;
+	return 0;
+}
