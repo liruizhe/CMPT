@@ -1,0 +1,1573 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ARCH_LLC_MISS_EVTNR	types.h	108;"	d
+ARCH_LLC_MISS_UMASK	types.h	109;"	d
+ARCH_LLC_REFERENCE_EVTNR	types.h	105;"	d
+ARCH_LLC_REFERENCE_UMASK	types.h	106;"	d
+ATOM	cpucounters.h	/^        ATOM = 28,$/;"	e	enum:PCM::SupportedCPUModels
+ATOM_2	cpucounters.h	/^        ATOM_2 = 53,$/;"	e	enum:PCM::SupportedCPUModels
+ATOM_AVOTON	cpucounters.h	/^        ATOM_AVOTON = 77,$/;"	e	enum:PCM::SupportedCPUModels
+ATOM_BAYTRAIL	cpucounters.h	/^        ATOM_BAYTRAIL = 55,$/;"	e	enum:PCM::SupportedCPUModels
+ATOM_CENTERTON	cpucounters.h	/^        ATOM_CENTERTON = 54,$/;"	e	enum:PCM::SupportedCPUModels
+ATOM_MEM_LOAD_RETIRED_L2_HIT_EVTNR	types.h	113;"	d
+ATOM_MEM_LOAD_RETIRED_L2_HIT_EVTNR	types.h	119;"	d
+ATOM_MEM_LOAD_RETIRED_L2_HIT_EVTNR	types.h	125;"	d
+ATOM_MEM_LOAD_RETIRED_L2_HIT_UMASK	types.h	114;"	d
+ATOM_MEM_LOAD_RETIRED_L2_HIT_UMASK	types.h	120;"	d
+ATOM_MEM_LOAD_RETIRED_L2_HIT_UMASK	types.h	126;"	d
+ATOM_MEM_LOAD_RETIRED_L2_MISS_EVTNR	types.h	116;"	d
+ATOM_MEM_LOAD_RETIRED_L2_MISS_EVTNR	types.h	122;"	d
+ATOM_MEM_LOAD_RETIRED_L2_MISS_EVTNR	types.h	128;"	d
+ATOM_MEM_LOAD_RETIRED_L2_MISS_UMASK	types.h	117;"	d
+ATOM_MEM_LOAD_RETIRED_L2_MISS_UMASK	types.h	123;"	d
+ATOM_MEM_LOAD_RETIRED_L2_MISS_UMASK	types.h	129;"	d
+AbstractRawCounter	width_extender.h	/^   struct AbstractRawCounter$/;"	s	class:CounterWidthExtender
+ArchLLCMiss	cpucounters.h	/^        uint64 ArchLLCMiss;$/;"	m	union:BasicCounterState::__anon4
+ArchLLCRef	cpucounters.h	/^        uint64 ArchLLCRef;$/;"	m	union:BasicCounterState::__anon5
+AsynchronCounterState	cpuasynchcounter.h	/^    AsynchronCounterState()$/;"	f	class:AsynchronCounterState
+AsynchronCounterState	cpuasynchcounter.h	/^class AsynchronCounterState {$/;"	c
+BB0_MSR_PERF_CNT_1	types.h	199;"	d
+BB0_MSR_PERF_CNT_CTL_1	types.h	200;"	d
+BB0_MSR_PERF_GLOBAL_CTL	types.h	198;"	d
+BB1_MSR_PERF_CNT_1	types.h	203;"	d
+BB1_MSR_PERF_CNT_CTL_1	types.h	204;"	d
+BB1_MSR_PERF_GLOBAL_CTL	types.h	202;"	d
+BUILD_PATH	WinMSRDriver/Win7/mymake.bat	/^set BUILD_PATH=$/;"	v
+BUILD_PATH	WinMSRDriver/WinXP/mymake.bat	/^set BUILD_PATH=$/;"	v
+BasicCounterState	cpucounters.h	/^    BasicCounterState() : $/;"	f	class:BasicCounterState
+BasicCounterState	cpucounters.h	/^class BasicCounterState$/;"	c
+BecktonUncorePMUCNTCTLRegister	types.h	/^struct BecktonUncorePMUCNTCTLRegister$/;"	s
+BecktonUncorePMUZDPCTLFVCRegister	types.h	/^struct BecktonUncorePMUZDPCTLFVCRegister$/;"	s
+CBO_MSR_PMON_BOX_CTL_FRZ	types.h	599;"	d
+CBO_MSR_PMON_BOX_CTL_FRZ_EN	types.h	600;"	d
+CBO_MSR_PMON_BOX_CTL_RST_CONTROL	types.h	597;"	d
+CBO_MSR_PMON_BOX_CTL_RST_COUNTERS	types.h	598;"	d
+CBO_MSR_PMON_CTL_EDGE_DET	types.h	605;"	d
+CBO_MSR_PMON_CTL_EN	types.h	607;"	d
+CBO_MSR_PMON_CTL_EVENT	types.h	602;"	d
+CBO_MSR_PMON_CTL_INVERT	types.h	608;"	d
+CBO_MSR_PMON_CTL_RST	types.h	604;"	d
+CBO_MSR_PMON_CTL_THRESH	types.h	609;"	d
+CBO_MSR_PMON_CTL_TID_EN	types.h	606;"	d
+CBO_MSR_PMON_CTL_UMASK	types.h	603;"	d
+CC	Makefile	/^CC=g++ -Wall$/;"	m
+CLARKDALE	cpucounters.h	/^        CLARKDALE = 37,$/;"	e	enum:PCM::SupportedCPUModels
+CLIENT_BAR_MASK	client_bw.cpp	67;"	d	file:
+CLIENT_BUS	client_bw.cpp	64;"	d	file:
+CLIENT_DEV	client_bw.cpp	65;"	d	file:
+CLIENT_EVENT_BASE	client_bw.cpp	68;"	d	file:
+CLIENT_FUNC	client_bw.cpp	66;"	d	file:
+COMPILE_FOR_WINDOWS_7	types.h	25;"	d
+CORE_UNIT	pcm3d/widget.cpp	270;"	d	file:
+CPUASYNCHCOUNTER_HEADER	cpuasynchcounter.h	19;"	d
+CPUCNT_INIT_THE_REST_OF_EVTCNT	cpucounters.cpp	1507;"	d	file:
+CPUCNT_INIT_THE_REST_OF_EVTCNT	cpucounters.cpp	1576;"	d	file:
+CPUCOUNTERS_HEADER	cpucounters.h	17;"	d
+CPUCounters_CLIENTBW_H	client_bw.h	17;"	d
+CPUCounters_MSR_H	msr.h	17;"	d
+CPUCounters_PCI_H	pci.h	19;"	d
+CPUCounters_TYPES_H	types.h	17;"	d
+CPU_CLK_UNHALTED_REF_ADDR	types.h	46;"	d
+CPU_CLK_UNHALTED_THREAD_ADDR	types.h	45;"	d
+CPU_WIDTH	pcm3d/widget.cpp	272;"	d	file:
+CPU_intensive_task	realtime.cpp	/^void CPU_intensive_task()$/;"	f
+CStateResidency	cpucounters.h	/^    uint64 CStateResidency[PCM::MAX_C_STATE + 1];$/;"	m	class:BasicCounterState
+CStateResidency	cpucounters.h	/^    uint64 CStateResidency[PCM::MAX_C_STATE + 1];$/;"	m	class:UncoreCounterState
+CUSTOM_CORE_EVENTS	cpucounters.h	/^        CUSTOM_CORE_EVENTS = 1,     \/*!< Custom set of core events specified in the parameter to the program method. The parameter must be a pointer to array of four \\c CustomCoreEventDescription values *\/$/;"	e	enum:PCM::ProgramMode
+CX_MSR_PMON_BOX_CTL	cpucounters.cpp	/^uint32 PCM::CX_MSR_PMON_BOX_CTL(uint32 Cbo) const$/;"	f	class:PCM
+CX_MSR_PMON_BOX_FILTER	cpucounters.cpp	/^uint32 PCM::CX_MSR_PMON_BOX_FILTER(uint32 Cbo) const$/;"	f	class:PCM
+CX_MSR_PMON_BOX_FILTER1	cpucounters.cpp	/^uint32 PCM::CX_MSR_PMON_BOX_FILTER1(uint32 Cbo) const$/;"	f	class:PCM
+CX_MSR_PMON_CTLY	cpucounters.cpp	/^uint32 PCM::CX_MSR_PMON_CTLY(uint32 Cbo, uint32 Ctl) const$/;"	f	class:PCM
+CX_MSR_PMON_CTRY	cpucounters.cpp	/^uint32 PCM::CX_MSR_PMON_CTRY(uint32 Cbo, uint32 Ctr) const$/;"	f	class:PCM
+ClientBW	client_bw.cpp	/^ClientBW::ClientBW() :$/;"	f	class:ClientBW
+ClientBW	client_bw.cpp	/^ClientBW::ClientBW()$/;"	f	class:ClientBW
+ClientBW	client_bw.h	/^class ClientBW$/;"	c
+ClientImcReadsCounter	width_extender.h	/^      ClientImcReadsCounter(ClientBW * clientBW_): clientBW(clientBW_) {}$/;"	f	struct:CounterWidthExtender::ClientImcReadsCounter
+ClientImcReadsCounter	width_extender.h	/^   struct ClientImcReadsCounter : public AbstractRawCounter$/;"	s	class:CounterWidthExtender
+ClientImcWritesCounter	width_extender.h	/^      ClientImcWritesCounter(ClientBW * clientBW_): clientBW(clientBW_) {}$/;"	f	struct:CounterWidthExtender::ClientImcWritesCounter
+ClientImcWritesCounter	width_extender.h	/^   struct ClientImcWritesCounter : public AbstractRawCounter$/;"	s	class:CounterWidthExtender
+CoreC0StateResidencyHash_	PCM-Service_Win/PCMService.h	/^		System::Collections::Hashtable CoreC0StateResidencyHash_;		$/;"	m	class:PCMServiceNS::MeasureThread
+CoreC3StateResidencyHash_	PCM-Service_Win/PCMService.h	/^		System::Collections::Hashtable CoreC3StateResidencyHash_;$/;"	m	class:PCMServiceNS::MeasureThread
+CoreC6StateResidencyHash_	PCM-Service_Win/PCMService.h	/^		System::Collections::Hashtable CoreC6StateResidencyHash_;$/;"	m	class:PCMServiceNS::MeasureThread
+CoreC7StateResidencyHash_	PCM-Service_Win/PCMService.h	/^		System::Collections::Hashtable CoreC7StateResidencyHash_;$/;"	m	class:PCMServiceNS::MeasureThread
+CoreCounterState	cpucounters.h	/^class CoreCounterState : public BasicCounterState$/;"	c
+CounterMutex	cpuasynchcounter.h	/^    pthread_mutex_t CounterMutex;$/;"	m	class:AsynchronCounterState
+CounterMutex	width_extender.h	/^	HANDLE CounterMutex;$/;"	m	class:CounterWidthExtender
+CounterMutex	width_extender.h	/^    pthread_mutex_t CounterMutex;$/;"	m	class:CounterWidthExtender
+CounterWidthExtender	width_extender.h	/^    CounterWidthExtender(AbstractRawCounter * raw_counter_): raw_counter(raw_counter_) $/;"	f	class:CounterWidthExtender
+CounterWidthExtender	width_extender.h	/^class CounterWidthExtender$/;"	c
+CpuClkUnhaltedRef	cpucounters.h	/^    uint64 CpuClkUnhaltedRef;$/;"	m	class:BasicCounterState
+CpuClkUnhaltedThread	cpucounters.h	/^    uint64 CpuClkUnhaltedThread;$/;"	m	class:BasicCounterState
+Cpuid	winring0/OlsApiInit.h	/^_Cpuid Cpuid = NULL;$/;"	v
+CpuidPx	winring0/OlsApiInit.h	/^_CpuidPx CpuidPx = NULL;$/;"	v
+CpuidTx	winring0/OlsApiInit.h	/^_CpuidTx CpuidTx = NULL;$/;"	v
+CustomCoreEventDescription	cpucounters.h	/^    struct CustomCoreEventDescription$/;"	s	class:PCM
+DEFAULT_EVENTS	cpucounters.h	/^        DEFAULT_EVENTS = 0,         \/*!< Default choice of events, the additional parameter is not needed and ignored *\/$/;"	e	enum:PCM::ProgramMode
+DELAY	cpuasynchcounter.h	30;"	d
+DELAY	cpucounterstest.cpp	42;"	d	file:
+DIMMS_WIDTH	pcm3d/widget.cpp	300;"	d	file:
+DIMM_UNIT	pcm3d/widget.cpp	299;"	d	file:
+DOS_DEVICE_NAME	WinMSRDriver/Win7/msrmain.c	29;"	d	file:
+DOS_DEVICE_NAME	WinMSRDriver/WinXP/msrmain.c	28;"	d	file:
+DRAMClocks	cpucounters.h	/^   uint64 DRAMClocks[8];$/;"	m	class:ServerUncorePowerState
+DRAMEnergyHash_	PCM-Service_Win/PCMService.h	/^		System::Collections::Hashtable DRAMEnergyHash_;$/;"	m	class:PCMServiceNS::MeasureThread
+DRAMEnergyStatus	cpucounters.h	/^    uint64 DRAMEnergyStatus;$/;"	m	class:UncoreCounterState
+DRAMEnergyStatus	cpucounters.h	/^   uint64 DRAMEnergyStatus;$/;"	m	class:ServerUncorePowerState
+DRAMPower	pcm3d/widget.cpp	/^float DRAMPower[2] = {0,0};$/;"	v
+DeinitOpenLibSys	winring0/OlsApiInit.h	/^BOOL DeinitOpenLibSys(HMODULE *hModule)$/;"	f
+DeinitializeOls	winring0/OlsApiInit.h	/^_DeinitializeOls DeinitializeOls = NULL;$/;"	v
+DllMain	Intelpcm.dll/dllmain.cpp	/^BOOL APIENTRY DllMain( HMODULE hModule,$/;"	f
+Driver	PCM_Win/windriver.h	/^class Driver$/;"	c
+DriverEntry	WinMSRDriver/Win7/msrmain.c	/^DRIVER_INITIALIZE DriverEntry;$/;"	v
+DriverEntry	WinMSRDriver/Win7/msrmain.c	/^DriverEntry($/;"	f
+DriverEntry	WinMSRDriver/WinXP/msrmain.c	/^DRIVER_INITIALIZE DriverEntry;$/;"	v
+DriverEntry	WinMSRDriver/WinXP/msrmain.c	/^DriverEntry($/;"	f
+END_OF_MODEL_LIST	cpucounters.h	/^        END_OF_MODEL_LIST$/;"	e	enum:PCM::SupportedCPUModels
+EXT_CUSTOM_CORE_EVENTS	cpucounters.h	/^        EXT_CUSTOM_CORE_EVENTS = 2, \/*!< Custom set of core events specified in the parameter to the program method. The parameter must be a pointer to a \\c ExtendedCustomCoreEventDescription  data structure *\/$/;"	e	enum:PCM::ProgramMode
+ErrorCode	cpucounters.h	/^    enum ErrorCode {$/;"	g	class:PCM
+Event0	cpucounters.h	/^        uint64 Event0;$/;"	m	union:BasicCounterState::__anon4
+Event1	cpucounters.h	/^        uint64 Event1;$/;"	m	union:BasicCounterState::__anon5
+Event2	cpucounters.h	/^        uint64 Event2;$/;"	m	union:BasicCounterState::__anon6
+Event3	cpucounters.h	/^        uint64 Event3;$/;"	m	union:BasicCounterState::__anon7
+EventSelectRegister	types.h	/^struct EventSelectRegister$/;"	s
+ExtendedCustomCoreEventDescription	cpucounters.h	/^    struct ExtendedCustomCoreEventDescription$/;"	s	class:PCM
+FORM_PCI_ADDR	MacMSRDriver/PCIDriverInterface.h	24;"	d
+FindPciDeviceByClass	winring0/OlsApiInit.h	/^_FindPciDeviceByClass FindPciDeviceByClass = NULL;$/;"	v
+FindPciDeviceById	winring0/OlsApiInit.h	/^_FindPciDeviceById FindPciDeviceById = NULL;$/;"	v
+FixedEventControlRegister	types.h	/^struct FixedEventControlRegister$/;"	s
+GETOPT_H_	freegetopt/getopt.h	38;"	d
+GetDllStatus	winring0/OlsApiInit.h	/^_GetDllStatus GetDllStatus = NULL;$/;"	v
+GetDllVersion	winring0/OlsApiInit.h	/^_GetDllVersion GetDllVersion = NULL;$/;"	v
+GetDriverStatus	winring0/OlsApiInit.h	/^_GetDriverStatus GetDriverStatus = NULL;$/;"	v
+GetDriverType	winring0/OlsApiInit.h	/^_GetDriverType GetDriverType = NULL;$/;"	v
+GetDriverVersion	winring0/OlsApiInit.h	/^_GetDriverVersion GetDriverVersion = NULL;$/;"	v
+GetOlsString	winring0/OlsApiInit.h	114;"	d
+GetOlsString	winring0/OlsApiInit.h	116;"	d
+GetOlsStringA	winring0/OlsApiInit.h	/^_GetOlsStringA GetOlsStringA = NULL;$/;"	v
+GetOlsStringW	winring0/OlsApiInit.h	/^_GetOlsStringW GetOlsStringW = NULL;$/;"	v
+GetOlsValue	winring0/OlsApiInit.h	/^_GetOlsValue GetOlsValue = NULL;$/;"	v
+HACK_TO_REMOVE_DUPLICATE_ERROR	cpucounterstest.cpp	21;"	d	file:
+HACK_TO_REMOVE_DUPLICATE_ERROR	pcm-memory.cpp	19;"	d	file:
+HACK_TO_REMOVE_DUPLICATE_ERROR	pcm-msr.cpp	15;"	d	file:
+HACK_TO_REMOVE_DUPLICATE_ERROR	pcm-numa.cpp	19;"	d	file:
+HACK_TO_REMOVE_DUPLICATE_ERROR	pcm-pcie.cpp	19;"	d	file:
+HACK_TO_REMOVE_DUPLICATE_ERROR	pcm-power.cpp	15;"	d	file:
+HACK_TO_REMOVE_DUPLICATE_ERROR	pcm-sensor.cpp	25;"	d	file:
+HACK_TO_REMOVE_DUPLICATE_ERROR	pcm-tsx.cpp	19;"	d	file:
+HACK_TO_REMOVE_DUPLICATE_ERROR	realtime.cpp	16;"	d	file:
+HASWELL	cpucounters.h	/^        HASWELL = 60,$/;"	e	enum:PCM::SupportedCPUModels
+HASWELL_2	cpucounters.h	/^        HASWELL_2 = 70,$/;"	e	enum:PCM::SupportedCPUModels
+HASWELL_ULT	cpucounters.h	/^        HASWELL_ULT = 69,$/;"	e	enum:PCM::SupportedCPUModels
+Hlt	winring0/OlsApiInit.h	/^_Hlt Hlt = NULL;$/;"	v
+HltPx	winring0/OlsApiInit.h	/^_HltPx HltPx = NULL;$/;"	v
+HltTx	winring0/OlsApiInit.h	/^_HltTx HltTx = NULL;$/;"	v
+IA32_CR_FIXED_CTR_CTRL	types.h	48;"	d
+IA32_CR_PERF_GLOBAL_CTRL	types.h	47;"	d
+IA32_DEBUGCTL	types.h	56;"	d
+IA32_PERFEVTSEL0_ADDR	types.h	49;"	d
+IA32_PERFEVTSEL1_ADDR	types.h	50;"	d
+IA32_PERFEVTSEL2_ADDR	types.h	51;"	d
+IA32_PERFEVTSEL3_ADDR	types.h	52;"	d
+IA32_PMC0	types.h	58;"	d
+IA32_PMC1	types.h	59;"	d
+IA32_PMC2	types.h	60;"	d
+IA32_PMC3	types.h	61;"	d
+IA32_TIME_STAMP_COUNTER	types.h	69;"	d
+ID	freegetopt/getopt.c	/^static const char* ID = "$Id: getopt.c,v 1.2 2003\/10\/26 03:10:20 vindaci Exp $";$/;"	v	file:
+IMC_DEV_IDS	cpucounters.cpp	/^static const uint32 IMC_DEV_IDS[] = {$/;"	v	file:
+INST_RETIRED_ANY_ADDR	types.h	44;"	d
+INTELPCM_API	Intelpcm.dll/Intelpcm.h	25;"	d
+INTELPCM_API	Intelpcm.dll/Intelpcm.h	27;"	d
+INTELPCM_API	cpucounters.h	28;"	d
+INTEL_PCM_VERSION	cpucounters.h	25;"	d
+INVALID_MODE	cpucounters.h	/^        INVALID_MODE                \/*!< Non-programmed mode *\/$/;"	e	enum:PCM::ProgramMode
+IO_CTL_MSR_READ	WinMSRDriver/Win7/msrstruct.h	28;"	d
+IO_CTL_MSR_READ	WinMSRDriver/WinXP/msrstruct.h	28;"	d
+IO_CTL_MSR_WRITE	WinMSRDriver/Win7/msrstruct.h	29;"	d
+IO_CTL_MSR_WRITE	WinMSRDriver/WinXP/msrstruct.h	29;"	d
+IO_CTL_PCICFG_READ	WinMSRDriver/Win7/msrstruct.h	30;"	d
+IO_CTL_PCICFG_WRITE	WinMSRDriver/Win7/msrstruct.h	31;"	d
+IVT_C0_MSR_PMON_BOX_FILTER1	types.h	595;"	d
+IVT_CBO_MSR_PMON_BOX_FILTER1_OPC	types.h	612;"	d
+IVYTOWN	cpucounters.h	/^        IVYTOWN = 62,$/;"	e	enum:PCM::SupportedCPUModels
+IVY_BRIDGE	cpucounters.h	/^        IVY_BRIDGE = 58,$/;"	e	enum:PCM::SupportedCPUModels
+InitOpenLibSys	winring0/OlsApiInit.h	/^BOOL InitOpenLibSys(HMODULE *hModule)$/;"	f
+InitializeComponent	PCM-Service_Win/PCMInstaller.h	/^		void InitializeComponent(void)$/;"	f	class:PMUService::ProjectInstaller
+InitializeComponent	PCM-Service_Win/PCMService.h	/^		void InitializeComponent(void)$/;"	f	class:PCMServiceNS::PCMService
+InitializeOls	winring0/OlsApiInit.h	/^_InitializeOls InitializeOls = NULL;$/;"	v
+InstRetiredAny	cpucounters.h	/^    uint64 InstRetiredAny;$/;"	m	class:BasicCounterState
+InstallOpenLibSys	winring0/OlsApiInit.h	/^_InstallOpenLibSys InstallOpenLibSys = NULL;$/;"	v
+InvariantTSC	cpucounters.h	/^    uint64 InvariantTSC; \/\/ invariant time stamp counter$/;"	m	class:BasicCounterState
+IsCpuid	winring0/OlsApiInit.h	/^_IsCpuid IsCpuid = NULL;$/;"	v
+IsMsr	winring0/OlsApiInit.h	/^_IsMsr IsMsr = NULL;$/;"	v
+IsTsc	winring0/OlsApiInit.h	/^_IsTsc IsTsc = NULL;$/;"	v
+JAKETOWN	cpucounters.h	/^        JAKETOWN = 45,$/;"	e	enum:PCM::SupportedCPUModels
+JKTIVT_CBO_MSR_STEP	types.h	593;"	d
+JKTIVT_MC0_CH0_REGISTER_DEV_ADDR	types.h	457;"	d
+JKTIVT_MC0_CH0_REGISTER_FUNC_ADDR	types.h	461;"	d
+JKTIVT_MC0_CH1_REGISTER_DEV_ADDR	types.h	458;"	d
+JKTIVT_MC0_CH1_REGISTER_FUNC_ADDR	types.h	462;"	d
+JKTIVT_MC0_CH2_REGISTER_DEV_ADDR	types.h	459;"	d
+JKTIVT_MC0_CH2_REGISTER_FUNC_ADDR	types.h	463;"	d
+JKTIVT_MC0_CH3_REGISTER_DEV_ADDR	types.h	460;"	d
+JKTIVT_MC0_CH3_REGISTER_FUNC_ADDR	types.h	464;"	d
+JKTIVT_MC1_CH0_REGISTER_DEV_ADDR	types.h	466;"	d
+JKTIVT_MC1_CH0_REGISTER_FUNC_ADDR	types.h	470;"	d
+JKTIVT_MC1_CH1_REGISTER_DEV_ADDR	types.h	467;"	d
+JKTIVT_MC1_CH1_REGISTER_FUNC_ADDR	types.h	471;"	d
+JKTIVT_MC1_CH2_REGISTER_DEV_ADDR	types.h	468;"	d
+JKTIVT_MC1_CH2_REGISTER_FUNC_ADDR	types.h	472;"	d
+JKTIVT_MC1_CH3_REGISTER_DEV_ADDR	types.h	469;"	d
+JKTIVT_MC1_CH3_REGISTER_FUNC_ADDR	types.h	473;"	d
+JKTIVT_PCU_MSR_PMON_BOX_CTL_ADDR	types.h	525;"	d
+JKTIVT_PCU_MSR_PMON_BOX_FILTER_ADDR	types.h	518;"	d
+JKTIVT_PCU_MSR_PMON_CTL0_ADDR	types.h	523;"	d
+JKTIVT_PCU_MSR_PMON_CTL1_ADDR	types.h	522;"	d
+JKTIVT_PCU_MSR_PMON_CTL2_ADDR	types.h	521;"	d
+JKTIVT_PCU_MSR_PMON_CTL3_ADDR	types.h	520;"	d
+JKTIVT_PCU_MSR_PMON_CTR0_ADDR	types.h	516;"	d
+JKTIVT_PCU_MSR_PMON_CTR1_ADDR	types.h	515;"	d
+JKTIVT_PCU_MSR_PMON_CTR2_ADDR	types.h	514;"	d
+JKTIVT_PCU_MSR_PMON_CTR3_ADDR	types.h	513;"	d
+JKTIVT_QPI_PORT0_REGISTER_DEV_ADDR	types.h	489;"	d
+JKTIVT_QPI_PORT0_REGISTER_FUNC_ADDR	types.h	490;"	d
+JKTIVT_QPI_PORT1_REGISTER_DEV_ADDR	types.h	491;"	d
+JKTIVT_QPI_PORT1_REGISTER_FUNC_ADDR	types.h	492;"	d
+JKTIVT_QPI_PORT2_REGISTER_DEV_ADDR	types.h	493;"	d
+JKTIVT_QPI_PORT2_REGISTER_FUNC_ADDR	types.h	494;"	d
+JKT_C0_MSR_PMON_BOX_CTL	types.h	591;"	d
+JKT_C0_MSR_PMON_BOX_FILTER	types.h	586;"	d
+JKT_C0_MSR_PMON_CTL0	types.h	590;"	d
+JKT_C0_MSR_PMON_CTL1	types.h	589;"	d
+JKT_C0_MSR_PMON_CTL2	types.h	588;"	d
+JKT_C0_MSR_PMON_CTL3	types.h	587;"	d
+JKT_C0_MSR_PMON_CTR0	types.h	585;"	d
+JKT_C0_MSR_PMON_CTR1	types.h	584;"	d
+JKT_C0_MSR_PMON_CTR2	types.h	583;"	d
+JKT_C0_MSR_PMON_CTR3	types.h	582;"	d
+JKT_CBO_MSR_PMON_BOX_FILTER_OPC	types.h	611;"	d
+L2Hit	cpucounters.h	/^        uint64 L2Hit;$/;"	m	union:BasicCounterState::__anon7
+L2HitM	cpucounters.h	/^        uint64 L2HitM;$/;"	m	union:BasicCounterState::__anon6
+L3Miss	cpucounters.h	/^        uint64 L3Miss;$/;"	m	union:BasicCounterState::__anon4
+L3UnsharedHit	cpucounters.h	/^        uint64 L3UnsharedHit;$/;"	m	union:BasicCounterState::__anon5
+LIB	Makefile	/^LIB= -lpthread -lPcmMsr$/;"	m
+LIB	Makefile	/^LIB= -lpthread -lrt$/;"	m
+LIB	Makefile	/^LIB= -lpthread$/;"	m
+MAX_C_STATE	cpucounters.h	/^    enum { MAX_C_STATE = 10 }; \/\/ max C-state on Intel architecture$/;"	e	enum:PCM::__anon1
+MB0_MSR_PERF_GLOBAL_CTL	types.h	183;"	d
+MB0_MSR_PMU_CNT_0	types.h	184;"	d
+MB0_MSR_PMU_CNT_1	types.h	186;"	d
+MB0_MSR_PMU_CNT_CTL_0	types.h	185;"	d
+MB0_MSR_PMU_CNT_CTL_1	types.h	187;"	d
+MB0_MSR_PMU_ZDP_CTL_FVC	types.h	188;"	d
+MB1_MSR_PERF_GLOBAL_CTL	types.h	191;"	d
+MB1_MSR_PMU_CNT_0	types.h	192;"	d
+MB1_MSR_PMU_CNT_1	types.h	194;"	d
+MB1_MSR_PMU_CNT_CTL_0	types.h	193;"	d
+MB1_MSR_PMU_CNT_CTL_1	types.h	195;"	d
+MB1_MSR_PMU_ZDP_CTL_FVC	types.h	196;"	d
+MCCounter	cpucounters.h	/^   uint64 MCCounter[8][4];\/\/ channel X counter$/;"	m	class:ServerUncorePowerState
+MCFGHeader	types.h	/^struct MCFGHeader$/;"	s
+MCFGRecord	types.h	/^struct MCFGRecord$/;"	s
+MCX_CHY_REGISTER_DEV_ADDR	cpucounters.h	/^    uint32 MCX_CHY_REGISTER_DEV_ADDR[2][4];$/;"	m	class:ServerPCICFGUncore
+MCX_CHY_REGISTER_FUNC_ADDR	cpucounters.h	/^    uint32 MCX_CHY_REGISTER_FUNC_ADDR[2][4];$/;"	m	class:ServerPCICFGUncore
+MC_CH_PCI_PMON_BOX_CTL_ADDR	types.h	475;"	d
+MC_CH_PCI_PMON_BOX_CTL_FRZ	types.h	530;"	d
+MC_CH_PCI_PMON_BOX_CTL_FRZ_EN	types.h	531;"	d
+MC_CH_PCI_PMON_BOX_CTL_RST_CONTROL	types.h	528;"	d
+MC_CH_PCI_PMON_BOX_CTL_RST_COUNTERS	types.h	529;"	d
+MC_CH_PCI_PMON_CTL0_ADDR	types.h	481;"	d
+MC_CH_PCI_PMON_CTL1_ADDR	types.h	480;"	d
+MC_CH_PCI_PMON_CTL2_ADDR	types.h	479;"	d
+MC_CH_PCI_PMON_CTL3_ADDR	types.h	478;"	d
+MC_CH_PCI_PMON_CTL_EDGE_DET	types.h	541;"	d
+MC_CH_PCI_PMON_CTL_EN	types.h	542;"	d
+MC_CH_PCI_PMON_CTL_EVENT	types.h	538;"	d
+MC_CH_PCI_PMON_CTL_INVERT	types.h	543;"	d
+MC_CH_PCI_PMON_CTL_RST	types.h	540;"	d
+MC_CH_PCI_PMON_CTL_THRESH	types.h	544;"	d
+MC_CH_PCI_PMON_CTL_UMASK	types.h	539;"	d
+MC_CH_PCI_PMON_CTR0_ADDR	types.h	487;"	d
+MC_CH_PCI_PMON_CTR1_ADDR	types.h	486;"	d
+MC_CH_PCI_PMON_CTR2_ADDR	types.h	485;"	d
+MC_CH_PCI_PMON_CTR3_ADDR	types.h	484;"	d
+MC_CH_PCI_PMON_FIXED_CTL_ADDR	types.h	477;"	d
+MC_CH_PCI_PMON_FIXED_CTL_EN	types.h	536;"	d
+MC_CH_PCI_PMON_FIXED_CTL_RST	types.h	535;"	d
+MC_CH_PCI_PMON_FIXED_CTR_ADDR	types.h	483;"	d
+MEM_LOAD_RETIRED_L2_HITM_EVTNR	types.h	80;"	d
+MEM_LOAD_RETIRED_L2_HITM_UMASK	types.h	81;"	d
+MEM_LOAD_RETIRED_L2_HIT_EVTNR	types.h	83;"	d
+MEM_LOAD_RETIRED_L2_HIT_UMASK	types.h	84;"	d
+MEM_LOAD_RETIRED_L3_MISS_EVTNR	types.h	74;"	d
+MEM_LOAD_RETIRED_L3_MISS_UMASK	types.h	75;"	d
+MEM_LOAD_RETIRED_L3_UNSHAREDHIT_EVTNR	types.h	77;"	d
+MEM_LOAD_RETIRED_L3_UNSHAREDHIT_UMASK	types.h	78;"	d
+MEM_LOAD_UOPS_LLC_HIT_RETIRED_XSNP_EVTNR	types.h	97;"	d
+MEM_LOAD_UOPS_LLC_HIT_RETIRED_XSNP_HITM_EVTNR	types.h	94;"	d
+MEM_LOAD_UOPS_LLC_HIT_RETIRED_XSNP_HITM_UMASK	types.h	95;"	d
+MEM_LOAD_UOPS_LLC_HIT_RETIRED_XSNP_NONE_EVTNR	types.h	91;"	d
+MEM_LOAD_UOPS_LLC_HIT_RETIRED_XSNP_NONE_UMASK	types.h	92;"	d
+MEM_LOAD_UOPS_LLC_HIT_RETIRED_XSNP_UMASK	types.h	98;"	d
+MEM_LOAD_UOPS_MISC_RETIRED_LLC_MISS_EVTNR	types.h	88;"	d
+MEM_LOAD_UOPS_MISC_RETIRED_LLC_MISS_UMASK	types.h	89;"	d
+MEM_LOAD_UOPS_RETIRED_L2_HIT_EVTNR	types.h	100;"	d
+MEM_LOAD_UOPS_RETIRED_L2_HIT_UMASK	types.h	101;"	d
+MSR	cpucounters.h	/^    MsrHandle ** MSR;$/;"	m	class:PCM
+MSRACCESSOR_HEADER	MacMSRDriver/MSRAccessorPublic.h	16;"	d
+MSRAccessDenied	cpucounters.h	/^        MSRAccessDenied = 1,$/;"	e	enum:PCM::ErrorCode
+MSRAccessor	MacMSRDriver/MSRAccessor.cpp	/^MSRAccessor::MSRAccessor(){$/;"	f	class:MSRAccessor
+MSRAccessor	MacMSRDriver/MSRAccessor.h	/^class MSRAccessor{$/;"	c
+MSRAccessor	MacMSRDriver/MSRAccessorPublic.h	/^class MSRAccessor{$/;"	c
+MSRUnload	WinMSRDriver/Win7/msrmain.c	/^DRIVER_UNLOAD MSRUnload;$/;"	v
+MSRUnload	WinMSRDriver/Win7/msrmain.c	/^VOID MSRUnload(PDRIVER_OBJECT DriverObject)$/;"	f
+MSRUnload	WinMSRDriver/WinXP/msrmain.c	/^DRIVER_UNLOAD MSRUnload;$/;"	v
+MSRUnload	WinMSRDriver/WinXP/msrmain.c	/^VOID MSRUnload(PDRIVER_OBJECT DriverObject)$/;"	f
+MSR_CORE_C3_RESIDENCY	types.h	624;"	d
+MSR_CORE_C6_RESIDENCY	types.h	625;"	d
+MSR_CORE_C7_RESIDENCY	types.h	626;"	d
+MSR_DEV_TYPE	WinMSRDriver/Win7/msrstruct.h	26;"	d
+MSR_DEV_TYPE	WinMSRDriver/WinXP/msrstruct.h	26;"	d
+MSR_DRAM_ENERGY_STATUS	types.h	618;"	d
+MSR_IA32_THERM_STATUS	types.h	615;"	d
+MSR_INCLUDED	WinMSRDriver/Win7/msr.h	2;"	d
+MSR_INCLUDED	WinMSRDriver/WinXP/msr.h	2;"	d
+MSR_KERNEL_SHARED	MacMSRDriver/MSRKernel.h	18;"	d
+MSR_OFFCORE_RSP0	types.h	63;"	d
+MSR_OFFCORE_RSP1	types.h	64;"	d
+MSR_PACKAGE_THERM_STATUS	types.h	614;"	d
+MSR_PKG_C2_RESIDENCY	types.h	620;"	d
+MSR_PKG_C3_RESIDENCY	types.h	621;"	d
+MSR_PKG_C6_RESIDENCY	types.h	622;"	d
+MSR_PKG_C7_RESIDENCY	types.h	623;"	d
+MSR_PKG_ENERGY_STATUS	types.h	448;"	d
+MSR_PKG_POWER_INFO	types.h	450;"	d
+MSR_RAPL_POWER_UNIT	types.h	449;"	d
+MSR_Request	WinMSRDriver/Win7/msrstruct.h	/^struct MSR_Request$/;"	s
+MSR_Request	WinMSRDriver/WinXP/msrstruct.h	/^struct MSR_Request$/;"	s
+MSR_STRUCT_HEADER	WinMSRDriver/Win7/msrstruct.h	19;"	d
+MSR_STRUCT_HEADER	WinMSRDriver/WinXP/msrstruct.h	19;"	d
+MSR_UNCORE_PERFEVTSEL0_ADDR	types.h	139;"	d
+MSR_UNCORE_PERFEVTSEL1_ADDR	types.h	140;"	d
+MSR_UNCORE_PERFEVTSEL2_ADDR	types.h	141;"	d
+MSR_UNCORE_PERFEVTSEL3_ADDR	types.h	142;"	d
+MSR_UNCORE_PERFEVTSEL4_ADDR	types.h	143;"	d
+MSR_UNCORE_PERFEVTSEL5_ADDR	types.h	144;"	d
+MSR_UNCORE_PERFEVTSEL6_ADDR	types.h	145;"	d
+MSR_UNCORE_PERFEVTSEL7_ADDR	types.h	146;"	d
+MSR_UNCORE_PERF_GLOBAL_CTRL_ADDR	types.h	137;"	d
+MSR_UNCORE_PMC0	types.h	149;"	d
+MSR_UNCORE_PMC1	types.h	150;"	d
+MSR_UNCORE_PMC2	types.h	151;"	d
+MSR_UNCORE_PMC3	types.h	152;"	d
+MSR_UNCORE_PMC4	types.h	153;"	d
+MSR_UNCORE_PMC5	types.h	154;"	d
+MSR_UNCORE_PMC6	types.h	155;"	d
+MSR_UNCORE_PMC7	types.h	156;"	d
+MeasureThread	PCM-Service_Win/PCMService.h	/^    ref class MeasureThread$/;"	c	namespace:PCMServiceNS
+Memory_intensive_task	readmem.cpp	/^void Memory_intensive_task(DS & ds)$/;"	f
+Memory_intensive_task	realtime.cpp	/^void Memory_intensive_task(DS & ds)$/;"	f
+MsrHandle	msr.cpp	/^MsrHandle::MsrHandle(uint32 cpu) : cpu_id(cpu)$/;"	f	class:MsrHandle
+MsrHandle	msr.cpp	/^MsrHandle::MsrHandle(uint32 cpu) : fd(-1), cpu_id(cpu)$/;"	f	class:MsrHandle
+MsrHandle	msr.cpp	/^MsrHandle::MsrHandle(uint32 cpu)$/;"	f	class:MsrHandle
+MsrHandle	msr.h	/^class MsrHandle$/;"	c
+MsrHandleCounter	width_extender.h	/^      MsrHandleCounter(MsrHandle * msr_, uint64 msr_addr_): msr(msr_), msr_addr(msr_addr_) {}$/;"	f	struct:CounterWidthExtender::MsrHandleCounter
+MsrHandleCounter	width_extender.h	/^   struct MsrHandleCounter : public AbstractRawCounter$/;"	s	class:CounterWidthExtender
+MySleep	utils.h	/^inline void MySleep(int delay)$/;"	f
+MySleepMs	utils.h	/^inline void MySleepMs(int delay_ms)$/;"	f
+MySleepUs	utils.h	/^inline void MySleepUs(int delay_us)$/;"	f
+MySystem	utils.h	/^inline int MySystem(char * sysCmd)$/;"	f
+NEHALEM	cpucounters.h	/^        NEHALEM = 30,$/;"	e	enum:PCM::SupportedCPUModels
+NEHALEM_EP	cpucounters.h	/^        NEHALEM_EP = 26,$/;"	e	enum:PCM::SupportedCPUModels
+NEHALEM_EX	cpucounters.h	/^        NEHALEM_EX = 46,$/;"	e	enum:PCM::SupportedCPUModels
+NT_DEVICE_NAME	WinMSRDriver/Win7/msrmain.c	28;"	d	file:
+NT_DEVICE_NAME	WinMSRDriver/WinXP/msrmain.c	27;"	d	file:
+NUM_CORES	msrtest.cpp	21;"	d	file:
+NUM_SAMPLES	pcm-pcie.cpp	205;"	d	file:
+OEMID	types.h	/^    char OEMID[6];$/;"	m	struct:MCFGHeader
+OEMRevision	types.h	/^    unsigned OEMRevision;$/;"	m	struct:MCFGHeader
+OEMTableID	types.h	/^    char OEMTableID[8];$/;"	m	struct:MCFGHeader
+OLS_DLL_DRIVER_NOT_FOUND	winring0/OlsDef.h	21;"	d
+OLS_DLL_DRIVER_NOT_LOADED	winring0/OlsDef.h	20;"	d
+OLS_DLL_DRIVER_NOT_LOADED_ON_NETWORK	winring0/OlsDef.h	23;"	d
+OLS_DLL_DRIVER_UNLOADED	winring0/OlsDef.h	22;"	d
+OLS_DLL_NO_ERROR	winring0/OlsDef.h	18;"	d
+OLS_DLL_UNKNOWN_ERROR	winring0/OlsDef.h	24;"	d
+OLS_DLL_UNSUPPORTED_PLATFORM	winring0/OlsDef.h	19;"	d
+OLS_DRIVER_TYPE_UNKNOWN	winring0/OlsDef.h	32;"	d
+OLS_DRIVER_TYPE_WIN_9X	winring0/OlsDef.h	33;"	d
+OLS_DRIVER_TYPE_WIN_NT	winring0/OlsDef.h	34;"	d
+OLS_DRIVER_TYPE_WIN_NT4	winring0/OlsDef.h	35;"	d
+OLS_DRIVER_TYPE_WIN_NT_IA64	winring0/OlsDef.h	37;"	d
+OLS_DRIVER_TYPE_WIN_NT_X64	winring0/OlsDef.h	36;"	d
+OLS_ERROR_PCI_BUS_NOT_EXIST	winring0/OlsDef.h	45;"	d
+OLS_ERROR_PCI_NO_DEVICE	winring0/OlsDef.h	46;"	d
+OLS_ERROR_PCI_READ_CONFIG	winring0/OlsDef.h	48;"	d
+OLS_ERROR_PCI_WRITE_CONFIG	winring0/OlsDef.h	47;"	d
+OPT	Makefile	/^OPT= -g -O3 $/;"	m
+OUTPUT_CORE_METRIC	pcm-sensor.cpp	502;"	d	file:
+OUTPUT_SOCKET_METRIC	pcm-sensor.cpp	526;"	d	file:
+OUTPUT_SYSTEM_METRIC	pcm-sensor.cpp	565;"	d	file:
+OffcoreResponseMsrValue	cpucounters.h	/^        uint64 OffcoreResponseMsrValue[2];$/;"	m	struct:PCM::ExtendedCustomCoreEventDescription
+PARTIAL	pcm-memory.cpp	42;"	d	file:
+PCICFG_Request	WinMSRDriver/Win7/msrstruct.h	/^struct PCICFG_Request$/;"	s
+PCIDriver_connect	MacMSRDriver/PCIDriverInterface.cpp	/^io_connect_t PCIDriver_connect = 0;$/;"	v
+PCIDriver_mapMemory	MacMSRDriver/PCIDriverInterface.cpp	/^uint32_t PCIDriver_mapMemory(uint32_t address, uint8_t** virtual_address)$/;"	f
+PCIDriver_mmap	MacMSRDriver/PCIDriverInterface.cpp	/^std::map<uint8_t*,void*> PCIDriver_mmap;$/;"	v
+PCIDriver_read32	MacMSRDriver/PCIDriverInterface.cpp	/^uint32_t PCIDriver_read32(uint32_t addr, uint32_t* val)$/;"	f
+PCIDriver_read64	MacMSRDriver/PCIDriverInterface.cpp	/^uint32_t PCIDriver_read64(uint32_t addr, uint64_t* val)$/;"	f
+PCIDriver_readMemory32	MacMSRDriver/PCIDriverInterface.cpp	/^uint32_t PCIDriver_readMemory32(uint8_t* address, uint32_t* val)$/;"	f
+PCIDriver_readMemory64	MacMSRDriver/PCIDriverInterface.cpp	/^uint32_t PCIDriver_readMemory64(uint8_t* address, uint64_t* val)$/;"	f
+PCIDriver_setupDriver	MacMSRDriver/PCIDriverInterface.cpp	/^int PCIDriver_setupDriver()$/;"	f
+PCIDriver_unmapMemory	MacMSRDriver/PCIDriverInterface.cpp	/^uint32_t PCIDriver_unmapMemory(uint8_t* virtual_address)$/;"	f
+PCIDriver_write32	MacMSRDriver/PCIDriverInterface.cpp	/^uint32_t PCIDriver_write32(uint32_t addr, uint32_t val)$/;"	f
+PCIDriver_write64	MacMSRDriver/PCIDriverInterface.cpp	/^uint32_t PCIDriver_write64(uint32_t addr, uint64_t val)$/;"	f
+PCISegmentGroupNumber	types.h	/^    unsigned short PCISegmentGroupNumber;$/;"	m	struct:MCFGRecord
+PCI_ENABLE	MacMSRDriver/PCIDriverInterface.h	23;"	d
+PCI_VENDOR_ID_INTEL	pci.h	36;"	d
+PCIeCounterState	cpucounters.h	/^    PCIeCounterState(): data(0)$/;"	f	class:PCIeCounterState
+PCIeCounterState	cpucounters.h	/^class PCIeCounterState$/;"	c
+PCIeEventCode	cpucounters.h	/^    enum PCIeEventCode$/;"	g	class:PCM
+PCIeEvents_t	pcm-pcie.cpp	/^} PCIeEvents_t;$/;"	t	typeref:struct:__anon8	file:
+PCIeItoM	cpucounters.h	/^        PCIeItoM = 0x19C,  \/\/ PCIe Write (allocating) (full cache line)$/;"	e	enum:PCM::PCIeEventCode
+PCIeItoM	pcm-pcie.cpp	/^    uint64 PCIeItoM;  \/\/ PCIe Write (allocating)$/;"	m	struct:__anon8	file:
+PCIeNSRd	cpucounters.h	/^        PCIeNSRd = 0x1E4,  \/\/ PCIe non-snoop read (full cache line)$/;"	e	enum:PCM::PCIeEventCode
+PCIeNSRd	pcm-pcie.cpp	/^    uint64 PCIeNSRd;  \/\/ PCIe non-snoop read$/;"	m	struct:__anon8	file:
+PCIeNSWr	cpucounters.h	/^        PCIeNSWr = 0x1E5,  \/\/ PCIe Non-snoop write (partial cache line)$/;"	e	enum:PCM::PCIeEventCode
+PCIeNSWr	pcm-pcie.cpp	/^    uint64 PCIeNSWr;  \/\/ PCIe Non-snoop write (partial)$/;"	m	struct:__anon8	file:
+PCIeNSWrF	cpucounters.h	/^        PCIeNSWrF = 0x1E6  \/\/ PCIe Non-snoop write (full cache line)$/;"	e	enum:PCM::PCIeEventCode
+PCIeNSWrF	pcm-pcie.cpp	/^    uint64 PCIeNSWrF; \/\/ PCIe Non-snoop write (full)$/;"	m	struct:__anon8	file:
+PCIePRd	cpucounters.h	/^        PCIePRd = 0x195,   \/\/ PCIe UC read (partial cache line)$/;"	e	enum:PCM::PCIeEventCode
+PCIePRd	pcm-pcie.cpp	/^    uint64 PCIePRd;   \/\/ PCIe UC read$/;"	m	struct:__anon8	file:
+PCIeRdCur	cpucounters.h	/^        PCIeRdCur = 0x19E, \/\/ PCIe read current (full cache line)$/;"	e	enum:PCM::PCIeEventCode
+PCIeRdCur	pcm-pcie.cpp	/^    uint64 PCIeRdCur; \/\/ PCIe read current$/;"	m	struct:__anon8	file:
+PCIeWiLF	cpucounters.h	/^        PCIeWiLF = 0x194,  \/\/ PCIe Write (non-allocating) (full cache line)$/;"	e	enum:PCM::PCIeEventCode
+PCIeWiLF	pcm-pcie.cpp	/^    uint64 PCIeWiLF;  \/\/ PCIe Write (non-allocating)$/;"	m	struct:__anon8	file:
+PCM	cpucounters.cpp	/^PCM::PCM() :$/;"	f	class:PCM
+PCM	cpucounters.h	/^class INTELPCM_API PCM$/;"	c
+PCMService	PCM-Service_Win/PCMService.h	/^		PCMService()$/;"	f	class:PCMServiceNS::PCMService
+PCMService	PCM-Service_Win/PCMService.h	/^	public ref class PCMService : public System::ServiceProcess::ServiceBase$/;"	c	namespace:PCMServiceNS
+PCMServiceNS	PCM-Service_Win/PCMService.h	/^namespace PCMServiceNS {$/;"	n
+PCM_CLIENT_IMC_BAR_OFFSET	client_bw.h	32;"	d
+PCM_CLIENT_IMC_DRAM_DATA_READS	client_bw.h	33;"	d
+PCM_CLIENT_IMC_DRAM_DATA_WRITES	client_bw.h	34;"	d
+PCM_CLIENT_IMC_MMAP_SIZE	client_bw.h	35;"	d
+PCM_COMPILE_ASSERT	utils.h	131;"	d
+PCM_CPUID_INFO	cpucounters.cpp	/^union PCM_CPUID_INFO$/;"	u	file:
+PCM_CSTATE_ARRAY	cpucounters.cpp	394;"	d	file:
+PCM_INSTANCE_LOCK_SEMAPHORE_NAME	cpucounters.cpp	73;"	d	file:
+PCM_INSTANCE_LOCK_SEMAPHORE_NAME	cpucounters.cpp	76;"	d	file:
+PCM_INTEL_PCI_VENDOR_ID	types.h	452;"	d
+PCM_INVALID_THERMAL_HEADROOM	types.h	616;"	d
+PCM_NUM_INSTANCES_SEMAPHORE_NAME	cpucounters.cpp	74;"	d	file:
+PCM_NUM_INSTANCES_SEMAPHORE_NAME	cpucounters.cpp	77;"	d	file:
+PCM_PARAM_PROTECT	cpucounters.cpp	393;"	d	file:
+PCM_PCICFG_MC_INIT	cpucounters.cpp	2862;"	d	file:
+PCM_PCICFG_MC_INIT	cpucounters.cpp	2875;"	d	file:
+PCM_PCICFG_SETUP_MC_HANDLE	cpucounters.cpp	2909;"	d	file:
+PCM_PCICFG_SETUP_MC_HANDLE	cpucounters.cpp	2931;"	d	file:
+PCM_PCI_VENDOR_ID_OFFSET	types.h	453;"	d
+PCM_PERF_COUNT_HW_REF_CPU_CYCLES	cpucounters.h	44;"	d
+PCM_USE_PCI_MM_LINUX	pci.h	39;"	d
+PCM_UTILS_HEADER	utils.h	20;"	d
+PCM_init_perf_event_attr	cpucounters.cpp	/^perf_event_attr PCM_init_perf_event_attr()$/;"	f
+PCUCounter	cpucounters.h	/^   uint64 PCUCounter[4];$/;"	m	class:ServerUncorePowerState
+PCU_MSR_PMON_BOX_CTL_ADDR	cpucounters.h	/^    uint32 PCU_MSR_PMON_BOX_CTL_ADDR, PCU_MSR_PMON_CTRX_ADDR[4];$/;"	m	class:PCM
+PCU_MSR_PMON_BOX_CTL_FRZ	types.h	567;"	d
+PCU_MSR_PMON_BOX_CTL_FRZ_EN	types.h	568;"	d
+PCU_MSR_PMON_BOX_CTL_RST_CONTROL	types.h	565;"	d
+PCU_MSR_PMON_BOX_CTL_RST_COUNTERS	types.h	566;"	d
+PCU_MSR_PMON_BOX_FILTER_BAND_0	types.h	560;"	d
+PCU_MSR_PMON_BOX_FILTER_BAND_1	types.h	561;"	d
+PCU_MSR_PMON_BOX_FILTER_BAND_2	types.h	562;"	d
+PCU_MSR_PMON_BOX_FILTER_BAND_3	types.h	563;"	d
+PCU_MSR_PMON_CTL_EDGE_DET	types.h	573;"	d
+PCU_MSR_PMON_CTL_EN	types.h	575;"	d
+PCU_MSR_PMON_CTL_EVENT	types.h	570;"	d
+PCU_MSR_PMON_CTL_EXTRA_SEL	types.h	574;"	d
+PCU_MSR_PMON_CTL_INVERT	types.h	576;"	d
+PCU_MSR_PMON_CTL_OCC_EDGE_DET	types.h	579;"	d
+PCU_MSR_PMON_CTL_OCC_INVERT	types.h	578;"	d
+PCU_MSR_PMON_CTL_OCC_SEL	types.h	571;"	d
+PCU_MSR_PMON_CTL_RST	types.h	572;"	d
+PCU_MSR_PMON_CTL_THRESH	types.h	577;"	d
+PCU_MSR_PMON_CTRX_ADDR	cpucounters.h	/^    uint32 PCU_MSR_PMON_BOX_CTL_ADDR, PCU_MSR_PMON_CTRX_ADDR[4];$/;"	m	class:PCM
+PERF_CPU_CLK_UNHALTED_REF_POS	cpucounters.h	/^        PERF_CPU_CLK_UNHALTED_REF_POS = 2,$/;"	e	enum:PCM::__anon2
+PERF_CPU_CLK_UNHALTED_THREAD_POS	cpucounters.h	/^        PERF_CPU_CLK_UNHALTED_THREAD_POS = 1,$/;"	e	enum:PCM::__anon2
+PERF_GEN_EVENT_0_POS	cpucounters.h	/^        PERF_GEN_EVENT_0_POS = 3,$/;"	e	enum:PCM::__anon2
+PERF_GEN_EVENT_1_POS	cpucounters.h	/^        PERF_GEN_EVENT_1_POS = 4,$/;"	e	enum:PCM::__anon2
+PERF_GEN_EVENT_2_POS	cpucounters.h	/^        PERF_GEN_EVENT_2_POS = 5,$/;"	e	enum:PCM::__anon2
+PERF_GEN_EVENT_3_POS	cpucounters.h	/^        PERF_GEN_EVENT_3_POS = 6$/;"	e	enum:PCM::__anon2
+PERF_GROUP_LEADER_COUNTER	cpucounters.h	/^        PERF_GROUP_LEADER_COUNTER = PERF_INST_RETIRED_ANY_POS $/;"	e	enum:PCM::__anon3
+PERF_INST_RETIRED_ANY_POS	cpucounters.h	/^        PERF_INST_RETIRED_ANY_POS = 0,$/;"	e	enum:PCM::__anon2
+PERF_MAX_COUNTERS	types.h	54;"	d
+PLATE_UNIT	pcm3d/widget.cpp	271;"	d	file:
+PLATFORM_INFO_ADDR	types.h	67;"	d
+PMUBusy	cpucounters.h	/^        PMUBusy = 2,$/;"	e	enum:PCM::ErrorCode
+PMUService	PCM-Service_Win/PCMInstaller.h	/^namespace PMUService {$/;"	n
+PMUinUse	cpucounters.cpp	/^bool PCM::PMUinUse()$/;"	f	class:PCM
+PRINT_DEBUG	MacMSRDriver/PcmMsr/PcmMsr.h	58;"	d
+PackageC2StateResidencyHash_	PCM-Service_Win/PCMService.h	/^		System::Collections::Hashtable PackageC2StateResidencyHash_;$/;"	m	class:PCMServiceNS::MeasureThread
+PackageC3StateResidencyHash_	PCM-Service_Win/PCMService.h	/^		System::Collections::Hashtable PackageC3StateResidencyHash_;$/;"	m	class:PCMServiceNS::MeasureThread
+PackageC6StateResidencyHash_	PCM-Service_Win/PCMService.h	/^		System::Collections::Hashtable PackageC6StateResidencyHash_;$/;"	m	class:PCMServiceNS::MeasureThread
+PackageC7StateResidencyHash_	PCM-Service_Win/PCMService.h	/^		System::Collections::Hashtable PackageC7StateResidencyHash_;$/;"	m	class:PCMServiceNS::MeasureThread
+PackageEnergyStatus	cpucounters.h	/^    uint64 PackageEnergyStatus;$/;"	m	class:UncoreCounterState
+PackageEnergyStatus	cpucounters.h	/^   uint64 PackageEnergyStatus;$/;"	m	class:ServerUncorePowerState
+PackagePower	pcm3d/widget.cpp	/^float PackagePower[2] = {0,0};$/;"	v
+PackageThermalHeadroom	cpucounters.h	/^   int32 PackageThermalHeadroom;$/;"	m	class:ServerUncorePowerState
+PciBusDevFunc	winring0/OlsDef.h	57;"	d
+PciGetBus	winring0/OlsDef.h	59;"	d
+PciGetDev	winring0/OlsDef.h	61;"	d
+PciGetFunc	winring0/OlsDef.h	63;"	d
+PciHandle	pci.cpp	/^PciHandle::PciHandle(uint32 groupnr_, uint32 bus_, uint32 device_, uint32 function_) :$/;"	f	class:PciHandle
+PciHandle	pci.h	/^class PciHandle$/;"	c
+PciHandleM	pci.cpp	/^PciHandleM::PciHandleM(uint32 bus_, uint32 device_, uint32 function_) :$/;"	f	class:PciHandleM
+PciHandleM	pci.h	/^class PciHandleM$/;"	c
+PciHandleM	pci.h	/^typedef PciHandle PciHandleM;$/;"	t
+PciHandleM	pci.h	144;"	d
+PciHandleMM	pci.cpp	/^PciHandleMM::PciHandleMM(uint32 groupnr_, uint32 bus_, uint32 device_, uint32 function_) :$/;"	f	class:PciHandleMM
+PciHandleMM	pci.h	/^class PciHandleMM$/;"	c
+PcmMsrClientClassName	MacMSRDriver/PcmMsr/PcmMsrClient.h	/^class PcmMsrClientClassName : public IOUserClient$/;"	c
+PcmMsrClientClassName	MacMSRDriver/PcmMsr/PcmMsrClient.h	19;"	d
+PcmMsrDriverClassName	MacMSRDriver/MSRKernel.h	15;"	d
+PcmMsrDriverClassName	MacMSRDriver/PcmMsr/PcmMsr.h	/^class PcmMsrDriverClassName : public IOService$/;"	c
+PcmMsrDriverClassName	MacMSRDriver/PcmMsr/UserKernelShared.h	15;"	d
+PreviousGroupAffinity	msr.cpp	/^	GROUP_AFFINITY PreviousGroupAffinity;$/;"	m	class:ThreadGroupTempAffinity	file:
+ProgramMode	cpucounters.h	/^    enum ProgramMode {$/;"	g	class:PCM
+ProjectInstaller	PCM-Service_Win/PCMInstaller.h	/^		ProjectInstaller(void)$/;"	f	class:PMUService::ProjectInstaller
+ProjectInstaller	PCM-Service_Win/PCMInstaller.h	/^	public ref class ProjectInstaller : public System::Configuration::Install::Installer$/;"	c	namespace:PMUService
+QPIClocks	cpucounters.h	/^   uint64 QPIClocks[3], QPIL0pTxCycles[3], QPIL1Cycles[3];$/;"	m	class:ServerUncorePowerState
+QPIL0pTxCycles	cpucounters.h	/^   uint64 QPIClocks[3], QPIL0pTxCycles[3], QPIL1Cycles[3];$/;"	m	class:ServerUncorePowerState
+QPIL1Cycles	cpucounters.h	/^   uint64 QPIClocks[3], QPIL0pTxCycles[3], QPIL1Cycles[3];$/;"	m	class:ServerUncorePowerState
+QPIUtil	pcm3d/widget.cpp	/^float QPIUtil[2] = {0,0};$/;"	v
+QPI_PORT0_MISC_REGISTER_DEV_ADDR	types.h	496;"	d
+QPI_PORT0_MISC_REGISTER_FUNC_ADDR	types.h	497;"	d
+QPI_RATE_STATUS_ADDR	types.h	511;"	d
+Q_P_PCI_PMON_BOX_CTL_ADDR	types.h	499;"	d
+Q_P_PCI_PMON_BOX_CTL_RST_CONTROL	types.h	546;"	d
+Q_P_PCI_PMON_BOX_CTL_RST_COUNTERS	types.h	547;"	d
+Q_P_PCI_PMON_BOX_CTL_RST_FRZ	types.h	548;"	d
+Q_P_PCI_PMON_BOX_CTL_RST_FRZ_EN	types.h	549;"	d
+Q_P_PCI_PMON_CTL0_ADDR	types.h	504;"	d
+Q_P_PCI_PMON_CTL1_ADDR	types.h	503;"	d
+Q_P_PCI_PMON_CTL2_ADDR	types.h	502;"	d
+Q_P_PCI_PMON_CTL3_ADDR	types.h	501;"	d
+Q_P_PCI_PMON_CTL_EDGE_DET	types.h	554;"	d
+Q_P_PCI_PMON_CTL_EN	types.h	556;"	d
+Q_P_PCI_PMON_CTL_EVENT	types.h	551;"	d
+Q_P_PCI_PMON_CTL_EVENT_EXT	types.h	555;"	d
+Q_P_PCI_PMON_CTL_INVERT	types.h	557;"	d
+Q_P_PCI_PMON_CTL_RST	types.h	553;"	d
+Q_P_PCI_PMON_CTL_THRESH	types.h	558;"	d
+Q_P_PCI_PMON_CTL_UMASK	types.h	552;"	d
+Q_P_PCI_PMON_CTR0_ADDR	types.h	509;"	d
+Q_P_PCI_PMON_CTR1_ADDR	types.h	508;"	d
+Q_P_PCI_PMON_CTR2_ADDR	types.h	507;"	d
+Q_P_PCI_PMON_CTR3_ADDR	types.h	506;"	d
+RDMSR	MacMSRDriver/PcmMsr/PcmMsr.cpp	/^inline uint64_t RDMSR(uint32_t msr)$/;"	f
+RDTSC	cpucounters.cpp	/^uint64 RDTSC()$/;"	f
+RDTSCP	cpucounters.cpp	/^uint64 RDTSCP()$/;"	f
+READ	pcm-memory.cpp	40;"	d	file:
+R_MSR_PMON_CTL0	types.h	206;"	d
+R_MSR_PMON_CTL1	types.h	208;"	d
+R_MSR_PMON_CTL10	types.h	226;"	d
+R_MSR_PMON_CTL11	types.h	228;"	d
+R_MSR_PMON_CTL12	types.h	230;"	d
+R_MSR_PMON_CTL13	types.h	232;"	d
+R_MSR_PMON_CTL14	types.h	234;"	d
+R_MSR_PMON_CTL15	types.h	236;"	d
+R_MSR_PMON_CTL2	types.h	210;"	d
+R_MSR_PMON_CTL3	types.h	212;"	d
+R_MSR_PMON_CTL4	types.h	214;"	d
+R_MSR_PMON_CTL5	types.h	216;"	d
+R_MSR_PMON_CTL6	types.h	218;"	d
+R_MSR_PMON_CTL7	types.h	220;"	d
+R_MSR_PMON_CTL8	types.h	222;"	d
+R_MSR_PMON_CTL9	types.h	224;"	d
+R_MSR_PMON_CTR0	types.h	207;"	d
+R_MSR_PMON_CTR1	types.h	209;"	d
+R_MSR_PMON_CTR10	types.h	227;"	d
+R_MSR_PMON_CTR11	types.h	229;"	d
+R_MSR_PMON_CTR12	types.h	231;"	d
+R_MSR_PMON_CTR13	types.h	233;"	d
+R_MSR_PMON_CTR14	types.h	235;"	d
+R_MSR_PMON_CTR15	types.h	237;"	d
+R_MSR_PMON_CTR2	types.h	211;"	d
+R_MSR_PMON_CTR3	types.h	213;"	d
+R_MSR_PMON_CTR4	types.h	215;"	d
+R_MSR_PMON_CTR5	types.h	217;"	d
+R_MSR_PMON_CTR6	types.h	219;"	d
+R_MSR_PMON_CTR7	types.h	221;"	d
+R_MSR_PMON_CTR8	types.h	223;"	d
+R_MSR_PMON_CTR9	types.h	225;"	d
+R_MSR_PMON_GLOBAL_CTL_15_8	types.h	258;"	d
+R_MSR_PMON_GLOBAL_CTL_7_0	types.h	257;"	d
+R_MSR_PORT0_IPERF_CFG0	types.h	239;"	d
+R_MSR_PORT0_IPERF_CFG1	types.h	248;"	d
+R_MSR_PORT1_IPERF_CFG0	types.h	240;"	d
+R_MSR_PORT1_IPERF_CFG1	types.h	249;"	d
+R_MSR_PORT2_IPERF_CFG0	types.h	241;"	d
+R_MSR_PORT2_IPERF_CFG1	types.h	250;"	d
+R_MSR_PORT3_IPERF_CFG0	types.h	242;"	d
+R_MSR_PORT3_IPERF_CFG1	types.h	251;"	d
+R_MSR_PORT4_IPERF_CFG0	types.h	243;"	d
+R_MSR_PORT4_IPERF_CFG1	types.h	252;"	d
+R_MSR_PORT5_IPERF_CFG0	types.h	244;"	d
+R_MSR_PORT5_IPERF_CFG1	types.h	253;"	d
+R_MSR_PORT6_IPERF_CFG0	types.h	245;"	d
+R_MSR_PORT6_IPERF_CFG1	types.h	254;"	d
+R_MSR_PORT7_IPERF_CFG0	types.h	246;"	d
+R_MSR_PORT7_IPERF_CFG1	types.h	255;"	d
+Rdmsr	winring0/OlsApiInit.h	/^_Rdmsr Rdmsr = NULL;$/;"	v
+RdmsrPx	winring0/OlsApiInit.h	/^_RdmsrPx RdmsrPx = NULL;$/;"	v
+RdmsrTx	winring0/OlsApiInit.h	/^_RdmsrTx RdmsrTx = NULL;$/;"	v
+Rdpmc	winring0/OlsApiInit.h	/^_Rdpmc Rdpmc = NULL;$/;"	v
+RdpmcPx	winring0/OlsApiInit.h	/^_RdpmcPx RdpmcPx = NULL;$/;"	v
+RdpmcTx	winring0/OlsApiInit.h	/^_RdpmcTx RdpmcTx = NULL;$/;"	v
+Rdtsc	winring0/OlsApiInit.h	/^_Rdtsc Rdtsc = NULL;$/;"	v
+RdtscPx	winring0/OlsApiInit.h	/^_RdtscPx RdtscPx = NULL;$/;"	v
+RdtscTx	winring0/OlsApiInit.h	/^_RdtscTx RdtscTx = NULL;$/;"	v
+ReadDmiMemory	winring0/OlsApiInit.h	/^_ReadDmiMemory ReadDmiMemory = NULL;$/;"	v
+ReadIoPortByte	winring0/OlsApiInit.h	/^_ReadIoPortByte ReadIoPortByte = NULL;$/;"	v
+ReadIoPortByteEx	winring0/OlsApiInit.h	/^_ReadIoPortByteEx ReadIoPortByteEx = NULL;$/;"	v
+ReadIoPortDword	winring0/OlsApiInit.h	/^_ReadIoPortDword ReadIoPortDword = NULL;$/;"	v
+ReadIoPortDwordEx	winring0/OlsApiInit.h	/^_ReadIoPortDwordEx ReadIoPortDwordEx = NULL;$/;"	v
+ReadIoPortWord	winring0/OlsApiInit.h	/^_ReadIoPortWord ReadIoPortWord = NULL;$/;"	v
+ReadIoPortWordEx	winring0/OlsApiInit.h	/^_ReadIoPortWordEx ReadIoPortWordEx = NULL;$/;"	v
+ReadPciConfigByte	winring0/OlsApiInit.h	/^_ReadPciConfigByte ReadPciConfigByte = NULL;$/;"	v
+ReadPciConfigByteEx	winring0/OlsApiInit.h	/^_ReadPciConfigByteEx ReadPciConfigByteEx = NULL;$/;"	v
+ReadPciConfigDword	winring0/OlsApiInit.h	/^_ReadPciConfigDword ReadPciConfigDword = NULL;$/;"	v
+ReadPciConfigDwordEx	winring0/OlsApiInit.h	/^_ReadPciConfigDwordEx ReadPciConfigDwordEx = NULL;$/;"	v
+ReadPciConfigWord	winring0/OlsApiInit.h	/^_ReadPciConfigWord ReadPciConfigWord = NULL;$/;"	v
+ReadPciConfigWordEx	winring0/OlsApiInit.h	/^_ReadPciConfigWordEx ReadPciConfigWordEx = NULL;$/;"	v
+ReadPhysicalMemory	winring0/OlsApiInit.h	/^_ReadPhysicalMemory ReadPhysicalMemory = NULL;$/;"	v
+SANDY_BRIDGE	cpucounters.h	/^        SANDY_BRIDGE = 42,$/;"	e	enum:PCM::SupportedCPUModels
+SIZE	cpucounterstest.cpp	41;"	d	file:
+ServerPCICFGUncore	cpucounters.cpp	/^ServerPCICFGUncore::ServerPCICFGUncore(uint32 socket_, PCM * pcm) : $/;"	f	class:ServerPCICFGUncore
+ServerPCICFGUncore	cpucounters.h	/^class ServerPCICFGUncore$/;"	c
+ServerUncorePowerState	cpucounters.h	/^class ServerUncorePowerState$/;"	c
+SetOlsValue	winring0/OlsApiInit.h	/^_SetOlsValue SetOlsValue = NULL;$/;"	v
+SetPciMaxBusIndex	winring0/OlsApiInit.h	/^_SetPciMaxBusIndex SetPciMaxBusIndex = NULL;$/;"	v
+SetServiceFail	PCM-Service_Win/PCMService.h	/^        void SetServiceFail (int ErrorCode) $/;"	f	class:PCMServiceNS::PCMService
+SocketCounterState	cpucounters.h	/^class SocketCounterState : public BasicCounterState, public UncoreCounterState$/;"	c
+Success	cpucounters.h	/^        Success = 0,$/;"	e	enum:PCM::ErrorCode
+SupportedCPUModels	cpucounters.h	/^    enum SupportedCPUModels$/;"	g	class:PCM
+SystemCounterState	cpucounters.h	/^    SystemCounterState() :$/;"	f	class:SystemCounterState
+SystemCounterState	cpucounters.h	/^class SystemCounterState : public BasicCounterState, public UncoreCounterState$/;"	c
+SystemWideLock	cpucounters.cpp	/^    SystemWideLock() : globalSemaphoreName(PCM_INSTANCE_LOCK_SEMAPHORE_NAME)$/;"	f	class:SystemWideLock
+SystemWideLock	cpucounters.cpp	/^    SystemWideLock()$/;"	f	class:SystemWideLock
+SystemWideLock	cpucounters.cpp	/^class SystemWideLock$/;"	c	file:
+T	memoptest.cpp	/^    T() { }$/;"	f	struct:T
+T	memoptest.cpp	/^    T(int a) { key[0] = a; }$/;"	f	struct:T
+T	memoptest.cpp	/^struct T$/;"	s	file:
+T	readmem.cpp	/^    T() { }$/;"	f	struct:T
+T	readmem.cpp	/^    T(int a) { key[0] = a; }$/;"	f	struct:T
+T	readmem.cpp	/^struct T$/;"	s	file:
+T	realtime.cpp	/^    T() { }$/;"	f	struct:T
+T	realtime.cpp	/^    T(int a) { key[0] = a; }$/;"	f	struct:T
+T	realtime.cpp	/^struct T$/;"	s	file:
+TSXEvent	pcm-tsx.cpp	/^struct TSXEvent$/;"	s	file:
+TemporalThreadAffinity	cpucounters.cpp	/^    TemporalThreadAffinity(uint32 core_id)$/;"	f	class:TemporalThreadAffinity
+TemporalThreadAffinity	cpucounters.cpp	/^class TemporalThreadAffinity  \/\/ speedup trick for Linux$/;"	c	file:
+ThermalHeadroom	cpucounters.h	/^    int32 ThermalHeadroom;$/;"	m	class:BasicCounterState
+ThreadGroupTempAffinity	msr.cpp	/^	ThreadGroupTempAffinity(uint32 core_id)$/;"	f	class:ThreadGroupTempAffinity
+ThreadGroupTempAffinity	msr.cpp	/^class ThreadGroupTempAffinity$/;"	c	file:
+TopologyEntry	cpucounters.h	/^    TopologyEntry() : os_id(-1), socket(-1), core_id(-1) { }$/;"	f	struct:TopologyEntry
+TopologyEntry	cpucounters.h	/^struct INTELPCM_API TopologyEntry \/\/ decribes a core$/;"	s
+UNAME	Makefile	/^UNAME:=$(shell uname)$/;"	m
+UNCORE_PMON_BOX_CTL_VALID_BITS_MASK	types.h	533;"	d
+UNC_QHL_REQUESTS_EVTNR	types.h	166;"	d
+UNC_QHL_REQUESTS_IOH_READS_UMASK	types.h	168;"	d
+UNC_QHL_REQUESTS_IOH_WRITES_UMASK	types.h	169;"	d
+UNC_QHL_REQUESTS_LOCAL_READS_UMASK	types.h	172;"	d
+UNC_QHL_REQUESTS_LOCAL_WRITES_UMASK	types.h	173;"	d
+UNC_QHL_REQUESTS_REMOTE_READS_UMASK	types.h	170;"	d
+UNC_QHL_REQUESTS_REMOTE_WRITES_UMASK	types.h	171;"	d
+UNC_QMC_NORMAL_READS_ANY_EVTNR	types.h	163;"	d
+UNC_QMC_NORMAL_READS_ANY_UMASK	types.h	164;"	d
+UNC_QMC_WRITES_FULL_ANY_EVTNR	types.h	160;"	d
+UNC_QMC_WRITES_FULL_ANY_UMASK	types.h	161;"	d
+USER_KERNEL_SHARED	MacMSRDriver/PcmMsr/UserKernelShared.h	18;"	d
+U_MSR_PMON_GLOBAL_CTL	types.h	181;"	d
+Ui	pcm3d/widget.h	/^namespace Ui {$/;"	n
+UncMCFullWrites	cpucounters.h	/^    uint64 UncMCFullWrites;$/;"	m	class:UncoreCounterState
+UncMCNormalReads	cpucounters.h	/^    uint64 UncMCNormalReads;$/;"	m	class:UncoreCounterState
+UncoreCounterState	cpucounters.h	/^    UncoreCounterState() :$/;"	f	class:UncoreCounterState
+UncoreCounterState	cpucounters.h	/^class UncoreCounterState$/;"	c
+UncoreEventSelectRegister	types.h	/^struct UncoreEventSelectRegister$/;"	s
+UninstallOpenLibSys	winring0/OlsApiInit.h	/^_UninstallOpenLibSys UninstallOpenLibSys = NULL;$/;"	v
+UnknownError	cpucounters.h	/^        UnknownError$/;"	e	enum:PCM::ErrorCode
+UnsupportedMessage	cpucounters.h	/^    const char * UnsupportedMessage;$/;"	m	class:PCM
+UpdateCounters	cpuasynchcounter.h	/^void * UpdateCounters(void * state)$/;"	f
+UpdateThread	cpuasynchcounter.h	/^    pthread_t UpdateThread;$/;"	m	class:AsynchronCounterState
+UpdateThread	width_extender.h	/^	HANDLE UpdateThread;$/;"	m	class:CounterWidthExtender
+UpdateThread	width_extender.h	/^    pthread_t UpdateThread;$/;"	m	class:CounterWidthExtender
+WESTMERE_EP	cpucounters.h	/^        WESTMERE_EP = 44,$/;"	e	enum:PCM::SupportedCPUModels
+WESTMERE_EX	cpucounters.h	/^        WESTMERE_EX = 47,$/;"	e	enum:PCM::SupportedCPUModels
+WIDGET_H	pcm3d/widget.h	17;"	d
+WIDTH_EXTENDER_HEADER_	width_extender.h	17;"	d
+WINDRIVER_HEADER	PCM_Win/windriver.h	2;"	d
+WINVER	Intelpcm.dll/targetver.h	28;"	d
+WRITE	pcm-memory.cpp	41;"	d	file:
+WRMSR	MacMSRDriver/PcmMsr/PcmMsr.cpp	/^inline void WRMSR(uint32_t msr, uint64_t value)$/;"	f
+W_MSR_PMON_FIXED_CTR	types.h	262;"	d
+W_MSR_PMON_FIXED_CTR_CTL	types.h	261;"	d
+W_MSR_PMON_GLOBAL_CTL	types.h	260;"	d
+WatchDogProc	cpucounters.cpp	/^DWORD WINAPI WatchDogProc(LPVOID state)$/;"	f
+Widget	pcm3d/widget.cpp	/^Widget::Widget(QWidget *parent) :$/;"	f	class:Widget
+Widget	pcm3d/widget.h	/^class Widget : public QGLWidget$/;"	c
+WriteIoPortByte	winring0/OlsApiInit.h	/^_WriteIoPortByte WriteIoPortByte = NULL;$/;"	v
+WriteIoPortByteEx	winring0/OlsApiInit.h	/^_WriteIoPortByteEx WriteIoPortByteEx = NULL;$/;"	v
+WriteIoPortDword	winring0/OlsApiInit.h	/^_WriteIoPortDword WriteIoPortDword = NULL;$/;"	v
+WriteIoPortDwordEx	winring0/OlsApiInit.h	/^_WriteIoPortDwordEx WriteIoPortDwordEx = NULL;$/;"	v
+WriteIoPortWord	winring0/OlsApiInit.h	/^_WriteIoPortWord WriteIoPortWord = NULL;$/;"	v
+WriteIoPortWordEx	winring0/OlsApiInit.h	/^_WriteIoPortWordEx WriteIoPortWordEx = NULL;$/;"	v
+WritePciConfigByte	winring0/OlsApiInit.h	/^_WritePciConfigByte WritePciConfigByte = NULL;$/;"	v
+WritePciConfigByteEx	winring0/OlsApiInit.h	/^_WritePciConfigByteEx WritePciConfigByteEx = NULL;$/;"	v
+WritePciConfigDword	winring0/OlsApiInit.h	/^_WritePciConfigDword WritePciConfigDword = NULL;$/;"	v
+WritePciConfigDwordEx	winring0/OlsApiInit.h	/^_WritePciConfigDwordEx WritePciConfigDwordEx = NULL;$/;"	v
+WritePciConfigWord	winring0/OlsApiInit.h	/^_WritePciConfigWord WritePciConfigWord = NULL;$/;"	v
+WritePciConfigWordEx	winring0/OlsApiInit.h	/^_WritePciConfigWordEx WritePciConfigWordEx = NULL;$/;"	v
+WritePhysicalMemory	winring0/OlsApiInit.h	/^_WritePhysicalMemory WritePhysicalMemory = NULL;$/;"	v
+Wrmsr	winring0/OlsApiInit.h	/^_Wrmsr Wrmsr = NULL;$/;"	v
+WrmsrPx	winring0/OlsApiInit.h	/^_WrmsrPx WrmsrPx = NULL;$/;"	v
+WrmsrTx	winring0/OlsApiInit.h	/^_WrmsrTx WrmsrTx = NULL;$/;"	v
+_CRT_SECURE_NO_WARNINGS	freegetopt/getopt.c	37;"	d	file:
+_Cpuid	winring0/OlsApiInitDef.h	/^typedef DWORD (WINAPI *_Cpuid) (DWORD index, PDWORD eax, PDWORD ebx, PDWORD ecx, PDWORD edx);$/;"	t
+_CpuidPx	winring0/OlsApiInitDef.h	/^typedef DWORD (WINAPI *_CpuidPx) (DWORD index, PDWORD eax, PDWORD ebx, PDWORD ecx, PDWORD edx, DWORD_PTR processAffinityMask);$/;"	t
+_CpuidTx	winring0/OlsApiInitDef.h	/^typedef DWORD (WINAPI *_CpuidTx) (DWORD index, PDWORD eax, PDWORD ebx, PDWORD ecx, PDWORD edx, DWORD_PTR threadAffinityMask);$/;"	t
+_DEBUG	MacMSRDriver/PcmMsr/PcmMsr.h	54;"	d
+_DEBUG	MacMSRDriver/PcmMsr/PcmMsr.h	56;"	d
+_DeinitializeOls	winring0/OlsApiInitDef.h	/^typedef VOID (WINAPI *_DeinitializeOls) ();$/;"	t
+_FindPciDeviceByClass	winring0/OlsApiInitDef.h	/^typedef DWORD (WINAPI *_FindPciDeviceByClass) (BYTE baseClass, BYTE subClass, BYTE programIf, BYTE index);$/;"	t
+_FindPciDeviceById	winring0/OlsApiInitDef.h	/^typedef DWORD (WINAPI *_FindPciDeviceById) (WORD vendorId, WORD deviceId, BYTE index);$/;"	t
+_GetDllStatus	winring0/OlsApiInitDef.h	/^typedef DWORD (WINAPI *_GetDllStatus) ();$/;"	t
+_GetDllVersion	winring0/OlsApiInitDef.h	/^typedef DWORD (WINAPI *_GetDllVersion) (PBYTE major, PBYTE minor, PBYTE revision, PBYTE release);$/;"	t
+_GetDriverType	winring0/OlsApiInitDef.h	/^typedef DWORD (WINAPI *_GetDriverType) ();$/;"	t
+_GetDriverVersion	winring0/OlsApiInitDef.h	/^typedef DWORD (WINAPI *_GetDriverVersion) (PBYTE major, PBYTE minor, PBYTE revision, PBYTE release);$/;"	t
+_Hlt	winring0/OlsApiInitDef.h	/^typedef BOOL  (WINAPI *_Hlt) ();$/;"	t
+_HltPx	winring0/OlsApiInitDef.h	/^typedef BOOL  (WINAPI *_HltPx)   (DWORD_PTR processAffinityMask);$/;"	t
+_HltTx	winring0/OlsApiInitDef.h	/^typedef BOOL  (WINAPI *_HltTx) (DWORD_PTR threadAffinityMask);$/;"	t
+_InitializeOls	winring0/OlsApiInitDef.h	/^typedef BOOL (WINAPI *_InitializeOls) ();$/;"	t
+_IsCpuid	winring0/OlsApiInitDef.h	/^typedef BOOL (WINAPI *_IsCpuid) ();$/;"	t
+_IsMsr	winring0/OlsApiInitDef.h	/^typedef BOOL (WINAPI *_IsMsr) ();$/;"	t
+_IsTsc	winring0/OlsApiInitDef.h	/^typedef BOOL (WINAPI *_IsTsc) ();$/;"	t
+_Rdmsr	winring0/OlsApiInitDef.h	/^typedef DWORD (WINAPI *_Rdmsr) (DWORD index, PDWORD eax, PDWORD edx);$/;"	t
+_RdmsrPx	winring0/OlsApiInitDef.h	/^typedef DWORD (WINAPI *_RdmsrPx) (DWORD index, PDWORD eax, PDWORD edx, DWORD_PTR processAffinityMask);$/;"	t
+_RdmsrTx	winring0/OlsApiInitDef.h	/^typedef DWORD (WINAPI *_RdmsrTx) (DWORD index, PDWORD eax, PDWORD edx, DWORD_PTR threadAffinityMask);$/;"	t
+_Rdpmc	winring0/OlsApiInitDef.h	/^typedef DWORD (WINAPI *_Rdpmc) (DWORD index, PDWORD eax, PDWORD edx);$/;"	t
+_RdpmcPx	winring0/OlsApiInitDef.h	/^typedef DWORD (WINAPI *_RdpmcPx) (DWORD index, PDWORD eax, PDWORD edx, DWORD_PTR processAffinityMask);$/;"	t
+_RdpmcTx	winring0/OlsApiInitDef.h	/^typedef DWORD (WINAPI *_RdpmcTx) (DWORD index, PDWORD eax, PDWORD edx, DWORD_PTR threadAffinityMask);$/;"	t
+_Rdtsc	winring0/OlsApiInitDef.h	/^typedef DWORD (WINAPI *_Rdtsc) (PDWORD eax, PDWORD edx);$/;"	t
+_RdtscPx	winring0/OlsApiInitDef.h	/^typedef DWORD (WINAPI *_RdtscPx) (PDWORD eax, PDWORD edx, DWORD_PTR processAffinityMask);$/;"	t
+_RdtscTx	winring0/OlsApiInitDef.h	/^typedef DWORD (WINAPI *_RdtscTx) (PDWORD eax, PDWORD edx, DWORD_PTR threadAffinityMask);$/;"	t
+_ReadDmiMemory	winring0/OlsApiInitDef.h	/^typedef DWORD (WINAPI *_ReadDmiMemory) (PBYTE buffer, DWORD count, DWORD unitSize);$/;"	t
+_ReadIoPortByte	winring0/OlsApiInitDef.h	/^typedef BYTE  (WINAPI *_ReadIoPortByte) (WORD address);$/;"	t
+_ReadIoPortByteEx	winring0/OlsApiInitDef.h	/^typedef BOOL (WINAPI *_ReadIoPortByteEx) (WORD address, PBYTE value);$/;"	t
+_ReadIoPortDword	winring0/OlsApiInitDef.h	/^typedef DWORD (WINAPI *_ReadIoPortDword) (WORD address);$/;"	t
+_ReadIoPortDwordEx	winring0/OlsApiInitDef.h	/^typedef BOOL (WINAPI *_ReadIoPortDwordEx) (WORD address, PDWORD value);$/;"	t
+_ReadIoPortWord	winring0/OlsApiInitDef.h	/^typedef WORD  (WINAPI *_ReadIoPortWord) (WORD address);$/;"	t
+_ReadIoPortWordEx	winring0/OlsApiInitDef.h	/^typedef BOOL (WINAPI *_ReadIoPortWordEx) (WORD address, PWORD value);$/;"	t
+_ReadPciConfigByte	winring0/OlsApiInitDef.h	/^typedef BYTE  (WINAPI *_ReadPciConfigByte) (DWORD pciAddress, BYTE regAddress);$/;"	t
+_ReadPciConfigByteEx	winring0/OlsApiInitDef.h	/^typedef BOOL (WINAPI *_ReadPciConfigByteEx) (DWORD pciAddress, DWORD regAddress, PBYTE value);$/;"	t
+_ReadPciConfigDword	winring0/OlsApiInitDef.h	/^typedef DWORD (WINAPI *_ReadPciConfigDword) (DWORD pciAddress, BYTE regAddress);$/;"	t
+_ReadPciConfigDwordEx	winring0/OlsApiInitDef.h	/^typedef BOOL (WINAPI *_ReadPciConfigDwordEx) (DWORD pciAddress, DWORD regAddress, PDWORD value);$/;"	t
+_ReadPciConfigWord	winring0/OlsApiInitDef.h	/^typedef WORD  (WINAPI *_ReadPciConfigWord) (DWORD pciAddress, BYTE regAddress);$/;"	t
+_ReadPciConfigWordEx	winring0/OlsApiInitDef.h	/^typedef BOOL (WINAPI *_ReadPciConfigWordEx) (DWORD pciAddress, DWORD regAddress, PWORD value);$/;"	t
+_ReadPhysicalMemory	winring0/OlsApiInitDef.h	/^typedef DWORD (WINAPI *_ReadPhysicalMemory) (DWORD_PTR address, PBYTE buffer, DWORD count, DWORD unitSize);$/;"	t
+_SetPciMaxBusIndex	winring0/OlsApiInitDef.h	/^typedef VOID (WINAPI *_SetPciMaxBusIndex) (BYTE max);$/;"	t
+_WIN32_IE	Intelpcm.dll/targetver.h	40;"	d
+_WIN32_WINDOWS	Intelpcm.dll/targetver.h	36;"	d
+_WIN32_WINNT	Intelpcm.dll/targetver.h	32;"	d
+_WIN32_WINNT	PCM-MSR_Win/stdafx.h	9;"	d
+_WIN32_WINNT	PCM-Memory_Win/stdafx.h	9;"	d
+_WIN32_WINNT	PCM-NUMA_Win/stdafx.h	9;"	d
+_WIN32_WINNT	PCM-PCIE_Win/stdafx.h	9;"	d
+_WIN32_WINNT	PCM-Power_Win/stdafx.h	9;"	d
+_WIN32_WINNT	PCM-TSX_Win/stdafx.h	9;"	d
+_WIN32_WINNT	PCM_Win/stdafx.h	22;"	d
+_WriteIoPortByte	winring0/OlsApiInitDef.h	/^typedef VOID (WINAPI *_WriteIoPortByte) (WORD address, BYTE value);$/;"	t
+_WriteIoPortByteEx	winring0/OlsApiInitDef.h	/^typedef BOOL (WINAPI *_WriteIoPortByteEx) (WORD address, BYTE value);$/;"	t
+_WriteIoPortDword	winring0/OlsApiInitDef.h	/^typedef VOID (WINAPI *_WriteIoPortDword) (WORD address, DWORD value);$/;"	t
+_WriteIoPortDwordEx	winring0/OlsApiInitDef.h	/^typedef BOOL (WINAPI *_WriteIoPortDwordEx) (WORD address, DWORD value);$/;"	t
+_WriteIoPortWord	winring0/OlsApiInitDef.h	/^typedef VOID (WINAPI *_WriteIoPortWord) (WORD address, WORD value);$/;"	t
+_WriteIoPortWordEx	winring0/OlsApiInitDef.h	/^typedef BOOL (WINAPI *_WriteIoPortWordEx) (WORD address, WORD value);$/;"	t
+_WritePciConfigByte	winring0/OlsApiInitDef.h	/^typedef VOID (WINAPI *_WritePciConfigByte) (DWORD pciAddress, BYTE regAddress, BYTE value);$/;"	t
+_WritePciConfigByteEx	winring0/OlsApiInitDef.h	/^typedef BOOL (WINAPI *_WritePciConfigByteEx) (DWORD pciAddress, DWORD regAddress, BYTE value);$/;"	t
+_WritePciConfigDword	winring0/OlsApiInitDef.h	/^typedef VOID (WINAPI *_WritePciConfigDword) (DWORD pciAddress, BYTE regAddress, DWORD value);$/;"	t
+_WritePciConfigDwordEx	winring0/OlsApiInitDef.h	/^typedef BOOL (WINAPI *_WritePciConfigDwordEx) (DWORD pciAddress, DWORD regAddress, DWORD value);$/;"	t
+_WritePciConfigWord	winring0/OlsApiInitDef.h	/^typedef VOID (WINAPI *_WritePciConfigWord) (DWORD pciAddress, BYTE regAddress, WORD value);$/;"	t
+_WritePciConfigWordEx	winring0/OlsApiInitDef.h	/^typedef BOOL (WINAPI *_WritePciConfigWordEx) (DWORD pciAddress, DWORD regAddress, WORD value);$/;"	t
+_WritePhysicalMemory	winring0/OlsApiInitDef.h	/^typedef DWORD (WINAPI *_WritePhysicalMemory) (DWORD_PTR address, PBYTE buffer, DWORD count, DWORD unitSize);$/;"	t
+_Wrmsr	winring0/OlsApiInitDef.h	/^typedef DWORD (WINAPI *_Wrmsr) (DWORD index, DWORD eax, DWORD edx);$/;"	t
+_WrmsrPx	winring0/OlsApiInitDef.h	/^typedef DWORD (WINAPI *_WrmsrPx) (DWORD index, DWORD eax, DWORD edx, DWORD_PTR processAffinityMask);$/;"	t
+_WrmsrTx	winring0/OlsApiInitDef.h	/^typedef DWORD (WINAPI *_WrmsrTx) (DWORD index, DWORD eax, DWORD edx, DWORD_PTR threadAffinityMask);$/;"	t
+_antimain	MacMSRDriver/build/PcmMsr.build/Release/PcmMsrDriver.build/DerivedSources/PcmMsrDriver_info.c	/^__private_extern__ kmod_stop_func_t *_antimain = 0;$/;"	v
+_kext_apple_cc	MacMSRDriver/build/PcmMsr.build/Release/PcmMsrDriver.build/DerivedSources/PcmMsrDriver_info.c	/^__private_extern__ int _kext_apple_cc = __APPLE_CC__ ;$/;"	v
+_realmain	MacMSRDriver/build/PcmMsr.build/Release/PcmMsrDriver.build/DerivedSources/PcmMsrDriver_info.c	/^__private_extern__ kmod_start_func_t *_realmain = 0;$/;"	v
+_tmain	PCM-Service_Win/PCMService.cpp	/^int _tmain(int argc, _TCHAR* argv[])$/;"	f
+accumulateCoreState	cpucounters.h	/^    void accumulateCoreState(const CoreCounterState & o)$/;"	f	class:SocketCounterState
+accumulateSocketState	cpucounters.h	/^    void accumulateSocketState(const SocketCounterState & o)$/;"	f	class:SystemCounterState
+after_sstate	realtime.cpp	/^SystemCounterState before_sstate, after_sstate;$/;"	v
+after_time	realtime.cpp	/^double before_time, after_time;$/;"	v
+aggregate_sample	pcm-pcie.cpp	/^PCIeEvents_t aggregate_sample;$/;"	v
+all_fib	realtime.cpp	/^long long int all_fib = 0;$/;"	v
+allocator	cpucounters.h	/^template class INTELPCM_API std::allocator<CounterWidthExtender*>;$/;"	m	class:std	typeref:class:std::
+allocator	cpucounters.h	/^template class INTELPCM_API std::allocator<TopologyEntry>;$/;"	m	class:std	typeref:class:std::
+allocator	cpucounters.h	/^template class INTELPCM_API std::allocator<char>;$/;"	m	class:std	typeref:class:std::
+allocator	cpucounters.h	/^template class INTELPCM_API std::allocator<uint32>;$/;"	m	class:std	typeref:class:std::
+any_thread	types.h	/^            uint64 any_thread : 1;$/;"	m	struct:EventSelectRegister::__anon9::__anon10
+any_thread0	types.h	/^            uint64 any_thread0 : 1;$/;"	m	struct:FixedEventControlRegister::__anon11::__anon12
+any_thread1	types.h	/^            uint64 any_thread1 : 1;$/;"	m	struct:FixedEventControlRegister::__anon11::__anon12
+any_thread2	types.h	/^            uint64 any_thread2 : 1;$/;"	m	struct:FixedEventControlRegister::__anon11::__anon12
+apic_int	types.h	/^            uint64 apic_int : 1;$/;"	m	struct:EventSelectRegister::__anon9::__anon10
+argv_index	freegetopt/getopt.c	/^static int argv_index = 0;             \/* Option we're checking *\/$/;"	v	file:
+argv_index2	freegetopt/getopt.c	/^static int argv_index2 = 0;            \/* Option argument we're checking *\/$/;"	v	file:
+array	cpucounters.cpp	/^	int array[4];$/;"	m	union:PCM_CPUID_INFO	file:
+baseAddress	types.h	/^    unsigned long long baseAddress;$/;"	m	struct:MCFGRecord
+baseTicksForIpcHash_	PCM-Service_Win/PCMService.h	/^        System::Collections::Hashtable baseTicksForIpcHash_;$/;"	m	class:PCMServiceNS::MeasureThread
+baseTicksForRelFreqHash_	PCM-Service_Win/PCMService.h	/^        System::Collections::Hashtable baseTicksForRelFreqHash_;$/;"	m	class:PCMServiceNS::MeasureThread
+base_addr	pci.h	/^    uint64 base_addr;$/;"	m	class:PciHandleM
+base_addr	pci.h	/^    uint64 base_addr;$/;"	m	class:PciHandleMM
+bcmd	types.h	/^            uint64 bcmd : 3;$/;"	m	struct:BecktonUncorePMUZDPCTLFVCRegister::__anon15::__anon16
+bcmd	types.h	/^            uint64 bcmd : 3;$/;"	m	struct:BecktonUncorePMUZDPCTLFVCRegister::__anon15::__anon17
+before_sstate	realtime.cpp	/^SystemCounterState before_sstate, after_sstate;$/;"	v
+before_time	realtime.cpp	/^double before_time, after_time;$/;"	v
+bitCount	cpucounters.cpp	/^int bitCount(uint64 n)$/;"	f
+buildTopology	MacMSRDriver/MSRAccessor.cpp	/^int32_t MSRAccessor::buildTopology(uint32_t num_cores ,void* pTopos){$/;"	f	class:MSRAccessor
+buildTopology	MacMSRDriver/PcmMsr/PcmMsr.cpp	/^IOReturn PcmMsrDriverClassName::buildTopology(topologyEntry* odata, uint32_t input_num_cores){$/;"	f	class:PcmMsrDriverClassName
+buildTopology	MacMSRDriver/PcmMsr/PcmMsrClient.cpp	/^IOReturn PcmMsrClientClassName::buildTopology(topologyEntry* data, size_t output_size)$/;"	f	class:PcmMsrClientClassName
+buildTopology	msr.cpp	/^int32 MsrHandle::buildTopology(uint32 num_cores, void* ptr){$/;"	f	class:MsrHandle
+build_bit	cpucounters.cpp	/^uint64 build_bit(uint32 beg, uint32 end)$/;"	f
+build_bit_ui	cpucounters.cpp	/^uint32 build_bit_ui(int beg, int end)$/;"	f
+bus	WinMSRDriver/Win7/msrstruct.h	/^    ULONG bus, dev, func, reg, bytes;$/;"	m	struct:PCICFG_Request
+bus	cpucounters.h	/^    int bus, groupnr;$/;"	m	class:ServerPCICFGUncore
+bus	pci.h	/^    uint32 bus;$/;"	m	class:PciHandle
+bus	pci.h	/^    uint32 bus;$/;"	m	class:PciHandleM
+bus	pci.h	/^    uint32 bus;$/;"	m	class:PciHandleMM
+bytes	WinMSRDriver/Win7/msrstruct.h	/^    ULONG bus, dev, func, reg, bytes;$/;"	m	struct:PCICFG_Request
+calculate_bandwidth	pcm-memory.cpp	/^void calculate_bandwidth(PCM *m, const ServerUncorePowerState uncState1[], const ServerUncorePowerState uncState2[], uint64 elapsedTime)$/;"	f
+canUsePerf	cpucounters.h	/^    bool canUsePerf;$/;"	m	class:PCM
+checkActiveAndOpened	MacMSRDriver/PcmMsr/PcmMsrClient.cpp	/^IOReturn PcmMsrClientClassName::checkActiveAndOpened (const char* memberFunction)$/;"	f	class:PcmMsrClientClassName
+checkModel	cpucounters.cpp	/^bool PCM::checkModel()$/;"	f	class:PCM
+checksum	types.h	/^    unsigned char checksum;$/;"	m	struct:MCFGHeader
+cleanup	cpucounters.cpp	/^void PCM::cleanup()$/;"	f	class:PCM
+cleanup	pcm3d/main.cpp	/^BOOL cleanup(DWORD)$/;"	f
+cleanup	utils.h	/^inline BOOL cleanup(DWORD)$/;"	f
+cleanup	utils.h	/^inline void cleanup(int s)$/;"	f
+cleanupPMU	cpucounters.cpp	/^void PCM::cleanupPMU()$/;"	f	class:PCM
+clientBW	cpucounters.h	/^    ClientBW * clientBW;$/;"	m	class:PCM
+clientBW	width_extender.h	/^      ClientBW * clientBW;$/;"	m	struct:CounterWidthExtender::ClientImcReadsCounter
+clientBW	width_extender.h	/^      ClientBW * clientBW;$/;"	m	struct:CounterWidthExtender::ClientImcWritesCounter
+clientClose	MacMSRDriver/PcmMsr/PcmMsrClient.cpp	/^IOReturn PcmMsrClientClassName::clientClose(void)$/;"	f	class:PcmMsrClientClassName
+clientImcReads	cpucounters.h	/^    CounterWidthExtender * clientImcReads;$/;"	m	class:PCM
+clientImcWrites	cpucounters.h	/^    CounterWidthExtender * clientImcWrites;$/;"	m	class:PCM
+closeConnection	MacMSRDriver/MSRAccessor.cpp	/^void MSRAccessor::closeConnection(){$/;"	f	class:MSRAccessor
+closeMSRClient	MacMSRDriver/DriverInterface.c	/^kern_return_t closeMSRClient(io_connect_t connect)$/;"	f
+closeUserClient	MacMSRDriver/PcmMsr/PcmMsrClient.cpp	/^IOReturn PcmMsrClientClassName::closeUserClient(void)$/;"	f	class:PcmMsrClientClassName
+cmask	types.h	/^            uint64 cmask : 8;$/;"	m	struct:EventSelectRegister::__anon9::__anon10
+cmask	types.h	/^            uint64 cmask : 8;$/;"	m	struct:UncoreEventSelectRegister::__anon13::__anon14
+components	PCM-Service_Win/PCMInstaller.h	/^		System::ComponentModel::Container ^components;$/;"	m	class:PMUService::ProjectInstaller
+components	PCM-Service_Win/PCMService.h	/^		System::ComponentModel::Container ^components;$/;"	m	class:PCMServiceNS::PCMService
+computeNominalFrequency	cpucounters.cpp	/^void PCM::computeNominalFrequency()$/;"	f	class:PCM
+computeQPISpeed	cpucounters.cpp	/^uint64 ServerPCICFGUncore::computeQPISpeed()$/;"	f	class:ServerPCICFGUncore
+computeQPISpeedBeckton	cpucounters.cpp	/^void PCM::computeQPISpeedBeckton(int core_nr)$/;"	f	class:PCM
+connect	MacMSRDriver/MSRAccessor.h	/^    io_connect_t connect;$/;"	m	class:MSRAccessor
+convertUnknownToInt	cpucounters.cpp	/^int convertUnknownToInt(size_t size, char* value){$/;"	f
+coreCStateMsr	cpucounters.h	/^    uint64 * coreCStateMsr; \/\/ MSR addresses of core C-state free-running counters$/;"	m	class:PCM
+coreEventDesc	cpucounters.h	/^    CustomCoreEventDescription coreEventDesc[4];$/;"	m	class:PCM
+coreUtil	pcm3d/widget.cpp	/^float coreUtil[2][16];$/;"	v
+core_fixed_counter_num_max	cpucounters.h	/^    uint32 core_fixed_counter_num_max;$/;"	m	class:PCM
+core_fixed_counter_num_used	cpucounters.h	/^    uint32 core_fixed_counter_num_used;$/;"	m	class:PCM
+core_fixed_counter_width	cpucounters.h	/^    uint32 core_fixed_counter_width;$/;"	m	class:PCM
+core_gen_counter_num_max	cpucounters.h	/^    uint32 core_gen_counter_num_max;$/;"	m	class:PCM
+core_gen_counter_num_used	cpucounters.h	/^    uint32 core_gen_counter_num_used;$/;"	m	class:PCM
+core_gen_counter_width	cpucounters.h	/^    uint32 core_gen_counter_width;$/;"	m	class:PCM
+core_id	MacMSRDriver/PcmMsr/UserKernelShared.h	/^    uint32_t core_id;$/;"	m	struct:__anon24
+core_id	MacMSRDriver/PcmMsr/UserKernelShared.h	/^    uint32_t core_id;$/;"	m	struct:__anon25
+core_id	WinMSRDriver/Win7/msrstruct.h	/^    int core_id;$/;"	m	struct:MSR_Request
+core_id	WinMSRDriver/WinXP/msrstruct.h	/^    int core_id;$/;"	m	struct:MSR_Request
+core_id	cpucounters.h	/^    int32 core_id;$/;"	m	struct:TopologyEntry
+corestate	pcm3d/widget.cpp	/^static std::vector<CoreCounterState> corestate;$/;"	v	file:
+count_mode	types.h	/^            uint64 count_mode : 2;$/;"	m	struct:BecktonUncorePMUCNTCTLRegister::__anon18::__anon19
+counters	realtime.cpp	/^AsynchronCounterState counters;$/;"	v
+cpuGetTopoData	MacMSRDriver/PcmMsr/PcmMsr.cpp	/^void cpuGetTopoData(void* pTopos){$/;"	f
+cpuReadMSR	MacMSRDriver/PcmMsr/PcmMsr.cpp	/^void cpuReadMSR(void* pIData){$/;"	f
+cpuWriteMSR	MacMSRDriver/PcmMsr/PcmMsr.cpp	/^void cpuWriteMSR(void* pIDatas){$/;"	f
+cpu_family	cpucounters.h	/^    int32 cpu_family;$/;"	m	class:PCM
+cpu_id	msr.h	/^    uint32 cpu_id;$/;"	m	class:MsrHandle
+cpu_model	cpucounters.h	/^    int32 cpu_model, original_cpu_model;$/;"	m	class:PCM
+cpu_num	MacMSRDriver/MSRKernel.h	/^    uint32_t cpu_num;$/;"	m	struct:__anon27
+cpu_num	MacMSRDriver/PcmMsr/UserKernelShared.h	/^    uint32_t cpu_num;$/;"	m	struct:__anon22
+cpuid	MacMSRDriver/PcmMsr/PcmMsr.cpp	25;"	d	file:
+createIntelPerfMonDevice	cpucounters.cpp	/^PciHandleM * ServerPCICFGUncore::createIntelPerfMonDevice(uint32 groupnr_, uint32 bus_, uint32 dev_, uint32 func_, bool checkVendor)$/;"	f	class:ServerPCICFGUncore
+creatorID	types.h	/^    unsigned creatorID;$/;"	m	struct:MCFGHeader
+creatorRevision	types.h	/^    unsigned creatorRevision;$/;"	m	struct:MCFGHeader
+cstates1	cpuasynchcounter.h	/^    CoreCounterState * cstates1, * cstates2;$/;"	m	class:AsynchronCounterState
+cstates2	cpuasynchcounter.h	/^    CoreCounterState * cstates1, * cstates2;$/;"	m	class:AsynchronCounterState
+currentMemoryBandwidth	realtime.cpp	/^double currentMemoryBandwidth()$/;"	f
+cvt_ds	types.h	/^union cvt_ds$/;"	u
+dashdash	freegetopt/getopt.c	/^static int dashdash = 0;               \/* True if "--" option reached *\/$/;"	v	file:
+data	cpucounters.h	/^    uint64 data;$/;"	m	class:PCIeCounterState
+data	memoptest.cpp	/^    int data[3];$/;"	m	struct:T	file:
+data	readmem.cpp	/^    int data[15];$/;"	m	struct:T	file:
+data	realtime.cpp	/^    int data[15];$/;"	m	struct:T	file:
+decrementInstanceSemaphore	cpucounters.cpp	/^bool PCM::decrementInstanceSemaphore()$/;"	f	class:PCM
+decrementNumClients	MacMSRDriver/DriverInterface.c	/^kern_return_t decrementNumClients(io_connect_t connect, uint32_t* num_insts)$/;"	f
+decrementNumInstances	MacMSRDriver/MSRAccessor.cpp	/^uint32_t MSRAccessor::decrementNumInstances(){$/;"	f	class:MSRAccessor
+decrementNumInstances	MacMSRDriver/PcmMsr/PcmMsr.cpp	/^IOReturn PcmMsrDriverClassName::decrementNumInstances(uint32_t* num_insts){$/;"	f	class:PcmMsrDriverClassName
+decrementNumInstances	MacMSRDriver/PcmMsr/PcmMsrClient.cpp	/^IOReturn PcmMsrClientClassName::decrementNumInstances(uint32_t* num_insts){$/;"	f	class:PcmMsrClientClassName
+decrementNumInstances	cpucounters.cpp	/^uint32 PCM::decrementNumInstances()$/;"	f	class:PCM
+decrementNumInstances	msr.cpp	/^uint32 MsrHandle::decrementNumInstances(){$/;"	f	class:MsrHandle
+default_freq_band	pcm-power.cpp	/^int default_freq_band[3] = {12,20,40};$/;"	v
+description	pcm-tsx.cpp	/^    const char * description;$/;"	m	struct:TSXEvent	file:
+destroyMSR	cpucounters.cpp	/^void PCM::destroyMSR()$/;"	f	class:PCM
+dev	WinMSRDriver/Win7/msrstruct.h	/^    ULONG bus, dev, func, reg, bytes;$/;"	m	struct:PCICFG_Request
+device	pci.h	/^    uint32 device;$/;"	m	class:PciHandle
+device	pci.h	/^    uint32 device;$/;"	m	class:PciHandleM
+device	pci.h	/^    uint32 device;$/;"	m	class:PciHandleMM
+deviceControl	WinMSRDriver/Win7/msrmain.c	/^DRIVER_DISPATCH deviceControl;$/;"	v
+deviceControl	WinMSRDriver/Win7/msrmain.c	/^NTSTATUS deviceControl(PDEVICE_OBJECT DeviceObject, PIRP Irp)$/;"	f
+deviceControl	WinMSRDriver/WinXP/msrmain.c	/^DRIVER_DISPATCH deviceControl;$/;"	v
+deviceControl	WinMSRDriver/WinXP/msrmain.c	/^NTSTATUS deviceControl(PDEVICE_OBJECT DeviceObject, PIRP Irp)$/;"	f
+didTerminate	MacMSRDriver/PcmMsr/PcmMsrClient.cpp	/^bool PcmMsrClientClassName::didTerminate(IOService* provider, IOOptionBits options, bool* defer)$/;"	f	class:PcmMsrClientClassName
+disableJKTWorkaround	cpucounters.h	/^    inline void disableJKTWorkaround() { disable_JKT_workaround = true; }$/;"	f	class:PCM
+disable_JKT_workaround	cpucounters.h	/^    bool disable_JKT_workaround;$/;"	m	class:PCM
+display_bandwidth	pcm-memory.cpp	/^void display_bandwidth(float *iMC_Rd_socket_chan, float *iMC_Wr_socket_chan, float *iMC_Rd_socket, float *iMC_Wr_socket, uint32 numSockets, uint32 num_imc_channels, uint64 *partial_write)$/;"	f
+doMeasurements	PCM-Service_Win/PCMService.h	/^        void doMeasurements( void )$/;"	f	class:PCMServiceNS::MeasureThread
+dramEnergyMetricsAvailable	cpucounters.h	/^    bool dramEnergyMetricsAvailable() const$/;"	f	class:PCM
+draw3DBox	pcm3d/widget.cpp	/^void Widget::draw3DBox(float x, float y, float z, const QColor & c)$/;"	f	class:Widget
+drawAll	pcm3d/widget.cpp	/^void Widget::drawAll()$/;"	f	class:Widget
+drawCPU	pcm3d/widget.cpp	/^void Widget::drawCPU(float * height, QColor * \/* colors*\/, float power)$/;"	f	class:Widget
+drawDIMMChannels	pcm3d/widget.cpp	/^void Widget::drawDIMMChannels(float ox, float oy, float oz, float x, float y, float z, float fill,const QColor & c)$/;"	f	class:Widget
+drawDIMMMs	pcm3d/widget.cpp	/^void Widget::drawDIMMMs(float power)$/;"	f	class:Widget
+drawPipe	pcm3d/widget.cpp	/^void Widget::drawPipe(float x, float y, float z, float fill,const QColor & c)$/;"	f	class:Widget
+drawQPILink	pcm3d/widget.cpp	/^void Widget::drawQPILink(float x, float y, float z, float fill1, float \/* fill2*\/ ,const QColor & c)$/;"	f	class:Widget
+drawWireFrame	pcm3d/widget.cpp	/^void Widget::drawWireFrame(float x, float y, float z)$/;"	f	class:Widget
+driver	msr.cpp	/^MSRAccessor * MsrHandle::driver = NULL;$/;"	m	class:MsrHandle	file:
+drv_	PCM-Service_Win/PCMService.h	/^        Driver* drv_;$/;"	m	class:PCMServiceNS::PCMService
+dummyFunction	WinMSRDriver/Win7/msrmain.c	/^NTSTATUS dummyFunction(PDEVICE_OBJECT DeviceObject, PIRP Irp)$/;"	f
+dummyFunction	WinMSRDriver/WinXP/msrmain.c	/^NTSTATUS dummyFunction(PDEVICE_OBJECT DeviceObject, PIRP Irp)$/;"	f
+eax	cpucounters.cpp	/^        struct { int eax,ebx,ecx,edx; } reg ;$/;"	m	struct:PCM_CPUID_INFO::__anon21	file:
+ebx	cpucounters.cpp	/^        struct { int eax,ebx,ecx,edx; } reg ;$/;"	m	struct:PCM_CPUID_INFO::__anon21	file:
+ecx	cpucounters.cpp	/^        struct { int eax,ebx,ecx,edx; } reg ;$/;"	m	struct:PCM_CPUID_INFO::__anon21	file:
+edge	types.h	/^            uint64 edge : 1;$/;"	m	struct:EventSelectRegister::__anon9::__anon10
+edge	types.h	/^            uint64 edge : 1;$/;"	m	struct:UncoreEventSelectRegister::__anon13::__anon14
+edx	cpucounters.cpp	/^        struct { int eax,ebx,ecx,edx; } reg ;$/;"	m	struct:PCM_CPUID_INFO::__anon21	file:
+en	types.h	/^            uint64 en : 1;$/;"	m	struct:BecktonUncorePMUCNTCTLRegister::__anon18::__anon19
+enable	types.h	/^            uint64 enable : 1;$/;"	m	struct:EventSelectRegister::__anon9::__anon10
+enable	types.h	/^            uint64 enable : 1;$/;"	m	struct:UncoreEventSelectRegister::__anon13::__anon14
+enableJKTWorkaround	cpucounters.cpp	/^void PCM::enableJKTWorkaround(bool enable)$/;"	f	class:PCM
+enableJKTWorkaround	cpucounters.cpp	/^void ServerPCICFGUncore::enableJKTWorkaround(bool enable)$/;"	f	class:ServerPCICFGUncore
+enable_pmi	types.h	/^            uint64 enable_pmi : 1;$/;"	m	struct:UncoreEventSelectRegister::__anon13::__anon14
+enable_pmi0	types.h	/^            uint64 enable_pmi0 : 1;$/;"	m	struct:FixedEventControlRegister::__anon11::__anon12
+enable_pmi1	types.h	/^            uint64 enable_pmi1 : 1;$/;"	m	struct:FixedEventControlRegister::__anon11::__anon12
+enable_pmi2	types.h	/^            uint64 enable_pmi2 : 1;$/;"	m	struct:FixedEventControlRegister::__anon11::__anon12
+endBusNumber	types.h	/^    unsigned char endBusNumber;$/;"	m	struct:MCFGRecord
+errorMessage	cpucounters.h	/^    std::string errorMessage;$/;"	m	class:PCM
+event	pcm-tsx.cpp	/^    unsigned char event;$/;"	m	struct:TSXEvent	file:
+eventDefinition	pcm-tsx.cpp	/^TSXEvent eventDefinition[] = {$/;"	v
+event_number	cpucounters.h	/^        int32 event_number, umask_value;$/;"	m	struct:PCM::CustomCoreEventDescription
+event_select	types.h	/^            uint64 event_select : 8;$/;"	m	struct:EventSelectRegister::__anon9::__anon10
+event_select	types.h	/^            uint64 event_select : 8;$/;"	m	struct:UncoreEventSelectRegister::__anon13::__anon14
+evnt0	types.h	/^            uint64 evnt0 : 3;$/;"	m	struct:BecktonUncorePMUZDPCTLFVCRegister::__anon15::__anon16
+evnt0	types.h	/^            uint64 evnt0 : 3;$/;"	m	struct:BecktonUncorePMUZDPCTLFVCRegister::__anon15::__anon17
+evnt1	types.h	/^            uint64 evnt1 : 3;$/;"	m	struct:BecktonUncorePMUZDPCTLFVCRegister::__anon15::__anon16
+evnt1	types.h	/^            uint64 evnt1 : 3;$/;"	m	struct:BecktonUncorePMUZDPCTLFVCRegister::__anon15::__anon17
+evnt2	types.h	/^            uint64 evnt2 : 3;$/;"	m	struct:BecktonUncorePMUZDPCTLFVCRegister::__anon15::__anon16
+evnt2	types.h	/^            uint64 evnt2 : 3;$/;"	m	struct:BecktonUncorePMUZDPCTLFVCRegister::__anon15::__anon17
+evnt3	types.h	/^            uint64 evnt3 : 3;$/;"	m	struct:BecktonUncorePMUZDPCTLFVCRegister::__anon15::__anon16
+evnt3	types.h	/^            uint64 evnt3 : 3;$/;"	m	struct:BecktonUncorePMUZDPCTLFVCRegister::__anon15::__anon17
+exists	pci.cpp	/^bool PciHandle::exists(uint32 bus_, uint32 device_, uint32 function_)$/;"	f	class:PciHandle
+exists	pci.cpp	/^bool PciHandleM::exists(uint32 \/* bus_*\/, uint32 \/* device_ *\/, uint32 \/* function_ *\/)$/;"	f	class:PciHandleM
+exists	pci.cpp	/^bool PciHandleMM::exists(uint32 bus_, uint32 device_, uint32 function_)$/;"	f	class:PciHandleMM
+extended_value	width_extender.h	/^    uint64 extended_value;$/;"	m	class:CounterWidthExtender
+externalMethod	MacMSRDriver/PcmMsr/PcmMsrClient.cpp	/^IOReturn PcmMsrClientClassName::externalMethod(uint32_t selector, IOExternalMethodArguments* args,													IOExternalMethodDispatch* dispatch, OSObject* target, void* reference)$/;"	f	class:PcmMsrClientClassName
+extractCoreFixedCounterValue	cpucounters.cpp	/^uint64 PCM::extractCoreFixedCounterValue(uint64 val)$/;"	f	class:PCM
+extractCoreGenCounterValue	cpucounters.cpp	/^uint64 PCM::extractCoreGenCounterValue(uint64 val)$/;"	f	class:PCM
+extractThermalHeadroom	cpucounters.cpp	/^int32 extractThermalHeadroom(uint64 val)$/;"	f
+extractUncoreFixedCounterValue	cpucounters.cpp	/^uint64 PCM::extractUncoreFixedCounterValue(uint64 val)$/;"	f	class:PCM
+extractUncoreGenCounterValue	cpucounters.cpp	/^uint64 PCM::extractUncoreGenCounterValue(uint64 val)$/;"	f	class:PCM
+extract_bits	cpucounters.cpp	/^uint64 extract_bits(uint64 myin, uint32 beg, uint32 end)$/;"	f
+extract_bits_ui	cpucounters.cpp	/^uint32 extract_bits_ui(uint32 myin, uint32 beg, uint32 end)$/;"	f
+fProvider	MacMSRDriver/PcmMsr/PcmMsrClient.h	/^    PcmMsrDriverClassName*                  fProvider;$/;"	m	class:PcmMsrClientClassName
+fd	client_bw.h	/^    int32 fd;$/;"	m	class:ClientBW
+fd	pci.h	/^    int32 fd;$/;"	m	class:PciHandleMM
+fib	realtime.cpp	/^long long int fib(long long int num)$/;"	f
+fields	types.h	/^        } fields; \/\/ nehalem-ex version$/;"	m	union:BecktonUncorePMUZDPCTLFVCRegister::__anon15	typeref:struct:BecktonUncorePMUZDPCTLFVCRegister::__anon15::__anon16
+fields	types.h	/^        } fields;$/;"	m	union:BecktonUncorePMUCNTCTLRegister::__anon18	typeref:struct:BecktonUncorePMUCNTCTLRegister::__anon18::__anon19
+fields	types.h	/^        } fields;$/;"	m	union:EventSelectRegister::__anon9	typeref:struct:EventSelectRegister::__anon9::__anon10
+fields	types.h	/^        } fields;$/;"	m	union:FixedEventControlRegister::__anon11	typeref:struct:FixedEventControlRegister::__anon11::__anon12
+fields	types.h	/^        } fields;$/;"	m	union:UncoreEventSelectRegister::__anon13	typeref:struct:UncoreEventSelectRegister::__anon13::__anon14
+fields_wsm	types.h	/^        } fields_wsm; \/\/ westmere-ex version$/;"	m	union:BecktonUncorePMUZDPCTLFVCRegister::__anon15	typeref:struct:BecktonUncorePMUZDPCTLFVCRegister::__anon15::__anon17
+findEvent	pcm-tsx.cpp	/^int findEvent(const char * name)$/;"	f
+fixedCfg	cpucounters.h	/^        FixedEventControlRegister * fixedCfg; \/\/ if NULL, then default configuration performed for fixed counters$/;"	m	struct:PCM::ExtendedCustomCoreEventDescription
+flag_mode	types.h	/^            uint64 flag_mode : 1;$/;"	m	struct:BecktonUncorePMUCNTCTLRegister::__anon18::__anon19
+float_format	cpucounterstest.cpp	/^double float_format(IntType n)$/;"	f
+free	MacMSRDriver/PcmMsr/PcmMsr.cpp	/^void PcmMsrDriverClassName::free()$/;"	f	class:PcmMsrDriverClassName
+freezeCounters	cpucounters.cpp	/^void ServerPCICFGUncore::freezeCounters()$/;"	f	class:ServerPCICFGUncore
+freezeServerUncoreCounters	cpucounters.cpp	/^void PCM::freezeServerUncoreCounters()$/;"	f	class:PCM
+freq_band	pcm-power.cpp	/^int freq_band[3];$/;"	v
+func	WinMSRDriver/Win7/msrstruct.h	/^    ULONG bus, dev, func, reg, bytes;$/;"	m	struct:PCICFG_Request
+function	pci.h	/^    uint32 function;$/;"	m	class:PciHandle
+function	pci.h	/^    uint32 function;$/;"	m	class:PciHandleM
+function	pci.h	/^    uint32 function;$/;"	m	class:PciHandleMM
+fvid	types.h	/^            uint64 fvid : 5;$/;"	m	struct:BecktonUncorePMUZDPCTLFVCRegister::__anon15::__anon16
+fvid	types.h	/^            uint64 fvid : 6;$/;"	m	struct:BecktonUncorePMUZDPCTLFVCRegister::__anon15::__anon17
+g_pci_driver	MacMSRDriver/PcmMsr/PcmMsr.cpp	/^PcmMsrDriverClassName *g_pci_driver = NULL;$/;"	v
+get	cpuasynchcounter.h	/^    T get(int param, uint32 core)$/;"	f	class:AsynchronCounterState
+get	cpuasynchcounter.h	/^    T get(uint32 core)$/;"	f	class:AsynchronCounterState
+getActiveAverageFrequency	cpucounters.h	/^double getActiveAverageFrequency(const CounterStateType & before, const CounterStateType & after) \/\/ in Hz$/;"	f
+getActiveRelativeFrequency	cpucounters.h	/^double getActiveRelativeFrequency(const CounterStateType & before, const CounterStateType & after) \/\/ fraction of nominal frequency$/;"	f
+getAllCounterStates	cpucounters.cpp	/^void PCM::getAllCounterStates(SystemCounterState & systemState, std::vector<SocketCounterState> & socketStates, std::vector<CoreCounterState> & coreStates)$/;"	f	class:PCM
+getAllIncomingQPILinkBytes	cpucounters.h	/^inline uint64 getAllIncomingQPILinkBytes(const SystemCounterState & before, const SystemCounterState & after)$/;"	f
+getAllIncomingQPILinkBytes	cpucounters.h	/^inline uint64 getAllIncomingQPILinkBytes(const SystemCounterState & now)$/;"	f
+getAllOutgoingQPILinkBytes	cpucounters.h	/^inline uint64 getAllOutgoingQPILinkBytes(const SystemCounterState & before, const SystemCounterState & after)$/;"	f
+getAverageFrequency	cpucounters.h	/^double getAverageFrequency(const CounterStateType & before, const CounterStateType & after) \/\/ in Hz$/;"	f
+getBusFromSocket	cpucounters.cpp	/^int getBusFromSocket(const uint32 socket)$/;"	f
+getBytesReadFromMC	cpucounters.h	/^uint64 getBytesReadFromMC(const CounterStateType & before, const CounterStateType & after)$/;"	f
+getBytesWrittenToMC	cpucounters.h	/^uint64 getBytesWrittenToMC(const CounterStateType & before, const CounterStateType & after)$/;"	f
+getCKEOffAverageCycles	pcm-power.cpp	/^int64 getCKEOffAverageCycles(uint32 channel, uint32 rank, const ServerUncorePowerState & before, const ServerUncorePowerState & after)$/;"	f
+getCKEOffResidency	pcm-power.cpp	/^double getCKEOffResidency(uint32 channel, uint32 rank, const ServerUncorePowerState & before, const ServerUncorePowerState & after)$/;"	f
+getCPUBrandString	cpucounters.cpp	/^std::string PCM::getCPUBrandString()$/;"	f	class:PCM
+getCPUModel	cpucounters.h	/^    uint32 getCPUModel() { return cpu_model; }$/;"	f	class:PCM
+getConsumedEnergy	cpucounters.h	/^uint64 getConsumedEnergy(const CounterStateType & before, const CounterStateType & after)$/;"	f
+getConsumedJoules	cpucounters.h	/^double getConsumedJoules(const CounterStateType & before, const CounterStateType & after)$/;"	f
+getCoreCStateResidency	cpucounters.h	/^inline double getCoreCStateResidency(int state, const CounterStateType & before, const CounterStateType & after)$/;"	f
+getCoreCounterState	cpucounters.cpp	/^CoreCounterState PCM::getCoreCounterState(uint32 core)$/;"	f	class:PCM
+getCoreCounterState	cpucounters.cpp	/^CoreCounterState getCoreCounterState(uint32 core)$/;"	f
+getCoreIPC	cpucounters.h	/^inline double getCoreIPC(const SystemCounterState & before, const SystemCounterState & after) \/\/ instructions per cycle$/;"	f
+getCoreId	msr.h	/^    uint32 getCoreId() { return cpu_id; }$/;"	f	class:MsrHandle
+getCycles	cpucounters.h	/^uint64 getCycles(const CounterStateType & before, const CounterStateType & after) \/\/ clocks$/;"	f
+getCycles	cpucounters.h	/^uint64 getCycles(const CounterStateType & now) \/\/ clocks$/;"	f
+getCyclesLostDueL2CacheMisses	cpucounters.h	/^double getCyclesLostDueL2CacheMisses(const CounterStateType & before, const CounterStateType & after) \/\/ 0.0 - 1.0$/;"	f
+getCyclesLostDueL3CacheMisses	cpucounters.h	/^double getCyclesLostDueL3CacheMisses(const CounterStateType & before, const CounterStateType & after) \/\/ 0.0 - 1.0$/;"	f
+getCyclesPerTransition	pcm-power.cpp	/^int64 getCyclesPerTransition(uint32 channel, uint32 rank, const ServerUncorePowerState & before, const ServerUncorePowerState & after)$/;"	f
+getDRAMClocks	cpucounters.cpp	/^uint64 ServerPCICFGUncore::getDRAMClocks(uint32 channel)$/;"	f	class:ServerPCICFGUncore
+getDRAMClocks	cpucounters.h	/^uint64 getDRAMClocks(uint32 channel, const CounterStateType & before, const CounterStateType & after)$/;"	f
+getDRAMConsumedEnergy	cpucounters.h	/^uint64 getDRAMConsumedEnergy(const CounterStateType & before, const CounterStateType & after)$/;"	f
+getDRAMConsumedJoules	cpucounters.h	/^double getDRAMConsumedJoules(const CounterStateType & before, const CounterStateType & after)$/;"	f
+getErrorMessage	cpucounters.h	/^    const std::string & getErrorMessage() const$/;"	f	class:PCM
+getExecUsage	cpucounters.h	/^double getExecUsage(const CounterStateType & before, const CounterStateType & after) \/\/ usage$/;"	f
+getFirstRank	pcm-power.cpp	/^int getFirstRank(int imc_profile)$/;"	f
+getIPC	cpucounters.h	/^double getIPC(const CounterStateType & before, const CounterStateType & after) \/\/ instructions per cycle$/;"	f
+getImcReads	client_bw.cpp	/^uint64 ClientBW::getImcReads()$/;"	f	class:ClientBW
+getImcReads	cpucounters.cpp	/^uint64 ServerPCICFGUncore::getImcReads()$/;"	f	class:ServerPCICFGUncore
+getImcWrites	client_bw.cpp	/^uint64 ClientBW::getImcWrites()$/;"	f	class:ClientBW
+getImcWrites	cpucounters.cpp	/^uint64 ServerPCICFGUncore::getImcWrites()$/;"	f	class:ServerPCICFGUncore
+getIncomingDataFlits	cpucounters.cpp	/^uint64 ServerPCICFGUncore::getIncomingDataFlits(uint32 port)$/;"	f	class:ServerPCICFGUncore
+getIncomingQPILinkBytes	cpucounters.h	/^inline uint64 getIncomingQPILinkBytes(uint32 socketNr, uint32 linkNr, const SystemCounterState & before, const SystemCounterState & after)$/;"	f
+getIncomingQPILinkBytes	cpucounters.h	/^inline uint64 getIncomingQPILinkBytes(uint32 socketNr, uint32 linkNr, const SystemCounterState & now)$/;"	f
+getIncomingQPILinkUtilization	cpucounters.h	/^inline double getIncomingQPILinkUtilization(uint32 socketNr, uint32 linkNr, const SystemCounterState & before, const SystemCounterState & after)$/;"	f
+getInstance	cpucounters.cpp	/^PCM * PCM::getInstance()$/;"	f	class:PCM
+getInstructionsRetired	cpucounters.h	/^uint64 getInstructionsRetired(const CounterStateType & before, const CounterStateType & after) \/\/ instructions$/;"	f
+getInstructionsRetired	cpucounters.h	/^uint64 getInstructionsRetired(const CounterStateType & now) \/\/ instructions$/;"	f
+getInvariantTSC	cpucounters.h	/^uint64 getInvariantTSC(const CounterStateType & before, const CounterStateType & after)$/;"	f
+getJoulesPerEnergyUnit	cpucounters.h	/^    double getJoulesPerEnergyUnit() const { return joulesPerEnergyUnit; }$/;"	f	class:PCM
+getL2CacheHitRatio	cpucounters.h	/^double getL2CacheHitRatio(const CounterStateType & before, const CounterStateType & after) \/\/ 0.0 - 1.0$/;"	f
+getL2CacheHits	cpucounters.h	/^uint64 getL2CacheHits(const CounterStateType & before, const CounterStateType & after)$/;"	f
+getL2CacheMisses	cpucounters.h	/^uint64 getL2CacheMisses(const CounterStateType & before, const CounterStateType & after)$/;"	f
+getL3CacheHitRatio	cpucounters.h	/^double getL3CacheHitRatio(const CounterStateType & before, const CounterStateType & after) \/\/ 0.0 - 1.0$/;"	f
+getL3CacheHits	cpucounters.h	/^uint64 getL3CacheHits(const CounterStateType & before, const CounterStateType & after)$/;"	f
+getL3CacheHitsNoSnoop	cpucounters.h	/^uint64 getL3CacheHitsNoSnoop(const CounterStateType & before, const CounterStateType & after)$/;"	f
+getL3CacheHitsSnoop	cpucounters.h	/^uint64 getL3CacheHitsSnoop(const CounterStateType & before, const CounterStateType & after)$/;"	f
+getL3CacheMisses	cpucounters.h	/^uint64 getL3CacheMisses(const CounterStateType & before, const CounterStateType & after)$/;"	f
+getMCChannelsPerSocket	cpucounters.h	/^    uint32 getMCChannelsPerSocket() const$/;"	f	class:PCM
+getMCCounter	cpucounters.cpp	/^uint64 ServerPCICFGUncore::getMCCounter(uint32 channel, uint32 counter)$/;"	f	class:ServerPCICFGUncore
+getMCCounter	cpucounters.h	/^uint64 getMCCounter(uint32 channel, uint32 counter, const CounterStateType & before, const CounterStateType & after)$/;"	f
+getMCPerSocket	cpucounters.h	/^    uint32 getMCPerSocket() const$/;"	f	class:PCM
+getMaxIPC	cpucounters.h	/^    uint32 getMaxIPC() const$/;"	f	class:PCM
+getMaxNumOfCBoxes	cpucounters.cpp	/^uint32 PCM::getMaxNumOfCBoxes() const$/;"	f	class:PCM
+getNominalFrequency	cpucounters.cpp	/^uint64 PCM::getNominalFrequency()$/;"	f	class:PCM
+getNormalizedPCUCounter	pcm-power.cpp	/^double getNormalizedPCUCounter(uint32 counter, const ServerUncorePowerState & before, const ServerUncorePowerState & after)$/;"	f
+getNormalizedQPIL0pTxCycles	cpucounters.h	/^double getNormalizedQPIL0pTxCycles(uint32 port, const CounterStateType & before, const CounterStateType & after)$/;"	f
+getNormalizedQPIL1Cycles	cpucounters.h	/^double getNormalizedQPIL1Cycles(uint32 port, const CounterStateType & before, const CounterStateType & after)$/;"	f
+getNumClients	MacMSRDriver/DriverInterface.c	/^kern_return_t getNumClients(io_connect_t connect, uint32_t* num_insts)$/;"	f
+getNumCores	MacMSRDriver/PcmMsr/PcmMsr.cpp	/^uint32_t PcmMsrDriverClassName::getNumCores()$/;"	f	class:PcmMsrDriverClassName
+getNumCores	cpuasynchcounter.h	/^    uint32 getNumCores()$/;"	f	class:AsynchronCounterState
+getNumCores	cpucounters.cpp	/^uint32 PCM::getNumCores()$/;"	f	class:PCM
+getNumInstances	MacMSRDriver/MSRAccessor.cpp	/^uint32_t MSRAccessor::getNumInstances(){$/;"	f	class:MSRAccessor
+getNumInstances	MacMSRDriver/PcmMsr/PcmMsr.cpp	/^IOReturn PcmMsrDriverClassName::getNumInstances(uint32_t* num_insts){$/;"	f	class:PcmMsrDriverClassName
+getNumInstances	MacMSRDriver/PcmMsr/PcmMsrClient.cpp	/^IOReturn PcmMsrClientClassName::getNumInstances(uint32_t* num_insts){$/;"	f	class:PcmMsrClientClassName
+getNumInstances	cpucounters.cpp	/^uint32 PCM::getNumInstances()$/;"	f	class:PCM
+getNumInstances	msr.cpp	/^uint32 MsrHandle::getNumInstances(){$/;"	f	class:MsrHandle
+getNumMC	cpucounters.h	/^    uint32 getNumMC() const { return num_imc; }$/;"	f	class:ServerPCICFGUncore
+getNumMCChannels	cpucounters.h	/^    uint32 getNumMCChannels() const { return num_imc_channels; }$/;"	f	class:ServerPCICFGUncore
+getNumQPIPorts	cpucounters.h	/^    uint32 getNumQPIPorts() const { return num_qpi_ports; }$/;"	f	class:ServerPCICFGUncore
+getNumSockets	cpuasynchcounter.h	/^    uint32 getNumSockets()$/;"	f	class:AsynchronCounterState
+getNumSockets	cpucounters.cpp	/^uint32 PCM::getNumSockets()$/;"	f	class:PCM
+getNumberOfCustomEvents	cpucounters.h	/^uint64 getNumberOfCustomEvents(int32 eventCounterNr, const CounterStateType & before, const CounterStateType & after)$/;"	f
+getNumberOfEvents	cpucounters.h	/^inline uint64 getNumberOfEvents(PCIeCounterState before, PCIeCounterState after)$/;"	f
+getOriginalCPUModel	cpucounters.h	/^    uint32 getOriginalCPUModel() { return original_cpu_model; }$/;"	f	class:PCM
+getOutgoingDataNonDataFlits	cpucounters.cpp	/^uint64 ServerPCICFGUncore::getOutgoingDataNonDataFlits(uint32 port)$/;"	f	class:ServerPCICFGUncore
+getOutgoingQPILinkBytes	cpucounters.h	/^inline uint64 getOutgoingQPILinkBytes(uint32 socketNr, uint32 linkNr, const SystemCounterState & before, const SystemCounterState & after)$/;"	f
+getOutgoingQPILinkUtilization	cpucounters.h	/^inline double getOutgoingQPILinkUtilization(uint32 socketNr, uint32 linkNr, const SystemCounterState & before, const SystemCounterState & after)$/;"	f
+getPCIeCounterState	cpucounters.cpp	/^PCIeCounterState PCM::getPCIeCounterState(const uint32 socket_)$/;"	f	class:PCM
+getPCIeEvents	pcm-pcie.cpp	/^void getPCIeEvents(PCM *m, PCM::PCIeEventCode opcode, uint32 delay_ms, PCIeEvents_t *sample)$/;"	f
+getPCUClocks	cpucounters.h	/^uint64 getPCUClocks(const CounterStateType & before, const CounterStateType & after)$/;"	f
+getPCUCounter	cpucounters.h	/^uint64 getPCUCounter(uint32 counter, const CounterStateType & before, const CounterStateType & after)$/;"	f
+getPackageCStateResidency	cpucounters.h	/^inline double getPackageCStateResidency(int state, const CounterStateType & before, const CounterStateType & after)$/;"	f
+getPackageMaximumPower	cpucounters.h	/^    int32 getPackageMaximumPower() const { return pkgMaximumPower; }$/;"	f	class:PCM
+getPackageMinimumPower	cpucounters.h	/^    int32 getPackageMinimumPower() const { return pkgMinimumPower; }$/;"	f	class:PCM
+getPackageThermalHeadroom	cpucounters.h	/^   int32 getPackageThermalHeadroom() const  { return PackageThermalHeadroom; }$/;"	f	class:ServerUncorePowerState
+getPackageThermalSpecPower	cpucounters.h	/^    int32 getPackageThermalSpecPower() const { return pkgThermalSpecPower; }$/;"	f	class:PCM
+getQPIClocks	cpucounters.cpp	/^uint64 ServerPCICFGUncore::getQPIClocks(uint32 port)$/;"	f	class:ServerPCICFGUncore
+getQPIClocks	cpucounters.h	/^uint64 getQPIClocks(uint32 port, const CounterStateType & before, const CounterStateType & after)$/;"	f
+getQPIL0pTxCycles	cpucounters.cpp	/^uint64 ServerPCICFGUncore::getQPIL0pTxCycles(uint32 port)$/;"	f	class:ServerPCICFGUncore
+getQPIL0pTxCycles	cpucounters.h	/^uint64 getQPIL0pTxCycles(uint32 port, const CounterStateType & before, const CounterStateType & after)$/;"	f
+getQPIL1Cycles	cpucounters.cpp	/^uint64 ServerPCICFGUncore::getQPIL1Cycles(uint32 port)$/;"	f	class:ServerPCICFGUncore
+getQPIL1Cycles	cpucounters.h	/^uint64 getQPIL1Cycles(uint32 port, const CounterStateType & before, const CounterStateType & after)$/;"	f
+getQPILLCounter	cpucounters.cpp	/^uint64 ServerPCICFGUncore::getQPILLCounter(uint32 port, uint32 counter)$/;"	f	class:ServerPCICFGUncore
+getQPILinkSpeed	cpucounters.h	/^    uint64 getQPILinkSpeed() const { return qpi_speed; }$/;"	f	class:PCM
+getQPILinksPerSocket	cpuasynchcounter.h	/^    uint32 getQPILinksPerSocket()$/;"	f	class:AsynchronCounterState
+getQPILinksPerSocket	cpucounters.h	/^    uint64 getQPILinksPerSocket() const$/;"	f	class:PCM
+getQPItoMCTrafficRatio	cpucounters.h	/^inline double getQPItoMCTrafficRatio(const SystemCounterState & before, const SystemCounterState & after)$/;"	f
+getRefCycles	cpucounters.h	/^uint64 getRefCycles(const CounterStateType & before, const CounterStateType & after) \/\/ clocks$/;"	f
+getRelativeFrequency	cpucounters.h	/^double getRelativeFrequency(const CounterStateType & before, const CounterStateType & after) \/\/ fraction of nominal frequency$/;"	f
+getSMT	cpucounters.cpp	/^bool PCM::getSMT()$/;"	f	class:PCM
+getSecondRank	pcm-power.cpp	/^int getSecondRank(int imc_profile)$/;"	f
+getSelfRefreshCycles	pcm-power.cpp	/^uint64 getSelfRefreshCycles(uint32 channel, const ServerUncorePowerState & before, const ServerUncorePowerState & after)$/;"	f
+getSelfRefreshTransitions	pcm-power.cpp	/^uint64 getSelfRefreshTransitions(uint32 channel, const ServerUncorePowerState & before, const ServerUncorePowerState & after)$/;"	f
+getServerUncorePowerState	cpucounters.cpp	/^ServerUncorePowerState PCM::getServerUncorePowerState(uint32 socket)$/;"	f	class:PCM
+getSocket	cpuasynchcounter.h	/^    T getSocket(int param, uint32 socket)$/;"	f	class:AsynchronCounterState
+getSocket	cpuasynchcounter.h	/^    T getSocket(uint32 socket)$/;"	f	class:AsynchronCounterState
+getSocket	cpuasynchcounter.h	/^    T getSocket(uint32 socket, uint32 param)$/;"	f	class:AsynchronCounterState
+getSocketCounterState	cpucounters.cpp	/^SocketCounterState PCM::getSocketCounterState(uint32 socket)$/;"	f	class:PCM
+getSocketCounterState	cpucounters.cpp	/^SocketCounterState getSocketCounterState(uint32 socket)$/;"	f
+getSocketId	cpuasynchcounter.h	/^    uint32 getSocketId(uint32 c)$/;"	f	class:AsynchronCounterState
+getSocketId	cpucounters.h	/^    uint32 getSocketId(uint32 core_id)$/;"	f	class:PCM
+getSocketIncomingQPILinkBytes	cpucounters.h	/^inline uint64 getSocketIncomingQPILinkBytes(uint32 socketNr, const SystemCounterState & now)$/;"	f
+getSystem	cpuasynchcounter.h	/^    T getSystem()$/;"	f	class:AsynchronCounterState
+getSystem	cpuasynchcounter.h	/^    T getSystem(int param)$/;"	f	class:AsynchronCounterState
+getSystemCounterState	cpucounters.cpp	/^SystemCounterState PCM::getSystemCounterState()$/;"	f	class:PCM
+getSystemCounterState	cpucounters.cpp	/^SystemCounterState getSystemCounterState()$/;"	f
+getThermalHeadroom	cpucounters.h	/^   int32 getThermalHeadroom() const  { return ThermalHeadroom; }$/;"	f	class:BasicCounterState
+getThermalHeadroom	cpucounters.h	/^int32 getThermalHeadroom(const CounterStateType & \/* before *\/, const CounterStateType & after)$/;"	f
+getThreadsPerCore	cpucounters.cpp	/^uint32 PCM::getThreadsPerCore()$/;"	f	class:PCM
+getTickCount	cpucounters.cpp	/^uint64 PCM::getTickCount(uint64 multiplier, uint32 core)$/;"	f	class:PCM
+getTickCountRDTSCP	cpucounters.cpp	/^uint64 PCM::getTickCountRDTSCP(uint64 multiplier)$/;"	f	class:PCM
+getTopologyInfo	MacMSRDriver/DriverInterface.c	/^kern_return_t getTopologyInfo(io_connect_t connect, topologyEntry* data, size_t* data_size)$/;"	f
+getTotalExecUsage	cpucounters.h	/^inline double getTotalExecUsage(const SystemCounterState & before, const SystemCounterState & after) \/\/ usage$/;"	f
+getUArchCodename	cpucounters.cpp	/^const char * PCM::getUArchCodename()$/;"	f	class:PCM
+get_frequency_from_cpuid	cpucounters.cpp	/^uint64 get_frequency_from_cpuid() \/\/ from Pat Fay (Intel)$/;"	f
+getopt	freegetopt/getopt.c	/^int getopt(int argc, char** argv, char* optstr)$/;"	f
+globalMutex	cpucounters.cpp	/^    HANDLE globalMutex;$/;"	m	class:SystemWideLock	file:
+globalSemaphore	cpucounters.cpp	/^    sem_t * globalSemaphore;$/;"	m	class:SystemWideLock	file:
+globalSemaphoreName	cpucounters.cpp	/^    const char * globalSemaphoreName;$/;"	m	class:SystemWideLock	file:
+good	cpucounters.cpp	/^bool PCM::good()$/;"	f	class:PCM
+gpCounterCfg	cpucounters.h	/^        EventSelectRegister * gpCounterCfg; \/\/ general purpose counters, if NULL, then default configuration performed for GP counters$/;"	m	struct:PCM::ExtendedCustomCoreEventDescription
+groupnr	cpucounters.h	/^    int bus, groupnr;$/;"	m	class:ServerPCICFGUncore
+hDriver	msr.h	/^    HANDLE hDriver;$/;"	m	class:MsrHandle
+hDriver	pci.h	/^    HANDLE hDriver;$/;"	m	class:PciHandle
+hOpenLibSys	cpucounters.cpp	/^HMODULE hOpenLibSys = NULL;$/;"	v
+hSCManager	PCM_Win/windriver.h	/^    SC_HANDLE hSCManager;$/;"	m	class:Driver
+hService	PCM_Win/windriver.h	/^    SC_HANDLE hService;$/;"	m	class:Driver
+handleClose	MacMSRDriver/PcmMsr/PcmMsr.cpp	/^void PcmMsrDriverClassName::handleClose(IOService* forClient, IOOptionBits opts){$/;"	f	class:PcmMsrDriverClassName
+handleIsOpen	MacMSRDriver/PcmMsr/PcmMsr.cpp	/^bool PcmMsrDriverClassName::handleIsOpen(const IOService* forClient) const{$/;"	f	class:PcmMsrDriverClassName
+handleOpen	MacMSRDriver/PcmMsr/PcmMsr.cpp	/^bool PcmMsrDriverClassName::handleOpen(IOService * forClient, IOOptionBits opts, void* args){$/;"	f	class:PcmMsrDriverClassName
+hasBecktonUncore	cpucounters.h	/^    bool hasBecktonUncore() const$/;"	f	class:PCM
+hasPCICFGUncore	cpucounters.h	/^    bool hasPCICFGUncore() const \/\/ has PCICFG uncore PMON$/;"	f	class:PCM
+high	types.h	/^		DWORD high;$/;"	m	struct:cvt_ds::__anon20
+iMCUtil	pcm3d/widget.cpp	/^float iMCUtil[2] = {0,0};$/;"	v
+imcHandles	cpucounters.h	/^    PciHandleM ** imcHandles;$/;"	m	class:ServerPCICFGUncore
+in_tx	types.h	/^            uint64 in_tx : 1;$/;"	m	struct:EventSelectRegister::__anon9::__anon10
+in_txcp	types.h	/^            uint64 in_txcp : 1;$/;"	m	struct:EventSelectRegister::__anon9::__anon10
+inc_sel	types.h	/^            uint64 inc_sel : 5;$/;"	m	struct:BecktonUncorePMUCNTCTLRegister::__anon18::__anon19
+incomingQPIPackets	cpucounters.h	/^    std::vector<std::vector<uint64> > incomingQPIPackets;$/;"	m	class:SystemCounterState
+incrementNumClients	MacMSRDriver/DriverInterface.c	/^kern_return_t incrementNumClients(io_connect_t connect, uint32_t* num_insts)$/;"	f
+incrementNumInstances	MacMSRDriver/MSRAccessor.cpp	/^uint32_t MSRAccessor::incrementNumInstances(){$/;"	f	class:MSRAccessor
+incrementNumInstances	MacMSRDriver/PcmMsr/PcmMsr.cpp	/^IOReturn PcmMsrDriverClassName::incrementNumInstances(uint32_t* num_insts){$/;"	f	class:PcmMsrDriverClassName
+incrementNumInstances	MacMSRDriver/PcmMsr/PcmMsrClient.cpp	/^IOReturn PcmMsrClientClassName::incrementNumInstances(uint32_t* num_insts){$/;"	f	class:PcmMsrClientClassName
+incrementNumInstances	cpucounters.cpp	/^uint32 PCM::incrementNumInstances()$/;"	f	class:PCM
+incrementNumInstances	msr.cpp	/^uint32 MsrHandle::incrementNumInstances(){$/;"	f	class:MsrHandle
+increment_index	freegetopt/getopt.c	/^static void increment_index()$/;"	f	file:
+init	MacMSRDriver/PcmMsr/PcmMsr.cpp	/^bool PcmMsrDriverClassName::init(OSDictionary *dict)$/;"	f	class:PcmMsrDriverClassName
+initSocket2Bus	cpucounters.cpp	/^void ServerPCICFGUncore::initSocket2Bus()$/;"	f	class:ServerPCICFGUncore
+initWinRing0Lib	cpucounters.cpp	/^bool PCM::initWinRing0Lib()$/;"	f	class:PCM
+initializeGL	pcm3d/widget.cpp	/^void Widget::initializeGL()$/;"	f	class:Widget
+instRetHash_	PCM-Service_Win/PCMService.h	/^        System::Collections::Hashtable instRetHash_;$/;"	m	class:PCMServiceNS::MeasureThread
+instance	cpucounters.cpp	/^PCM * PCM::instance = NULL;$/;"	m	class:PCM	file:
+instance	cpucounters.h	/^    static PCM * instance;$/;"	m	class:PCM
+int32	types.h	/^typedef signed int int32;$/;"	t
+int64	types.h	/^typedef signed long long int64;$/;"	t
+internal_read	width_extender.h	/^    uint64 internal_read()$/;"	f	class:CounterWidthExtender
+invert	types.h	/^            uint64 invert : 1;$/;"	m	struct:EventSelectRegister::__anon9::__anon10
+invert	types.h	/^            uint64 invert : 1;$/;"	m	struct:UncoreEventSelectRegister::__anon13::__anon14
+ipcHash_	PCM-Service_Win/PCMService.h	/^        System::Collections::Hashtable ipcHash_;$/;"	m	class:PCMServiceNS::MeasureThread
+isCPUModelSupported	cpucounters.cpp	/^bool PCM::isCPUModelSupported(int model_)$/;"	f	class:PCM
+isCoreCStateResidencySupported	cpucounters.h	/^    bool isCoreCStateResidencySupported(int state)$/;"	f	class:PCM
+isPackageCStateResidencySupported	cpucounters.h	/^    bool isPackageCStateResidencySupported(int state)$/;"	f	class:PCM
+jkt_dram_energy_status	cpucounters.h	/^    std::vector<CounterWidthExtender*> jkt_dram_energy_status;$/;"	m	class:PCM
+joulesPerEnergyUnit	cpucounters.h	/^    double joulesPerEnergyUnit;$/;"	m	class:PCM
+kBuildTopology	MacMSRDriver/PcmMsr/UserKernelShared.h	/^    kBuildTopology,$/;"	e	enum:__anon26
+kCloseDriver	MacMSRDriver/PcmMsr/UserKernelShared.h	/^    kCloseDriver,$/;"	e	enum:__anon26
+kDecrementNumInstances	MacMSRDriver/PcmMsr/UserKernelShared.h	/^    kDecrementNumInstances,$/;"	e	enum:__anon26
+kGetNumInstances	MacMSRDriver/PcmMsr/UserKernelShared.h	/^    kGetNumInstances,$/;"	e	enum:__anon26
+kIncrementNumInstances	MacMSRDriver/PcmMsr/UserKernelShared.h	/^    kIncrementNumInstances,$/;"	e	enum:__anon26
+kMapMemory	MacMSRDriver/PcmMsr/UserKernelShared.h	/^	kMapMemory,$/;"	e	enum:__anon26
+kNumberOfMethods	MacMSRDriver/PcmMsr/UserKernelShared.h	/^    kNumberOfMethods $/;"	e	enum:__anon26
+kOpenDriver	MacMSRDriver/PcmMsr/UserKernelShared.h	/^    kOpenDriver,$/;"	e	enum:__anon26
+kPcmMsrDriverClassName	MacMSRDriver/MSRKernel.h	16;"	d
+kPcmMsrDriverClassName	MacMSRDriver/PcmMsr/UserKernelShared.h	16;"	d
+kRead	MacMSRDriver/PcmMsr/UserKernelShared.h	/^	kRead,$/;"	e	enum:__anon26
+kReadMSR	MacMSRDriver/PcmMsr/UserKernelShared.h	/^	kReadMSR,$/;"	e	enum:__anon26
+kReadMemory	MacMSRDriver/PcmMsr/UserKernelShared.h	/^	kReadMemory,$/;"	e	enum:__anon26
+kTopologyEntry	MacMSRDriver/PcmMsr/UserKernelShared.h	/^} kTopologyEntry;$/;"	t	typeref:struct:__anon25
+kUnmapMemory	MacMSRDriver/PcmMsr/UserKernelShared.h	/^	kUnmapMemory,$/;"	e	enum:__anon26
+kWrite	MacMSRDriver/PcmMsr/UserKernelShared.h	/^	kWrite,$/;"	e	enum:__anon26
+kWriteMSR	MacMSRDriver/PcmMsr/UserKernelShared.h	/^    kWriteMSR,$/;"	e	enum:__anon26
+k_pcm_msr_data_t	MacMSRDriver/PcmMsr/UserKernelShared.h	/^} k_pcm_msr_data_t;$/;"	t	typeref:struct:__anon23
+key	memoptest.cpp	/^    int key[1];$/;"	m	struct:T	file:
+key	readmem.cpp	/^    int key[1];$/;"	m	struct:T	file:
+key	realtime.cpp	/^    int key[1];$/;"	m	struct:T	file:
+keyPressEvent	pcm3d/widget.cpp	/^void Widget::keyPressEvent(QKeyEvent* event)$/;"	f	class:Widget
+l2CacheMissHash_	PCM-Service_Win/PCMService.h	/^        System::Collections::Hashtable l2CacheMissHash_;$/;"	m	class:PCMServiceNS::MeasureThread
+l3CacheMissHash_	PCM-Service_Win/PCMService.h	/^        System::Collections::Hashtable l3CacheMissHash_;$/;"	m	class:PCMServiceNS::MeasureThread
+lastPos	pcm3d/widget.h	/^    QPoint lastPos;$/;"	m	class:Widget
+last_raw_value	width_extender.h	/^    uint64 last_raw_value;$/;"	m	class:CounterWidthExtender
+length	types.h	/^    unsigned length;$/;"	m	struct:MCFGHeader
+log_	PCM-Service_Win/PCMService.h	/^        MeasureThread( System::Diagnostics::EventLog^ log ) : log_(log)$/;"	f	class:PCMServiceNS::MeasureThread
+log_	PCM-Service_Win/PCMService.h	/^        System::Diagnostics::EventLog^ log_;$/;"	m	class:PCMServiceNS::MeasureThread
+low	types.h	/^		DWORD low;$/;"	m	struct:cvt_ds::__anon20
+m	cpuasynchcounter.h	/^    PCM * m;$/;"	m	class:AsynchronCounterState
+m_	PCM-Service_Win/PCMService.h	/^        PCM* m_;$/;"	m	class:PCMServiceNS::MeasureThread
+main	cpucounterstest.cpp	/^int main(int argc, char * argv[])$/;"	f
+main	memoptest.cpp	/^int main(int argc, char * argv[])$/;"	f
+main	msrtest.cpp	/^int main()$/;"	f
+main	pcm-memory.cpp	/^int main(int argc, char * argv[])$/;"	f
+main	pcm-msr.cpp	/^int main(int argc, char * argv[])$/;"	f
+main	pcm-numa.cpp	/^int main(int argc, char * argv[])$/;"	f
+main	pcm-pcie.cpp	/^int main(int argc, char * argv[])$/;"	f
+main	pcm-power.cpp	/^int main(int argc, char * argv[])$/;"	f
+main	pcm-sensor.cpp	/^int main()$/;"	f
+main	pcm-tsx.cpp	/^int main(int argc, char * argv[])$/;"	f
+main	pcm3d/main.cpp	/^int main(int argc, char *argv[])$/;"	f
+main	readmem.cpp	/^int main(int argc, char * argv[])$/;"	f
+main	realtime.cpp	/^int main(int argc, char * argv[])$/;"	f
+mapMemory	MacMSRDriver/PcmMsr/PcmMsr.cpp	/^void* PcmMsrDriverClassName::mapMemory (uint32_t address, UInt8 **virtual_address)$/;"	f	class:PcmMsrDriverClassName
+mapMemory	MacMSRDriver/PcmMsr/PcmMsrClient.cpp	/^IOReturn PcmMsrClientClassName::mapMemory(const uint64_t* input, uint32_t inputSize, uint64_t* output, uint32_t outputSize)$/;"	f	class:PcmMsrClientClassName
+mask	MacMSRDriver/PcmMsr/UserKernelShared.h	/^    bool mask;$/;"	m	struct:__anon23
+max_imc_channels	pcm-memory.cpp	/^const uint32 max_imc_channels = 8;$/;"	v
+max_sockets	pcm-memory.cpp	/^const uint32 max_sockets = 4;$/;"	v
+max_sockets	pcm-pcie.cpp	/^const uint32 max_sockets = 4;$/;"	v
+measure	realtime.cpp	/^void measure(DS & ds, size_t repeat, size_t nelements)$/;"	f
+memoryTrafficMetricsAvailable	cpucounters.h	/^    bool memoryTrafficMetricsAvailable() const$/;"	f	class:PCM
+mmapAddr	client_bw.h	/^    char * mmapAddr;$/;"	m	class:ClientBW
+mmapAddr	pci.h	/^    char * mmapAddr;$/;"	m	class:PciHandleMM
+mode	cpucounters.h	/^    ProgramMode mode;$/;"	m	class:PCM
+mouseMoveEvent	pcm3d/widget.cpp	/^void Widget::mouseMoveEvent(QMouseEvent *event)$/;"	f	class:Widget
+mousePressEvent	pcm3d/widget.cpp	/^void Widget::mousePressEvent(QMouseEvent *event)$/;"	f	class:Widget
+mrbHash_	PCM-Service_Win/PCMService.h	/^        System::Collections::Hashtable mrbHash_;$/;"	m	class:PCMServiceNS::MeasureThread
+msr	width_extender.h	/^      MsrHandle * msr;$/;"	m	struct:CounterWidthExtender::MsrHandleCounter
+msr_addr	width_extender.h	/^      uint64 msr_addr;$/;"	m	struct:CounterWidthExtender::MsrHandleCounter
+msr_address	WinMSRDriver/Win7/msrstruct.h	/^    ULONG64 msr_address;$/;"	m	struct:MSR_Request
+msr_address	WinMSRDriver/WinXP/msrstruct.h	/^    ULONG64 msr_address;$/;"	m	struct:MSR_Request
+msr_num	MacMSRDriver/MSRKernel.h	/^    uint32_t msr_num;$/;"	m	struct:__anon27
+msr_num	MacMSRDriver/PcmMsr/UserKernelShared.h	/^    uint32_t msr_num;$/;"	m	struct:__anon22
+msr_num	MacMSRDriver/PcmMsr/UserKernelShared.h	/^    uint32_t msr_num;$/;"	m	struct:__anon23
+mwbHash_	PCM-Service_Win/PCMService.h	/^        System::Collections::Hashtable mwbHash_;$/;"	m	class:PCMServiceNS::MeasureThread
+my_timestamp	memoptest.cpp	/^inline double my_timestamp()$/;"	f
+my_timestamp	readmem.cpp	/^inline double my_timestamp()$/;"	f
+my_timestamp	realtime.cpp	/^inline double my_timestamp()$/;"	f
+nGPCounters	cpucounters.h	/^        uint32 nGPCounters; \/\/ number of general purpose counters$/;"	m	struct:PCM::ExtendedCustomCoreEventDescription
+name	pcm-tsx.cpp	/^    const char * name;$/;"	m	struct:TSXEvent	file:
+nominal_frequency	cpucounters.h	/^    uint64 nominal_frequency;$/;"	m	class:PCM
+nonopt	freegetopt/getopt.c	/^static int nonopt = 0;                 \/* How many nonopts we've found *\/$/;"	v	file:
+nrecords	types.h	/^    unsigned nrecords() const$/;"	f	struct:MCFGHeader
+null_stream	utils.h	/^struct null_stream : public std::streambuf$/;"	s
+numInstancesSemaphore	cpucounters.h	/^    HANDLE numInstancesSemaphore;     \/\/ global semaphore that counts the number of PCM instances on the system$/;"	m	class:PCM
+numInstancesSemaphore	cpucounters.h	/^    sem_t * numInstancesSemaphore;$/;"	m	class:PCM
+num_clients	MacMSRDriver/PcmMsr/PcmMsr.h	/^    uint32_t num_clients = 0;$/;"	m	class:PcmMsrDriverClassName
+num_cores	MacMSRDriver/MSRAccessorPublic.h	/^    uint64_t num_cores;$/;"	m	class:MSRAccessor
+num_cores	MacMSRDriver/PcmMsr/PcmMsr.h	/^    uint32_t num_cores;$/;"	m	class:PcmMsrDriverClassName
+num_cores	cpucounters.h	/^    int32 num_cores;$/;"	m	class:PCM
+num_events	pcm-pcie.cpp	/^uint32 num_events = (sizeof(PCIeEvents_t)\/sizeof(uint64));$/;"	v
+num_handles	msr.cpp	/^int MsrHandle::num_handles = 0;$/;"	m	class:MsrHandle	file:
+num_imc	cpucounters.h	/^    uint32 num_imc;$/;"	m	class:ServerPCICFGUncore
+num_imc_channels	cpucounters.h	/^    uint32 num_imc_channels;$/;"	m	class:ServerPCICFGUncore
+num_qpi_ports	cpucounters.h	/^    uint32 num_qpi_ports;$/;"	m	class:ServerPCICFGUncore
+num_sockets	cpucounters.h	/^    int32 num_sockets;$/;"	m	class:PCM
+occ_ctr_rst	types.h	/^            uint64 occ_ctr_rst : 1;$/;"	m	struct:UncoreEventSelectRegister::__anon13::__anon14
+old_affinity	cpucounters.cpp	/^    cpu_set_t old_affinity;$/;"	m	class:TemporalThreadAffinity	file:
+oldcorestate	pcm3d/widget.cpp	/^static std::vector<CoreCounterState> oldcorestate;$/;"	v	file:
+oldsockstate	pcm3d/widget.cpp	/^static std::vector<SocketCounterState> oldsockstate;$/;"	v	file:
+oldsysstate	pcm3d/widget.cpp	/^static SystemCounterState oldsysstate;$/;"	v	file:
+openConnection	MacMSRDriver/MSRAccessor.cpp	/^kern_return_t MSRAccessor::openConnection(){$/;"	f	class:MSRAccessor
+openMSRClient	MacMSRDriver/DriverInterface.c	/^kern_return_t openMSRClient(io_connect_t connect)$/;"	f
+openUserClient	MacMSRDriver/PcmMsr/PcmMsrClient.cpp	/^IOReturn PcmMsrClientClassName::openUserClient(void)$/;"	f	class:PcmMsrClientClassName
+operator ()	width_extender.h	/^      uint64 operator() () { return clientBW->getImcReads(); }$/;"	f	struct:CounterWidthExtender::ClientImcReadsCounter
+operator ()	width_extender.h	/^      uint64 operator() () { return clientBW->getImcWrites(); }$/;"	f	struct:CounterWidthExtender::ClientImcWritesCounter
+operator ()	width_extender.h	/^      uint64 operator() ()$/;"	f	struct:CounterWidthExtender::MsrHandleCounter
+operator +=	cpucounters.h	/^    BasicCounterState & operator += (const BasicCounterState & o)$/;"	f	class:BasicCounterState
+operator +=	cpucounters.h	/^    UncoreCounterState & operator += (const UncoreCounterState & o)$/;"	f	class:UncoreCounterState
+operator <<	types.h	/^inline std::ostream & operator << (std::ostream & o, const FixedEventControlRegister & reg)$/;"	f
+operator ==	memoptest.cpp	/^    bool operator == (const T & k) const$/;"	f	struct:T
+operator ==	readmem.cpp	/^    bool operator == (const T & k) const$/;"	f	struct:T
+operator ==	realtime.cpp	/^    bool operator == (const T & k) const$/;"	f	struct:T
+opt_offset	freegetopt/getopt.c	/^static int opt_offset = 0;             \/* Index into compounded "-option" *\/$/;"	v	file:
+optarg	freegetopt/getopt.c	/^char* optarg = NULL;$/;"	v
+opterr	freegetopt/getopt.c	/^int opterr = 1;$/;"	v
+optind	freegetopt/getopt.c	/^int optind = 0;$/;"	v
+optopt	freegetopt/getopt.c	/^int optopt = '?';$/;"	v
+original_cpu_model	cpucounters.h	/^    int32 cpu_model, original_cpu_model;$/;"	m	class:PCM
+os	types.h	/^            uint64 os : 1;$/;"	m	struct:EventSelectRegister::__anon9::__anon10
+os0	types.h	/^            uint64 os0 : 1;$/;"	m	struct:FixedEventControlRegister::__anon11::__anon12
+os1	types.h	/^            uint64 os1 : 1;$/;"	m	struct:FixedEventControlRegister::__anon11::__anon12
+os2	types.h	/^            uint64 os2 : 1;$/;"	m	struct:FixedEventControlRegister::__anon11::__anon12
+os_id	MacMSRDriver/PcmMsr/UserKernelShared.h	/^    uint32_t os_id;$/;"	m	struct:__anon24
+os_id	MacMSRDriver/PcmMsr/UserKernelShared.h	/^    uint32_t os_id;$/;"	m	struct:__anon25
+os_id	cpucounters.h	/^    int32 os_id;$/;"	m	struct:TopologyEntry
+outgoingQPIDataNonDataFlits	cpucounters.h	/^    std::vector<std::vector<uint64> > outgoingQPIDataNonDataFlits;$/;"	m	class:SystemCounterState
+outgoingQPIIdleFlits	cpucounters.h	/^    std::vector<std::vector<uint64> > outgoingQPIIdleFlits;$/;"	m	class:SystemCounterState
+outgoingQPITrafficMetricsAvailable	cpucounters.h	/^    bool outgoingQPITrafficMetricsAvailable() const$/;"	f	class:PCM
+overflow	utils.h	/^    void overflow(char) { }$/;"	f	struct:null_stream
+packageEnergyHash_	PCM-Service_Win/PCMService.h	/^		System::Collections::Hashtable packageEnergyHash_;$/;"	m	class:PCMServiceNS::MeasureThread
+packageEnergyMetricsAvailable	cpucounters.h	/^    bool packageEnergyMetricsAvailable() const$/;"	f	class:PCM
+packageThermalMetricsAvailable	cpucounters.h	/^    bool packageThermalMetricsAvailable() const$/;"	f	class:PCM
+padding	MacMSRDriver/PcmMsr/UserKernelShared.h	/^    char padding[115];$/;"	m	struct:__anon23
+padding	MacMSRDriver/PcmMsr/UserKernelShared.h	/^    char padding[116];$/;"	m	struct:__anon25
+paintGL	pcm3d/widget.cpp	/^void Widget::paintGL()$/;"	f	class:Widget
+pbox_init_err	types.h	/^            uint64 pbox_init_err : 1;$/;"	m	struct:BecktonUncorePMUZDPCTLFVCRegister::__anon15::__anon16
+pbox_init_err	types.h	/^            uint64 pbox_init_err : 1;$/;"	m	struct:BecktonUncorePMUZDPCTLFVCRegister::__anon15::__anon17
+pciAddress	pci.h	/^    DWORD pciAddress;$/;"	m	class:PciHandle
+pci_driver_driverinterface_h	MacMSRDriver/PCIDriverInterface.h	17;"	d
+pcm_cpuid	cpucounters.cpp	/^void pcm_cpuid(int leaf, PCM_CPUID_INFO & info)$/;"	f
+pcm_msr_data_t	MacMSRDriver/MSRKernel.h	/^} pcm_msr_data_t;$/;"	t	typeref:struct:__anon27
+pcm_msr_data_t	MacMSRDriver/PcmMsr/UserKernelShared.h	/^} pcm_msr_data_t;$/;"	t	typeref:struct:__anon22
+perfEventHandle	cpucounters.h	/^    std::vector< std::vector<int> > perfEventHandle;$/;"	m	class:PCM
+perfmon_config_anythread	cpucounters.h	/^    int32 perfmon_config_anythread;$/;"	m	class:PCM
+perfmon_version	cpucounters.h	/^    int32 perfmon_version;$/;"	m	class:PCM
+permute_argv_once	freegetopt/getopt.c	/^static int permute_argv_once()$/;"	f	file:
+pin_control	types.h	/^            uint64 pin_control : 1;$/;"	m	struct:EventSelectRegister::__anon9::__anon10
+pkgCStateMsr	cpucounters.h	/^    uint64 * pkgCStateMsr; \/\/ MSR addresses of package C-state free-running counters$/;"	m	class:PCM
+pkgMaximumPower	cpucounters.h	/^    int32 pkgThermalSpecPower, pkgMinimumPower, pkgMaximumPower;$/;"	m	class:PCM
+pkgMinimumPower	cpucounters.h	/^    int32 pkgThermalSpecPower, pkgMinimumPower, pkgMaximumPower;$/;"	m	class:PCM
+pkgThermalSpecPower	cpucounters.h	/^    int32 pkgThermalSpecPower, pkgMinimumPower, pkgMaximumPower;$/;"	m	class:PCM
+pmi_en	types.h	/^            uint64 pmi_en : 1;$/;"	m	struct:BecktonUncorePMUCNTCTLRegister::__anon18::__anon19
+prev_argc	freegetopt/getopt.c	/^static int prev_argc = 0;              \/*    tell if getopt params change *\/$/;"	v	file:
+prev_argv	freegetopt/getopt.c	/^static char** prev_argv = NULL;        \/* Keep a copy of argv and argc to *\/$/;"	v	file:
+print	types.h	/^    void print()$/;"	f	struct:MCFGHeader
+print	types.h	/^    void print()$/;"	f	struct:MCFGRecord
+print_basic_stats	pcm-tsx.cpp	/^void print_basic_stats(const StateType & BeforeState, const StateType & AfterState, bool csv)$/;"	f
+print_csv	cpucounterstest.cpp	/^void print_csv(PCM * m,$/;"	f
+print_csv_header	cpucounterstest.cpp	/^void print_csv_header(PCM * m,$/;"	f
+print_custom_stats	pcm-tsx.cpp	/^void print_custom_stats(const StateType & BeforeState, const StateType & AfterState ,bool csv)$/;"	f
+print_events	pcm-pcie.cpp	/^void print_events()$/;"	f
+print_help	cpucounterstest.cpp	/^void print_help(char * prog_name)$/;"	f
+print_help	pcm-memory.cpp	/^void print_help(char * prog_name)$/;"	f
+print_mcfg	cpucounters.cpp	/^void print_mcfg(const char * path)$/;"	f
+print_output	cpucounterstest.cpp	/^void print_output(PCM * m,$/;"	f
+print_stats	pcm-numa.cpp	/^void print_stats(const StateType & BeforeState, const StateType & AfterState, bool csv)$/;"	f
+print_usage	pcm-msr.cpp	/^void print_usage(const char * progname)$/;"	f
+print_usage	pcm-numa.cpp	/^void print_usage(const char * progname)$/;"	f
+print_usage	pcm-pcie.cpp	/^void print_usage(const char * progname)$/;"	f
+print_usage	pcm-power.cpp	/^void print_usage(const char * progname)$/;"	f
+print_usage	pcm-tsx.cpp	/^void print_usage(const char * progname)$/;"	f
+program	cpucounters.cpp	/^PCM::ErrorCode PCM::program(PCM::ProgramMode mode_, void * parameter_)$/;"	f	class:PCM
+program	cpucounters.cpp	/^void ServerPCICFGUncore::program()$/;"	f	class:ServerPCICFGUncore
+programBecktonUncore	cpucounters.cpp	/^void PCM::programBecktonUncore(int32 core)$/;"	f	class:PCM
+programCboOpcodeFilter	cpucounters.cpp	/^void PCM::programCboOpcodeFilter(const uint32 opc, const uint32 cbo, MsrHandle * msr)$/;"	f	class:PCM
+programNehalemEPUncore	cpucounters.cpp	/^void PCM::programNehalemEPUncore(int32 core)$/;"	f	class:PCM
+programPCIeCounters	cpucounters.cpp	/^void PCM::programPCIeCounters(const PCM::PCIeEventCode event_)$/;"	f	class:PCM
+programServerUncorePowerMetrics	cpucounters.cpp	/^PCM::ErrorCode PCM::programServerUncorePowerMetrics(int mc_profile, int pcu_profile, int * freq_bands)$/;"	f	class:PCM
+program_power_metrics	cpucounters.cpp	/^void ServerPCICFGUncore::program_power_metrics(int mc_profile)$/;"	f	class:ServerPCICFGUncore
+qNormalizeAngle	pcm3d/widget.cpp	/^static void qNormalizeAngle(int &angle)$/;"	f	file:
+qpiHash_	PCM-Service_Win/PCMService.h	/^        System::Collections::Hashtable qpiHash_;$/;"	m	class:PCMServiceNS::MeasureThread
+qpiLLHandles	cpucounters.h	/^    PciHandleM ** qpiLLHandles;$/;"	m	class:ServerPCICFGUncore
+qpiUtilizationMetricsAvailable	cpucounters.h	/^    bool qpiUtilizationMetricsAvailable() const$/;"	f	class:PCM
+qpi_speed	cpucounters.h	/^    uint64 qpi_speed; \/\/ in GBytes\/second$/;"	m	class:PCM
+qpi_speed	cpucounters.h	/^    uint64 qpi_speed;$/;"	m	class:ServerPCICFGUncore
+raw_counter	width_extender.h	/^    AbstractRawCounter * raw_counter;$/;"	m	class:CounterWidthExtender
+rdmsr	MacMSRDriver/PcmMsr/PcmMsr.cpp	23;"	d	file:
+read	MacMSRDriver/MSRAccessor.cpp	/^int32_t MSRAccessor::read(uint32_t core_num, uint64_t msr_num, uint64_t * value){$/;"	f	class:MSRAccessor
+read	MacMSRDriver/PcmMsr/PcmMsr.cpp	/^uint32_t PcmMsrDriverClassName::read(uint32_t pci_address)$/;"	f	class:PcmMsrDriverClassName
+read	MacMSRDriver/PcmMsr/PcmMsrClient.cpp	/^IOReturn PcmMsrClientClassName::read(const uint64_t* input, uint32_t inputSize, uint64_t* output, uint32_t outputSize)$/;"	f	class:PcmMsrClientClassName
+read	msr.cpp	/^int32 MsrHandle::read(uint64 msr_number, uint64 * value)$/;"	f	class:MsrHandle
+read	msr.cpp	/^int32 MsrHandle::read(uint64 msr_number, uint64 * value){$/;"	f	class:MsrHandle
+read	width_extender.h	/^    uint64 read() \/\/ read extended value$/;"	f	class:CounterWidthExtender
+read32	pci.cpp	/^int32 PciHandle::read32(uint64 offset, uint32 * value)$/;"	f	class:PciHandle
+read32	pci.cpp	/^int32 PciHandleM::read32(uint64 offset, uint32 * value)$/;"	f	class:PciHandleM
+read32	pci.cpp	/^int32 PciHandleMM::read32(uint64 offset, uint32 * value)$/;"	f	class:PciHandleMM
+read64	pci.cpp	/^int32 PciHandle::read64(uint64 offset, uint64 * value)$/;"	f	class:PciHandle
+read64	pci.cpp	/^int32 PciHandleM::read64(uint64 offset, uint64 * value)$/;"	f	class:PciHandleM
+read64	pci.cpp	/^int32 PciHandleMM::read64(uint64 offset, uint64 * value)$/;"	f	class:PciHandleMM
+readAndAggregate	cpucounters.cpp	/^void BasicCounterState::readAndAggregate(MsrHandle * msr)$/;"	f	class:BasicCounterState
+readAndAggregate	cpucounters.cpp	/^void UncoreCounterState::readAndAggregate(MsrHandle * msr)$/;"	f	class:UncoreCounterState
+readAndAggregate	cpucounters.h	/^    void readAndAggregate(MsrHandle * handle)$/;"	f	class:SocketCounterState
+readAndAggregate	cpucounters.h	/^    void readAndAggregate(MsrHandle * handle)$/;"	f	class:SystemCounterState
+readAndAggregateEnergyCounters	cpucounters.cpp	/^void PCM::readAndAggregateEnergyCounters(const uint32 socket, CounterStateType & result)$/;"	f	class:PCM
+readAndAggregateUncoreMCCounters	cpucounters.cpp	/^void PCM::readAndAggregateUncoreMCCounters(const uint32 socket, CounterStateType & result)$/;"	f	class:PCM
+readCounters	pcm3d/widget.cpp	/^static void readCounters()$/;"	f	file:
+readMSR	MacMSRDriver/DriverInterface.c	/^kern_return_t readMSR(io_connect_t connect, pcm_msr_data_t* idata, size_t* idata_size,pcm_msr_data_t* odata, size_t* odata_size)$/;"	f
+readMSR	MacMSRDriver/PcmMsr/PcmMsr.cpp	/^IOReturn PcmMsrDriverClassName::readMSR(pcm_msr_data_t* idatas,pcm_msr_data_t* odatas){$/;"	f	class:PcmMsrDriverClassName
+readMSR	MacMSRDriver/PcmMsr/PcmMsrClient.cpp	/^IOReturn PcmMsrClientClassName::readMSR(pcm_msr_data_t* idata, pcm_msr_data_t* odata)$/;"	f	class:PcmMsrClientClassName
+readMemory	MacMSRDriver/PcmMsr/PcmMsrClient.cpp	/^IOReturn PcmMsrClientClassName::readMemory(const uint64_t* input, uint32_t inputSize, uint64_t* output, uint32_t outputSize)$/;"	f	class:PcmMsrClientClassName
+readPackageThermalHeadroom	cpucounters.cpp	/^void PCM::readPackageThermalHeadroom(const uint32 socket, CounterStateType & result)$/;"	f	class:PCM
+readPerfData	cpucounters.cpp	/^void PCM::readPerfData(uint32 core, std::vector<uint64> & outData)$/;"	f	class:PCM
+readQPICounters	cpucounters.cpp	/^void PCM::readQPICounters(SystemCounterState & result)$/;"	f	class:PCM
+read_base_addr	pci.cpp	/^uint64 read_base_addr(int mcfg_handle, uint32 group_, uint32 bus)$/;"	f
+read_intensive_task	memoptest.cpp	/^void read_intensive_task(Y * p, Y * e, int value)$/;"	f
+read_number	pcm-msr.cpp	/^uint64 read_number(char * str)$/;"	f
+reg	WinMSRDriver/Win7/msrstruct.h	/^    ULONG bus, dev, func, reg, bytes;$/;"	m	struct:PCICFG_Request
+reg	cpucounters.cpp	/^        struct { int eax,ebx,ecx,edx; } reg ;$/;"	m	union:PCM_CPUID_INFO	typeref:struct:PCM_CPUID_INFO::__anon21	file:
+relFreqHash_	PCM-Service_Win/PCMService.h	/^        System::Collections::Hashtable relFreqHash_;$/;"	m	class:PCMServiceNS::MeasureThread
+reportQPISpeed	cpucounters.cpp	/^void PCM::reportQPISpeed() const$/;"	f	class:PCM
+reserved	types.h	/^    char reserved[4];$/;"	m	struct:MCFGRecord
+reserved	types.h	/^    char reserved[8];$/;"	m	struct:MCFGHeader
+reserved1	types.h	/^            uint64 reserved1 : 1;$/;"	m	struct:UncoreEventSelectRegister::__anon13::__anon14
+reserved1	types.h	/^            uint64 reserved1 : 52;$/;"	m	struct:FixedEventControlRegister::__anon11::__anon12
+reserved2	types.h	/^            uint64 reserved2 : 1;$/;"	m	struct:UncoreEventSelectRegister::__anon13::__anon14
+reserved3	types.h	/^            uint64 reserved3 : 1;$/;"	m	struct:UncoreEventSelectRegister::__anon13::__anon14
+reservedX	types.h	/^            uint64 reservedX : 30;$/;"	m	struct:EventSelectRegister::__anon9::__anon10
+reservedx	types.h	/^            uint64 reservedx : 32;$/;"	m	struct:UncoreEventSelectRegister::__anon13::__anon14
+resetPMU	cpucounters.cpp	/^void PCM::resetPMU()$/;"	f	class:PCM
+resizeGL	pcm3d/widget.cpp	/^void Widget::resizeGL(int w, int h)$/;"	f	class:Widget
+resp	types.h	/^            uint64 resp : 3;$/;"	m	struct:BecktonUncorePMUZDPCTLFVCRegister::__anon15::__anon16
+resp	types.h	/^            uint64 resp : 3;$/;"	m	struct:BecktonUncorePMUZDPCTLFVCRegister::__anon15::__anon17
+revision	types.h	/^    unsigned char revision;$/;"	m	struct:MCFGHeader
+rsv1	types.h	/^            uint64 rsv1 : 1;$/;"	m	struct:BecktonUncorePMUCNTCTLRegister::__anon18::__anon19
+rsv2	types.h	/^            uint64 rsv2 : 5;$/;"	m	struct:BecktonUncorePMUCNTCTLRegister::__anon18::__anon19
+sBuildTopology	MacMSRDriver/PcmMsr/PcmMsrClient.cpp	/^IOReturn PcmMsrClientClassName::sBuildTopology(PcmMsrClientClassName* target, void* reference, IOExternalMethodArguments* args){$/;"	f	class:PcmMsrClientClassName
+sCloseDriver	MacMSRDriver/PcmMsr/PcmMsrClient.cpp	/^IOReturn PcmMsrClientClassName::sCloseDriver(PcmMsrClientClassName* target, void* reference, IOExternalMethodArguments* arguments)$/;"	f	class:PcmMsrClientClassName
+sDecrementNumInstances	MacMSRDriver/PcmMsr/PcmMsrClient.cpp	/^IOReturn PcmMsrClientClassName::sDecrementNumInstances(PcmMsrClientClassName* target, void* reference, IOExternalMethodArguments* args){$/;"	f	class:PcmMsrClientClassName
+sGetNumInstances	MacMSRDriver/PcmMsr/PcmMsrClient.cpp	/^IOReturn PcmMsrClientClassName::sGetNumInstances(PcmMsrClientClassName* target, void* reference, IOExternalMethodArguments* args){$/;"	f	class:PcmMsrClientClassName
+sIncrementNumInstances	MacMSRDriver/PcmMsr/PcmMsrClient.cpp	/^IOReturn PcmMsrClientClassName::sIncrementNumInstances(PcmMsrClientClassName* target, void* reference, IOExternalMethodArguments* args){$/;"	f	class:PcmMsrClientClassName
+sMapMemory	MacMSRDriver/PcmMsr/PcmMsrClient.cpp	/^IOReturn PcmMsrClientClassName::sMapMemory(PcmMsrClientClassName* target, void* reference, IOExternalMethodArguments* arguments) {$/;"	f	class:PcmMsrClientClassName
+sMethods	MacMSRDriver/PcmMsr/PcmMsrClient.cpp	/^const IOExternalMethodDispatch PcmMsrClientClassName::sMethods[kNumberOfMethods] = {$/;"	m	class:PcmMsrClientClassName	file:
+sMethods	MacMSRDriver/PcmMsr/PcmMsrClient.h	/^    static const IOExternalMethodDispatch   sMethods[kNumberOfMethods];$/;"	m	class:PcmMsrClientClassName
+sOpenDriver	MacMSRDriver/PcmMsr/PcmMsrClient.cpp	/^IOReturn PcmMsrClientClassName::sOpenDriver(PcmMsrClientClassName* target, void* reference, IOExternalMethodArguments* arguments)$/;"	f	class:PcmMsrClientClassName
+sRead	MacMSRDriver/PcmMsr/PcmMsrClient.cpp	/^IOReturn PcmMsrClientClassName::sRead(PcmMsrClientClassName* target, void* reference, IOExternalMethodArguments* arguments) {$/;"	f	class:PcmMsrClientClassName
+sReadMSR	MacMSRDriver/PcmMsr/PcmMsrClient.cpp	/^IOReturn PcmMsrClientClassName::sReadMSR(PcmMsrClientClassName* target, void* reference, IOExternalMethodArguments* arguments){$/;"	f	class:PcmMsrClientClassName
+sReadMemory	MacMSRDriver/PcmMsr/PcmMsrClient.cpp	/^IOReturn PcmMsrClientClassName::sReadMemory(PcmMsrClientClassName* target, void* reference, IOExternalMethodArguments* arguments) {$/;"	f	class:PcmMsrClientClassName
+sUnmapMemory	MacMSRDriver/PcmMsr/PcmMsrClient.cpp	/^IOReturn PcmMsrClientClassName::sUnmapMemory(PcmMsrClientClassName* target, void* reference, IOExternalMethodArguments* arguments) {$/;"	f	class:PcmMsrClientClassName
+sWrite	MacMSRDriver/PcmMsr/PcmMsrClient.cpp	/^IOReturn PcmMsrClientClassName::sWrite(PcmMsrClientClassName* target, void* reference, IOExternalMethodArguments* arguments) {$/;"	f	class:PcmMsrClientClassName
+sWriteMSR	MacMSRDriver/PcmMsr/PcmMsrClient.cpp	/^IOReturn PcmMsrClientClassName::sWriteMSR(PcmMsrClientClassName* target, void* reference, IOExternalMethodArguments* arguments){$/;"	f	class:PcmMsrClientClassName
+scale	pcm3d/widget.h	/^    GLfloat xRot, yRot, zRot, scale;$/;"	m	class:Widget
+server_pcicfg_uncore	cpucounters.h	/^    ServerPCICFGUncore ** server_pcicfg_uncore;$/;"	m	class:PCM
+service	MacMSRDriver/MSRAccessor.h	/^    io_service_t service;$/;"	m	class:MSRAccessor
+serviceInstaller1	PCM-Service_Win/PCMInstaller.h	/^    private: System::ServiceProcess::ServiceInstaller^  serviceInstaller1;$/;"	m	class:PMUService::ProjectInstaller
+serviceProcessInstaller1	PCM-Service_Win/PCMInstaller.h	/^    private: System::ServiceProcess::ServiceProcessInstaller^  serviceProcessInstaller1;$/;"	m	class:PMUService::ProjectInstaller
+setXRotation	pcm3d/widget.cpp	/^void Widget::setXRotation(int angle)$/;"	f	class:Widget
+setYRotation	pcm3d/widget.cpp	/^void Widget::setYRotation(int angle)$/;"	f	class:Widget
+setZRotation	pcm3d/widget.cpp	/^void Widget::setZRotation(int angle)$/;"	f	class:Widget
+set_flag_sel	types.h	/^            uint64 set_flag_sel : 3;$/;"	m	struct:BecktonUncorePMUCNTCTLRegister::__anon18::__anon19
+signature	types.h	/^    char signature[4];$/;"	m	struct:MCFGHeader
+skstates1	cpuasynchcounter.h	/^    SocketCounterState * skstates1, * skstates2;$/;"	m	class:AsynchronCounterState
+skstates2	cpuasynchcounter.h	/^    SocketCounterState * skstates1, * skstates2;$/;"	m	class:AsynchronCounterState
+snb_energy_status	cpucounters.h	/^    std::vector<CounterWidthExtender*> snb_energy_status;$/;"	m	class:PCM
+socket	MacMSRDriver/PcmMsr/UserKernelShared.h	/^    uint32_t socket;$/;"	m	struct:__anon24
+socket	MacMSRDriver/PcmMsr/UserKernelShared.h	/^    uint32_t socket;$/;"	m	struct:__anon25
+socket	cpucounters.h	/^    int32 socket;$/;"	m	struct:TopologyEntry
+socket2bus	cpucounters.cpp	/^std::vector<uint32> ServerPCICFGUncore::socket2bus;$/;"	m	class:ServerPCICFGUncore	file:
+socket2bus	cpucounters.h	/^    static std::vector<uint32> socket2bus;$/;"	m	class:ServerPCICFGUncore
+socketRefCore	cpucounters.h	/^    std::vector<uint32> socketRefCore;$/;"	m	class:PCM
+sockstate	pcm3d/widget.cpp	/^static std::vector<SocketCounterState> sockstate;$/;"	v	file:
+ss	PCM_Win/windriver.h	/^    SERVICE_STATUS ss;$/;"	m	class:Driver
+sstate1	cpuasynchcounter.h	/^    SystemCounterState sstate1, sstate2;$/;"	m	class:AsynchronCounterState
+sstate2	cpuasynchcounter.h	/^    SystemCounterState sstate1, sstate2;$/;"	m	class:AsynchronCounterState
+start	MacMSRDriver/PcmMsr/PcmMsr.cpp	/^bool PcmMsrDriverClassName::start(IOService* provider){$/;"	f	class:PcmMsrDriverClassName
+start	MacMSRDriver/PcmMsr/PcmMsrClient.cpp	/^bool PcmMsrClientClassName::start(IOService* provider)$/;"	f	class:PcmMsrClientClassName
+start	PCM_Win/windriver.h	/^    bool start(LPCWSTR driverPath)$/;"	f	class:Driver
+startBusNumber	types.h	/^    unsigned char startBusNumber;$/;"	m	struct:MCFGRecord
+stop	PCM_Win/windriver.h	/^    void stop()$/;"	f	class:Driver
+storage_mode	types.h	/^            uint64 storage_mode : 2;$/;"	m	struct:BecktonUncorePMUCNTCTLRegister::__anon18::__anon19
+stream_write_task	memoptest.cpp	/^void stream_write_task(Y * p, Y * e, int value)$/;"	f
+super	MacMSRDriver/PcmMsr/PcmMsr.cpp	83;"	d	file:
+super	MacMSRDriver/PcmMsr/PcmMsrClient.cpp	20;"	d	file:
+sysstate	pcm3d/widget.cpp	/^static SystemCounterState sysstate;$/;"	v	file:
+temp_format	cpucounterstest.cpp	/^std::string temp_format(int32 t)$/;"	f
+thermalHeadroomHash_	PCM-Service_Win/PCMService.h	/^		System::Collections::Hashtable thermalHeadroomHash_;$/;"	m	class:PCMServiceNS::MeasureThread
+threads_per_core	cpucounters.h	/^    int32 threads_per_core;$/;"	m	class:PCM
+ticksHash_	PCM-Service_Win/PCMService.h	/^        System::Collections::Hashtable ticksHash_;$/;"	m	class:PCMServiceNS::MeasureThread
+topologies	MacMSRDriver/PcmMsr/PcmMsr.h	/^    kTopologyEntry *topologies;$/;"	m	class:PcmMsrDriverClassName
+topology	cpucounters.h	/^    std::vector<TopologyEntry> topology;$/;"	m	class:PCM
+topologyEntry	MacMSRDriver/PcmMsr/UserKernelShared.h	/^} topologyEntry;$/;"	t	typeref:struct:__anon24
+ui	pcm3d/widget.h	/^    Ui::Widget *ui;$/;"	m	class:Widget
+ui32	types.h	/^	} ui32;$/;"	m	union:cvt_ds	typeref:struct:cvt_ds::__anon20
+ui64	types.h	/^	UINT64 ui64;$/;"	m	union:cvt_ds
+uint32	types.h	/^typedef unsigned int uint32;$/;"	t
+uint64	types.h	/^typedef unsigned long long uint64;$/;"	t
+umask	pcm-tsx.cpp	/^    unsigned char umask;$/;"	m	struct:TSXEvent	file:
+umask	types.h	/^            uint64 umask : 8;$/;"	m	struct:EventSelectRegister::__anon9::__anon10
+umask	types.h	/^            uint64 umask : 8;$/;"	m	struct:UncoreEventSelectRegister::__anon13::__anon14
+umask_value	cpucounters.h	/^        int32 event_number, umask_value;$/;"	m	struct:PCM::CustomCoreEventDescription
+uncoreTSC	cpucounters.h	/^    uint64 uncoreTSC;$/;"	m	class:SystemCounterState
+uncore_fixed_counter_num_max	cpucounters.h	/^    uint32 uncore_fixed_counter_num_max;$/;"	m	class:PCM
+uncore_fixed_counter_num_used	cpucounters.h	/^    uint32 uncore_fixed_counter_num_used;$/;"	m	class:PCM
+uncore_fixed_counter_width	cpucounters.h	/^    uint32 uncore_fixed_counter_width;$/;"	m	class:PCM
+uncore_gen_counter_num_max	cpucounters.h	/^    uint32 uncore_gen_counter_num_max;$/;"	m	class:PCM
+uncore_gen_counter_num_used	cpucounters.h	/^    uint32 uncore_gen_counter_num_used;$/;"	m	class:PCM
+uncore_gen_counter_width	cpucounters.h	/^    uint32 uncore_gen_counter_width;$/;"	m	class:PCM
+unfreezeCounters	cpucounters.cpp	/^void ServerPCICFGUncore::unfreezeCounters()$/;"	f	class:ServerPCICFGUncore
+unfreezeServerUncoreCounters	cpucounters.cpp	/^void PCM::unfreezeServerUncoreCounters()$/;"	f	class:PCM
+uninstall	PCM_Win/windriver.h	/^    void uninstall()$/;"	f	class:Driver
+unit_format	utils.h	/^inline std::string unit_format(IntType n)$/;"	f
+unmapMemory	MacMSRDriver/PcmMsr/PcmMsr.cpp	/^void PcmMsrDriverClassName::unmapMemory (void *memory_map)$/;"	f	class:PcmMsrDriverClassName
+unmapMemory	MacMSRDriver/PcmMsr/PcmMsrClient.cpp	/^IOReturn PcmMsrClientClassName::unmapMemory(const uint64_t* input, uint32_t inputSize)$/;"	f	class:PcmMsrClientClassName
+updateKPIs	pcm3d/widget.cpp	/^static void updateKPIs()$/;"	f	file:
+usr	types.h	/^            uint64 usr : 1;$/;"	m	struct:EventSelectRegister::__anon9::__anon10
+usr0	types.h	/^            uint64 usr0 : 1;$/;"	m	struct:FixedEventControlRegister::__anon11::__anon12
+usr1	types.h	/^            uint64 usr1 : 1;$/;"	m	struct:FixedEventControlRegister::__anon11::__anon12
+usr2	types.h	/^            uint64 usr2 : 1;$/;"	m	struct:FixedEventControlRegister::__anon11::__anon12
+value	MacMSRDriver/MSRKernel.h	/^    uint64_t value;$/;"	m	struct:__anon27
+value	MacMSRDriver/PcmMsr/UserKernelShared.h	/^    uint64_t value;$/;"	m	struct:__anon22
+value	MacMSRDriver/PcmMsr/UserKernelShared.h	/^    uint64_t value;$/;"	m	struct:__anon23
+value	types.h	/^        uint64 value;$/;"	m	union:BecktonUncorePMUCNTCTLRegister::__anon18
+value	types.h	/^        uint64 value;$/;"	m	union:BecktonUncorePMUZDPCTLFVCRegister::__anon15
+value	types.h	/^        uint64 value;$/;"	m	union:EventSelectRegister::__anon9
+value	types.h	/^        uint64 value;$/;"	m	union:FixedEventControlRegister::__anon11
+value	types.h	/^        uint64 value;$/;"	m	union:UncoreEventSelectRegister::__anon13
+valueUpdate	pcm3d/widget.cpp	/^void Widget::valueUpdate()$/;"	f	class:Widget
+vector	cpucounters.h	/^template class INTELPCM_API std::vector<CounterWidthExtender*>;$/;"	m	class:std	typeref:class:std::
+vector	cpucounters.h	/^template class INTELPCM_API std::vector<TopologyEntry>;$/;"	m	class:std	typeref:class:std::
+vector	cpucounters.h	/^template class INTELPCM_API std::vector<uint32>;$/;"	m	class:std	typeref:class:std::
+win_usleep	utils.h	/^inline void win_usleep(int delay_us)$/;"	f
+workerThread_	PCM-Service_Win/PCMService.h	/^        System::Threading::Thread^ workerThread_;$/;"	m	class:PCMServiceNS::PCMService
+wrap_mode	types.h	/^            uint64 wrap_mode : 1;$/;"	m	struct:BecktonUncorePMUCNTCTLRegister::__anon18::__anon19
+write	MacMSRDriver/MSRAccessor.cpp	/^int32_t MSRAccessor::write(uint32_t core_num, uint64_t msr_num, uint64_t value){$/;"	f	class:MSRAccessor
+write	MacMSRDriver/PcmMsr/PcmMsr.cpp	/^void PcmMsrDriverClassName::write(uint32_t pci_address, uint32_t value)$/;"	f	class:PcmMsrDriverClassName
+write	MacMSRDriver/PcmMsr/PcmMsrClient.cpp	/^IOReturn PcmMsrClientClassName::write(const uint64_t* input, uint32_t inputSize)$/;"	f	class:PcmMsrClientClassName
+write	msr.cpp	/^int32 MsrHandle::write(uint64 msr_number, uint64 value)$/;"	f	class:MsrHandle
+write32	pci.cpp	/^int32 PciHandle::write32(uint64 offset, uint32 value)$/;"	f	class:PciHandle
+write32	pci.cpp	/^int32 PciHandleM::write32(uint64 offset, uint32 value)$/;"	f	class:PciHandleM
+write32	pci.cpp	/^int32 PciHandleMM::write32(uint64 offset, uint32 value)$/;"	f	class:PciHandleMM
+write64	pci.cpp	/^int32 PciHandle::write64(uint64 offset, uint64 value)$/;"	f	class:PciHandle
+write64	pci.cpp	/^int32 PciHandleM::write64(uint64 offset, uint64 value)$/;"	f	class:PciHandleM
+write64	pci.cpp	/^int32 PciHandleMM::write64(uint64 offset, uint64 value)$/;"	f	class:PciHandleMM
+writeMSR	MacMSRDriver/DriverInterface.c	/^kern_return_t writeMSR(io_connect_t connect, pcm_msr_data_t* data, size_t* idata_size)$/;"	f
+writeMSR	MacMSRDriver/PcmMsr/PcmMsr.cpp	/^IOReturn PcmMsrDriverClassName::writeMSR(pcm_msr_data_t* idata){$/;"	f	class:PcmMsrDriverClassName
+writeMSR	MacMSRDriver/PcmMsr/PcmMsrClient.cpp	/^IOReturn PcmMsrClientClassName::writeMSR(pcm_msr_data_t* data)$/;"	f	class:PcmMsrClientClassName
+write_intensive_task	memoptest.cpp	/^void write_intensive_task(Y * p, Y * e, int value)$/;"	f
+write_value	WinMSRDriver/Win7/msrstruct.h	/^    ULONG64 write_value;     \/* value to write if write requet$/;"	m	struct:MSR_Request
+write_value	WinMSRDriver/Win7/msrstruct.h	/^    ULONG64 write_value;$/;"	m	struct:PCICFG_Request
+write_value	WinMSRDriver/WinXP/msrstruct.h	/^    ULONG64 write_value;     \/* value to write if write requet$/;"	m	struct:MSR_Request
+wrmsr	MacMSRDriver/PcmMsr/PcmMsr.cpp	21;"	d	file:
+xRot	pcm3d/widget.h	/^    GLfloat xRot, yRot, zRot, scale;$/;"	m	class:Widget
+yRot	pcm3d/widget.h	/^    GLfloat xRot, yRot, zRot, scale;$/;"	m	class:Widget
+zRot	pcm3d/widget.h	/^    GLfloat xRot, yRot, zRot, scale;$/;"	m	class:Widget
+~AbstractRawCounter	width_extender.h	/^       virtual ~AbstractRawCounter() {}$/;"	f	struct:CounterWidthExtender::AbstractRawCounter
+~AsynchronCounterState	cpuasynchcounter.h	/^    ~AsynchronCounterState()$/;"	f	class:AsynchronCounterState
+~BasicCounterState	cpucounters.h	/^    virtual ~BasicCounterState() { }$/;"	f	class:BasicCounterState
+~ClientBW	client_bw.cpp	/^ClientBW::~ClientBW() {$/;"	f	class:ClientBW
+~ClientBW	client_bw.cpp	/^ClientBW::~ClientBW() {}$/;"	f	class:ClientBW
+~ClientBW	client_bw.cpp	/^ClientBW::~ClientBW()$/;"	f	class:ClientBW
+~CounterWidthExtender	width_extender.h	/^    ~CounterWidthExtender()$/;"	f	class:CounterWidthExtender
+~MSRAccessor	MacMSRDriver/MSRAccessor.cpp	/^MSRAccessor::~MSRAccessor(){$/;"	f	class:MSRAccessor
+~MsrHandle	msr.cpp	/^MsrHandle::~MsrHandle()$/;"	f	class:MsrHandle
+~PCIeCounterState	cpucounters.h	/^    virtual ~PCIeCounterState() {}$/;"	f	class:PCIeCounterState
+~PCM	cpucounters.cpp	/^PCM::~PCM()$/;"	f	class:PCM
+~PCMService	PCM-Service_Win/PCMService.h	/^		~PCMService()$/;"	f	class:PCMServiceNS::PCMService
+~PciHandle	pci.cpp	/^PciHandle::~PciHandle()$/;"	f	class:PciHandle
+~PciHandleM	pci.cpp	/^PciHandleM::~PciHandleM()$/;"	f	class:PciHandleM
+~PciHandleMM	pci.cpp	/^PciHandleMM::~PciHandleMM()$/;"	f	class:PciHandleMM
+~ProjectInstaller	PCM-Service_Win/PCMInstaller.h	/^		~ProjectInstaller()$/;"	f	class:PMUService::ProjectInstaller
+~ServerPCICFGUncore	cpucounters.cpp	/^ServerPCICFGUncore::~ServerPCICFGUncore()$/;"	f	class:ServerPCICFGUncore
+~SystemWideLock	cpucounters.cpp	/^    ~SystemWideLock()$/;"	f	class:SystemWideLock
+~TemporalThreadAffinity	cpucounters.cpp	/^    ~TemporalThreadAffinity()$/;"	f	class:TemporalThreadAffinity
+~ThreadGroupTempAffinity	msr.cpp	/^	~ThreadGroupTempAffinity()$/;"	f	class:ThreadGroupTempAffinity
+~UncoreCounterState	cpucounters.h	/^    virtual ~UncoreCounterState() { }$/;"	f	class:UncoreCounterState
+~Widget	pcm3d/widget.cpp	/^Widget::~Widget()$/;"	f	class:Widget
