@@ -24,6 +24,13 @@ int cmpt_init(int is_pause_at_start)
 	return 0;
 }
 
+int cmpt_enable_openmp_region()
+{
+	if (is_shm_exists)
+	  data->enabled_openmp_region = 1;
+	return 0;
+}
+
 int cmpt_pause()
 {
 	if (is_shm_exists)
@@ -41,13 +48,13 @@ int cmpt_resume()
 int cmpt_enter_openmp()
 {
 	if (is_shm_exists)
-	  data->in_openmp_area = 1;
+	  data->in_openmp_region = 1;
 	return 0;
 }
 
 int cmpt_leave_openmp()
 {
 	if (is_shm_exists)
-	  data->in_openmp_area = 0;
+	  data->in_openmp_region = 0;
 	return 0;
 }
