@@ -26,17 +26,20 @@
 #include <unistd.h>
 #include <signal.h>
 #endif
+#include <sys/time.h>
 #include <math.h>
 #include <iomanip>
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 #include <string>
+#include <signal.h>
 #include <assert.h>
 #include "cpucounters.h"
 #include "utils.h"
 #include <time.h>
 #include <sys/wait.h>
+#include <setjmp.h>
 #include "../libs/cmpt.h"
 
 //Programmable iMC counter
@@ -45,16 +48,31 @@
 #define PARTIAL 2
 
 using namespace std;
+
+static jmp_buf exit_point;
+
 FILE * fw;
 long counter = 0;
 int cmpt_init_called = 0;
 
+int flag_run;
+PCM * pcm;
+CoreCounterState * BeforeCoreStates;
+CoreCounterState * AfterCoreStates;
+ServerUncorePowerState * BeforeState;
+ServerUncorePowerState * AfterState;
+uint64 BeforeTime, AfterTime;
+int is_cmpt_setting_enabled = 0;
+int fd  = 0;
+cmpt_data * cmpt_setting = NULL;
+pid_t pid = 0;
+
 void print_help(char * prog_name)
 {
 #ifdef _MSC_VER
-    cout << " Usage: " << prog_name << " <delay>|\"external_program parameters\"|--help|--uninstallDriver|--installDriver <other options>" << endl;
+	cout << " Usage: " << prog_name << " <delay>|\"external_program parameters\"|--help|--uninstallDriver|--installDriver <other options>" << endl;
 #else
-    cout << " Usage: " << prog_name << " <delay>|[external_program parameters]" << endl;
+	cout << " Usage: " << prog_name << " <delay>|[external_program parameters]" << endl;
 #endif
     cout << " Example: " << prog_name << " \"sleep 1\"" << endl;
     cout << " Example: " << prog_name << " 1" << endl;
@@ -116,17 +134,25 @@ void calculate_bandwidth(PCM *m, const ServerUncorePowerState uncState1[], const
                 continue;
             }
 
-            iMC_Rd_socket_chan[skt][channel] = (float) (getMCCounter(channel,READ,uncState1[skt],uncState2[skt]) * 64 / 1000000.0 / (elapsedTime/1000.0));
-            iMC_Wr_socket_chan[skt][channel] = (float) (getMCCounter(channel,WRITE,uncState1[skt],uncState2[skt]) * 64 / 1000000.0 / (elapsedTime/1000.0));
+			// in MB, 1 / 16384 = 64Byte / (1024 * 1024)
+            iMC_Rd_socket_chan[skt][channel] = (float) (getMCCounter(channel,READ,uncState1[skt],uncState2[skt]) / 16384.0 / elapsedTime);
+            iMC_Wr_socket_chan[skt][channel] = (float) (getMCCounter(channel,WRITE,uncState1[skt],uncState2[skt]) / 16384.0 / elapsedTime);
 
             iMC_Rd_socket[skt] += iMC_Rd_socket_chan[skt][channel];
             iMC_Wr_socket[skt] += iMC_Wr_socket_chan[skt][channel];
 
-            partial_write[skt] += (uint64) (getMCCounter(channel,PARTIAL,uncState1[skt],uncState2[skt]) / (elapsedTime/1000.0));
+            partial_write[skt] += (uint64) (getMCCounter(channel,PARTIAL,uncState1[skt],uncState2[skt]) / elapsedTime);
         }
     }
 
     write_bandwidth(iMC_Rd_socket_chan[0], iMC_Wr_socket_chan[0], iMC_Rd_socket, iMC_Wr_socket, m->getNumSockets(), max_imc_channels, partial_write);
+}
+
+uint64 gettimestamp()
+{
+	struct timeval t;
+	gettimeofday(&t, NULL);
+	return (uint64)(t.tv_sec) * 1000000 + t.tv_usec;
 }
 
 void mycleanup(int s)
@@ -137,43 +163,100 @@ void mycleanup(int s)
     exit(0);
 }
 
+void timeup(int signal)
+{
+	AfterTime = gettimestamp();
+	for(uint32 i=0; i<pcm->getNumSockets(); ++i)
+	  AfterState[i] = pcm->getServerUncorePowerState(i);
+	for(uint32 i=0; i<pcm->getNumCores(); ++i) {
+		AfterCoreStates[i] = pcm->getCoreCounterState(i);
+	}
+
+	if (!cmpt_init_called && cmpt_setting->init_called) {
+		cmpt_init_called = 1;
+		fflush(fw);
+		ftruncate(fileno(fw), (off_t)0);
+		rewind(fw);
+		printf("shm_init() on %ld\n", counter);
+		counter = 0;
+	}
+
+	if (!is_cmpt_setting_enabled || cmpt_setting->enabled) {
+		fprintf(fw, "%ld", counter);
+		calculate_bandwidth(pcm,BeforeState,AfterState,AfterTime-BeforeTime);
+		fprintf(fw, " [Inst]");
+
+		for (uint32 i = 0; i < pcm->getNumCores(); ++i) {
+			fprintf(fw, " %lld", getInstructionsRetired(BeforeCoreStates[i], AfterCoreStates[i]) * 1000000 / (AfterTime - BeforeTime));
+		}
+		fprintf(fw, " [FP]");
+		for (uint32 i = 0; i < pcm->getNumCores(); ++i) {
+			for (uint32 j = 0; j < 4; ++j) {
+				fprintf(fw, " %lld", getNumberOfCustomEvents(j, BeforeCoreStates[i], AfterCoreStates[i]) * 1000000 / (AfterTime - BeforeTime));
+			}
+		}
+
+		fprintf(fw, " [Other]");
+		if (cmpt_setting->enabled_openmp_region)
+		  fprintf(fw, " %d", cmpt_setting->in_openmp_region);
+		else
+		  fprintf(fw, " 1");
+		fprintf(fw, "\n");
+	}
+	counter++;
+
+	swap(BeforeTime, AfterTime);
+	swap(BeforeState, AfterState);
+	swap(BeforeCoreStates, AfterCoreStates);
+
+	if (flag_run) {
+		int status = 0;
+		int ret = waitpid(pid, &status, WNOHANG);
+		if (ret == 0)
+		  return;
+		if (ret < 0)
+		  printf("Error!!!!\n");
+		longjmp(exit_point, 1);
+	}
+}
+
 int main(int argc, char * argv[])
 {
 #ifdef PCM_FORCE_SILENT
-    null_stream nullStream1, nullStream2;
-    std::cout.rdbuf(&nullStream1);
-    std::cerr.rdbuf(&nullStream2);
+	null_stream nullStream1, nullStream2;
+	std::cout.rdbuf(&nullStream1);
+	std::cerr.rdbuf(&nullStream2);
 #endif
 
-    cout << endl;
-    cout << " Intel(r) Performance Counter Monitor: Memory Bandwidth Monitoring Utility " << INTEL_PCM_VERSION << endl;
-    cout << endl;
-    cout << " Copyright (c) 2009-2013 Intel Corporation" << endl;
-    cout << " This utility measures memory bandwidth per channel in real-time" << endl;
-    cout << endl;
+	cout << endl;
+	cout << " Intel(r) Performance Counter Monitor: Memory Bandwidth Monitoring Utility " << INTEL_PCM_VERSION << endl;
+	cout << endl;
+	cout << " Copyright (c) 2009-2013 Intel Corporation" << endl;
+	cout << " This utility measures memory bandwidth per channel in real-time" << endl;
+	cout << endl;
 #ifdef _MSC_VER
-    // Increase the priority a bit to improve context switching delays on Windows
-    SetThreadPriority(GetCurrentThread(), THREAD_PRIORITY_ABOVE_NORMAL);
+	// Increase the priority a bit to improve context switching delays on Windows
+	SetThreadPriority(GetCurrentThread(), THREAD_PRIORITY_ABOVE_NORMAL);
 
-    TCHAR driverPath[1032];
-    GetCurrentDirectory(1024, driverPath);
-    wcscat_s(driverPath, 1032, L"\\msr.sys");
+	TCHAR driverPath[1032];
+	GetCurrentDirectory(1024, driverPath);
+	wcscat_s(driverPath, 1032, L"\\msr.sys");
 
-    SetConsoleCtrlHandler((PHANDLER_ROUTINE)cleanup, TRUE);
+	SetConsoleCtrlHandler((PHANDLER_ROUTINE)cleanup, TRUE);
 #else
-    signal(SIGPIPE, cleanup);
-    signal(SIGINT, cleanup);
-    signal(SIGKILL, cleanup);
-    signal(SIGTERM, cleanup);
+	signal(SIGPIPE, cleanup);
+	signal(SIGINT, cleanup);
+	signal(SIGKILL, cleanup);
+	signal(SIGTERM, cleanup);
 #endif
 
-    int delay = 1;
-    char * sysCmd = NULL;
+	int delay = 1;
+	char * sysCmd = NULL;
 
-    if (argc >= 2)
-    {
-        if (strcmp(argv[1], "--help") == 0 ||
-                strcmp(argv[1], "-h") == 0 ||
+	if (argc >= 2)
+	{
+		if (strcmp(argv[1], "--help") == 0 ||
+					strcmp(argv[1], "-h") == 0 ||
                 strcmp(argv[1], "/h") == 0)
         {
             print_help(argv[0]);
@@ -224,9 +307,9 @@ int main(int argc, char * argv[])
 	eventDesc[1].event_number = 0x10; eventDesc[1].umask_value = 0x20;
 	eventDesc[2].event_number = 0x10; eventDesc[2].umask_value = 0x40;
 	eventDesc[3].event_number = 0x10; eventDesc[3].umask_value = 0x80;
-    PCM * m = PCM::getInstance();
-    m->disableJKTWorkaround();
-    PCM::ErrorCode status = m->program(PCM::CUSTOM_CORE_EVENTS, &eventDesc);
+    pcm = PCM::getInstance();
+    pcm->disableJKTWorkaround();
+    PCM::ErrorCode status = pcm->program(PCM::CUSTOM_CORE_EVENTS, &eventDesc);
     switch (status)
     {
         case PCM::Success:
@@ -241,7 +324,7 @@ int main(int argc, char * argv[])
             std::cin >> yn;
             if ('y' == yn)
             {
-                m->resetPMU();
+                pcm->resetPMU();
                 cout << "PMU configuration has been reset. Try to rerun the program again." << endl;
             }
             return -1;
@@ -250,55 +333,46 @@ int main(int argc, char * argv[])
             return -1;
     }
     
-    cout << "\nDetected "<< m->getCPUBrandString() << " \"Intel(r) microarchitecture codename "<<m->getUArchCodename()<<"\""<<endl;
-    if(!m->hasPCICFGUncore())
+    cout << "\nDetected "<< pcm->getCPUBrandString() << " \"Intel(r) microarchitecture codename "<<pcm->getUArchCodename()<<"\""<<endl;
+    if(!pcm->hasPCICFGUncore())
     {
         cout << "Jaketown, Ivytown or Haswell Server CPU is required for this tool!" << endl;
-        if(m->memoryTrafficMetricsAvailable())
+        if(pcm->memoryTrafficMetricsAvailable())
             cout << "For processor-level memory bandwidth statistics please use pcm.x" << endl;
-        m->cleanup();
+        pcm->cleanup();
         return -1;
     }
 
-    if(m->getNumSockets() > max_sockets)
+    if(pcm->getNumSockets() > max_sockets)
     {
         cout << "Only systems with up to "<<max_sockets<<" sockets are supported! Program aborted" << endl;
-        m->cleanup();
+        pcm->cleanup();
         return -1;
     }
 
-	CoreCounterState * BeforeCoreStates = new CoreCounterState[m->getNumCores()];
-	CoreCounterState * AfterCoreStates = new CoreCounterState[m->getNumCores()];
+	BeforeCoreStates = new CoreCounterState[pcm->getNumCores()];
+	AfterCoreStates = new CoreCounterState[pcm->getNumCores()];
 
-    ServerUncorePowerState * BeforeState = new ServerUncorePowerState[m->getNumSockets()];
-    ServerUncorePowerState * AfterState = new ServerUncorePowerState[m->getNumSockets()];
+    BeforeState = new ServerUncorePowerState[pcm->getNumSockets()];
+    AfterState = new ServerUncorePowerState[pcm->getNumSockets()];
 
 	
-    uint64 BeforeTime = 0, AfterTime = 0;
+    BeforeTime = 0, AfterTime = 0;
 
-    cout << "Update every "<<delay<<" seconds"<< endl;
-
-    BeforeTime = m->getTickCount();
-    for(uint32 i=0; i<m->getNumSockets(); ++i)
-        BeforeState[i] = m->getServerUncorePowerState(i); 
-
-	for (uint32 i=0; i<m->getNumCores(); ++i)
-	  BeforeCoreStates[i] = m->getCoreCounterState(i);
-
-	int flag_run = 0;
 	char cmd[1024];
 	uid_t uid;
-	pid_t pid = 0;
-	
+	pid = 0;
+	flag_run = 0;
+
 	if (argc >= 3) {
 		flag_run = 1;
 		sprintf(cmd, "%s", argv[1]);
 		sscanf(argv[2], "%d", &uid);
 	}
 
-	int is_cmpt_setting_enabled = 0;
-	int fd  = 0;
-	cmpt_data * cmpt_setting = NULL;
+	is_cmpt_setting_enabled = 0;
+	fd  = 0;
+	cmpt_setting = NULL;
 	if ((fd = shm_open(SHARED_MEMORY_FILENAME, O_CREAT | O_RDWR, 0666)) != -1 && 
 				ftruncate(fd, sizeof(cmpt_data)) == 0 &&
 				(cmpt_setting = (cmpt_data *)mmap(NULL, sizeof(cmpt_data), PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0)) != MAP_FAILED) {
@@ -321,97 +395,41 @@ int main(int argc, char * argv[])
 			return 0;
 		} else if (pid < 0) {
 			printf("Fork() error!\n");
-			m->cleanup();
+			pcm->cleanup();
 			return 0;
 		}
 	}
+	BeforeTime = gettimestamp();
+    for(uint32 i=0; i<pcm->getNumSockets(); ++i)
+        BeforeState[i] = pcm->getServerUncorePowerState(i); 
+
+	for (uint32 i=0; i<pcm->getNumCores(); ++i)
+	  BeforeCoreStates[i] = pcm->getCoreCounterState(i);
+
 	counter = 0;
-    while(1)
-    {
-#ifdef _MSC_VER
-        int delay_ms = delay * 1000;
-        // compensate slow Windows console output
-        if(AfterTime) delay_ms -= (int)(m->getTickCount() - BeforeTime);
-        if(delay_ms < 0) delay_ms = 0;
-#else
-        int delay_ms = delay * 1000;
-#endif
+	struct sigaction sa;
+	struct itimerval timer;
+	memset (&sa, 0, sizeof (sa));
+	sa.sa_handler = &timeup;
+	sigaction (SIGALRM, &sa, NULL);
+	timer.it_value.tv_sec = 0;
+	timer.it_value.tv_usec = 10000;
+	timer.it_interval.tv_sec = 0;
+	timer.it_interval.tv_usec = 10000;
+	setitimer(ITIMER_REAL, &timer, NULL);
 
-		/*
-        if(sysCmd)
-            MySystem(sysCmd);
-        else
-            MySleepMs(delay_ms);
-			*/
-		delay_ms = 10;
-		usleep((long)delay_ms * 1000);
-
-        AfterTime = m->getTickCount();
-        for(uint32 i=0; i<m->getNumSockets(); ++i)
-            AfterState[i] = m->getServerUncorePowerState(i);
-		for(uint32 i=0; i<m->getNumCores(); ++i) {
-			AfterCoreStates[i] = m->getCoreCounterState(i);
+	if (!setjmp(exit_point)) {
+		while(1)
+		{
+			sleep(10);
 		}
+	}
 
-		/*
-        cout << "Time elapsed: "<<dec<<fixed<<AfterTime-BeforeTime<<" ms\n";
-        cout << "Called sleep function for "<<dec<<fixed<<delay_ms<<" ms\n";
-		*/
-
-		if (!cmpt_init_called && cmpt_setting->init_called) {
-			cmpt_init_called = 1;
-			fflush(fw);
-			ftruncate(fileno(fw), (off_t)0);
-			rewind(fw);
-			printf("shm_init() on %ld\n", counter);
-			counter = 0;
-		}
-
-		if (!is_cmpt_setting_enabled || cmpt_setting->enabled) {
-			fprintf(fw, "%ld", counter);
-			calculate_bandwidth(m,BeforeState,AfterState,AfterTime-BeforeTime);
-			fprintf(fw, " [Inst]");
-
-			for (uint32 i = 0; i < m->getNumCores(); ++i) {
-				fprintf(fw, " %lf", getInstructionsRetired(BeforeCoreStates[i], AfterCoreStates[i]) * 1000.0 / (AfterTime - BeforeTime) / 1000000.0);
-			}
-			fprintf(fw, " [FP]");
-			for (uint32 i = 0; i < m->getNumCores(); ++i) {
-				for (uint32 j = 0; j < 4; ++j) {
-					fprintf(fw, " %lf", getNumberOfCustomEvents(j, BeforeCoreStates[i], AfterCoreStates[i]) * 1000.0 / (AfterTime - BeforeTime) / 1000000.0);
-				}
-			}
-
-			fprintf(fw, " [Other]");
-			if (cmpt_setting->enabled_openmp_region)
-			  fprintf(fw, " %d", cmpt_setting->in_openmp_region);
-			else
-			  fprintf(fw, " 1");
-			fprintf(fw, "\n");
-		}
-		counter++;
-
-		swap(BeforeTime, AfterTime);
-		swap(BeforeState, AfterState);
-		swap(BeforeCoreStates, AfterCoreStates);
-
-		if (flag_run) {
-			int status = 0;
-			int ret = waitpid(pid, &status, WNOHANG);
-			if (ret == 0)
-			  continue;
-			if (ret < 0)
-			  printf("Error!!!!\n");
-			break;
-		}
-
-    }
-
-    delete[] BeforeState;
-    delete[] AfterState;
+	delete[] BeforeState;
+	delete[] AfterState;
 
 	shm_unlink(SHARED_MEMORY_FILENAME);
-    m->cleanup();
+	pcm->cleanup();
 
-    return 0;
+	return 0;
 }
